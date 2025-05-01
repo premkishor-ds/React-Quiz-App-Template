@@ -4,172 +4,815 @@
 // 3. MAQs | Multiple Answers | multiple
 
 import { Topic } from '.'
-import CodeSnippet1 from '../../assets/images/code-snippet-1.png'
+
 
 export const reasoning: Topic = {
-  topic: 'React',
-  level: 'Intermediate',
-  totalQuestions: 11,
-  totalScore: 95,
-  totalTime: 600,
+  topic: 'Reasoning',
+  level: 'Beginner',
+  totalQuestions: 100,
+  totalScore: 1000,
+  totalTime: 100,
   questions: [
+
     {
-      question: 'What is JSX in hhj?',
-      choices: [
-        'A syntax extension for aa that allows writing HTML-like code in sd',
-        'A state management library for h applications',
-        'A build tool for bundling h applications',
-        'A testing framework for h components',
-      ],
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
       type: 'MCQs',
-      correctAnswers: [
-        'A syntax extension for sda that allows writing HTML-like code in ww',
-      ],
+      correctAnswers: ['40'],
       score: 10,
     },
     {
-      question: 'React components must always return a single JSX element.',
-      choices: ['True', 'False'],
-      type: 'boolean',
-      correctAnswers: ['True'],
-      score: 5,
-    },
-    {
-      question: 'What is the purpose of React components?',
-      choices: [
-        'To handle HTTP requests and fetch data from APIs',
-        'To manage the state of a React application',
-        'To define the structure and appearance of the user interface',
-        'To handle user interactions and events',
-      ],
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
       type: 'MCQs',
-      correctAnswers: ['To define the structure and appearance of the user interface'],
+      correctAnswers: ['Carrot'],
       score: 10,
     },
     {
-      question:
-        'Which of the following are valid React lifecycle methods? (Select all that apply)',
-      choices: [
-        'componentWillMount',
-        'componentDidMount',
-        'componentWillUpdate',
-        'componentDidUpdate',
-      ],
-      type: 'MAQs',
-      correctAnswers: ['componentDidMount', 'componentWillUpdate', 'componentDidUpdate'],
-      score: 10,
-    },
-    {
-      question: 'What will be the output of the following React code?',
-      code: `import React, { useState } from 'h';
-
-const Counter = () => {
-  const [count, setCount] = useState(0);
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={increment}>Increment</button>
-    </div>
-  );
-};
-
-const App = () => {
-  return <Counter />;
-};
-
-export default App;`,
-      choices: ['Count: 0', 'Count: 1', 'Count: undefined', 'An error will occur'],
+      question: 'If CAT = 3-1-20, then DOG = ?',
+      
+      choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
       type: 'MCQs',
-      correctAnswers: ['Count: 0'],
+      correctAnswers: ['4-15-7'],
       score: 10,
     },
     {
-      question:
-        'In React, props are used to pass data from parent components to child components.',
-      choices: ['True', 'False'],
-      type: 'boolean',
-      correctAnswers: ['True'],
-      score: 5,
-    },
-    {
-      question: 'What is the output of the following code snippet?',
-      image: CodeSnippet1,
-      choices: ['0', '1', '2', 'undefined'],
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
       type: 'MCQs',
-      correctAnswers: ['0'],
+      correctAnswers: ['Cotton'],
       score: 10,
     },
     {
-      question:
-        'Which of the following are valid ways to conditionally render content in React? (Select all that apply)',
-      choices: [
-        'Using the if-else statement',
-        'Using the ternary operator',
-        'Using the switch statement',
-        'Using the && operator',
-      ],
-      type: 'MAQs',
-      correctAnswers: [
-        'Using the if-else statement',
-        'Using the ternary operator',
-        'Using the && operator',
-      ],
-      score: 10,
-    },
-    {
-      question: 'In React, what is the purpose of keys in lists?',
-      choices: [
-        'To provide a unique identifier for each item in the list',
-        'To control the order of items in the list',
-        'To enable sorting and filtering of the list',
-        'To handle user interactions within the list',
-      ],
+      question: 'Which number comes next: 2, 4, 6, 8, ?',
+      
+      choices: ['9', '10', '12', '14'],
       type: 'MCQs',
-      correctAnswers: ['To provide a unique identifier for each item in the list'],
+      correctAnswers: ['10'],
       score: 10,
     },
     {
-      question: 'What will be the result of the following React code?',
-      code: `import React from 'react';
-
-class Button extends React.Component {
-  handleClick() {
-    console.log('Button clicked');
-  }
-
-  render() {
-    return <button onClick={this.handleClick}>Click me</button>;
-  }
-}
-
-const App = () => {
-  return <Button />;
-};
-
-export default App;`,
-      choices: [
-        'The "Button clicked" message will be logged to the console when the button is clicked',
-        'The button will not respond to the click event',
-        'An error will occur due to the incorrect usage of onClick',
-        'The button will display but nothing will happen when clicked',
-      ],
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
       type: 'MCQs',
-      correctAnswers: [
-        'The "Button clicked" message will be logged to the console when the button is clicked',
-      ],
+      correctAnswers: ['J'],
       score: 10,
     },
     {
-      question: 'React uses a virtual DOM to optimize rendering performance.',
-      choices: ['True', 'False'],
-      type: 'boolean',
-      correctAnswers: ['True'],
-      score: 5,
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: 'Which number comes next: 2, 4, 6, 8, ?',
+      
+      choices: ['9', '10', '12', '14'],
+      type: 'MCQs',
+      correctAnswers: ['10'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
+      type: 'MCQs',
+      correctAnswers: ['J'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
+      type: 'MCQs',
+      correctAnswers: ['Carrot'],
+      score: 10,
+    },
+    {
+      question: 'If CAT = 3-1-20, then DOG = ?',
+      
+      choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
+      type: 'MCQs',
+      correctAnswers: ['4-15-7'],
+      score: 10,
+    },
+    {
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
+      type: 'MCQs',
+      correctAnswers: ['Carrot'],
+      score: 10,
+    },
+    {
+      question: 'If CAT = 3-1-20, then DOG = ?',
+      
+      choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
+      type: 'MCQs',
+      correctAnswers: ['4-15-7'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
+      type: 'MCQs',
+      correctAnswers: ['Carrot'],
+      score: 10,
+    },
+    {
+      question: 'Which number comes next: 2, 4, 6, 8, ?',
+      
+      choices: ['9', '10', '12', '14'],
+      type: 'MCQs',
+      correctAnswers: ['10'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
+      type: 'MCQs',
+      correctAnswers: ['Carrot'],
+      score: 10,
+    },
+    {
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
+      type: 'MCQs',
+      correctAnswers: ['Carrot'],
+      score: 10,
+    },
+    {
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
+      type: 'MCQs',
+      correctAnswers: ['Carrot'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: 'Which number comes next: 2, 4, 6, 8, ?',
+      
+      choices: ['9', '10', '12', '14'],
+      type: 'MCQs',
+      correctAnswers: ['10'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
+    },
+    {
+      question: 'Which number comes next: 2, 4, 6, 8, ?',
+      
+      choices: ['9', '10', '12', '14'],
+      type: 'MCQs',
+      correctAnswers: ['10'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
+      type: 'MCQs',
+      correctAnswers: ['J'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
+      type: 'MCQs',
+      correctAnswers: ['J'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
+      type: 'MCQs',
+      correctAnswers: ['J'],
+      score: 10,
+    },
+    {
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
+      type: 'MCQs',
+      correctAnswers: ['J'],
+      score: 10,
+    },
+    {
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
+      type: 'MCQs',
+      correctAnswers: ['Carrot'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
+      type: 'MCQs',
+      correctAnswers: ['Carrot'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: 'If CAT = 3-1-20, then DOG = ?',
+      
+      choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
+      type: 'MCQs',
+      correctAnswers: ['4-15-7'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
+    },
+    {
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: 'Which number comes next: 2, 4, 6, 8, ?',
+      
+      choices: ['9', '10', '12', '14'],
+      type: 'MCQs',
+      correctAnswers: ['10'],
+      score: 10,
+    },
+    {
+      question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
+      
+      choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
+      type: 'MCQs',
+      correctAnswers: ['Carrot'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: 'Which number comes next: 2, 4, 6, 8, ?',
+      
+      choices: ['9', '10', '12', '14'],
+      type: 'MCQs',
+      correctAnswers: ['10'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
+    },
+    {
+      question: 'If CAT = 3-1-20, then DOG = ?',
+      
+      choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
+      type: 'MCQs',
+      correctAnswers: ['4-15-7'],
+      score: 10,
+    },
+    {
+      question: 'Fill in the blank: 5, 10, 20, __, 80',
+      
+      choices: ['30', '35', '40', '50'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'If CAT = 3-1-20, then DOG = ?',
+      
+      choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
+      type: 'MCQs',
+      correctAnswers: ['4-15-7'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
+    },
+    {
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
+      type: 'MCQs',
+      correctAnswers: ['J'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: `'Unscramble: ‘LPEAP’'`,
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: 'Which number comes next: 2, 4, 6, 8, ?',
+      
+      choices: ['9', '10', '12', '14'],
+      type: 'MCQs',
+      correctAnswers: ['10'],
+      score: 10,
+    },
+    {
+      question: 'If CAT = 3-1-20, then DOG = ?',
+      
+      choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
+      type: 'MCQs',
+      correctAnswers: ['4-15-7'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
+      type: 'MCQs',
+      correctAnswers: ['J'],
+      score: 10,
+    },
+    {
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
+      type: 'MCQs',
+      correctAnswers: ['J'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: 'Which is the lightest?',
+      
+      choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
+      type: 'MCQs',
+      correctAnswers: ['Cotton'],
+      score: 10,
+    },
+    {
+      question: 'If CAT = 3-1-20, then DOG = ?',
+      
+      choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
+      type: 'MCQs',
+      correctAnswers: ['4-15-7'],
+      score: 10,
+    },
+    {
+      question: 'Unscramble: ‘LPEAP’',
+      
+      choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
+      type: 'MCQs',
+      correctAnswers: ['APPLE'],
+      score: 10,
+    },
+    {
+      question: `'Mirror image of 'CAT' is?'`,
+      
+      choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
+      type: 'MCQs',
+      correctAnswers: ['ʇ∀Ɔ'],
+      score: 10,
+    },
+    {
+      question: 'What comes next in: A, C, E, G, ?',
+      
+      choices: ['H', 'I', 'J', 'K'],
+      type: 'MCQs',
+      correctAnswers: ['J'],
+      score: 10,
+    },
+    {
+      question: 'If CAT = 3-1-20, then DOG = ?',
+      
+      choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
+      type: 'MCQs',
+      correctAnswers: ['4-15-7'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
+    },
+    {
+      question: 'Which shape is different?',
+      
+      choices: ['Circle', 'Triangle', 'Square', 'Cube'],
+      type: 'MCQs',
+      correctAnswers: ['Cube'],
+      score: 10,
+    },
+    {
+      question: 'If MONDAY is coded as 123456, then DAY = ?',
+      
+      choices: ['456', '654', '321', '345'],
+      type: 'MCQs',
+      correctAnswers: ['456'],
+      score: 10,
     },
   ],
 }

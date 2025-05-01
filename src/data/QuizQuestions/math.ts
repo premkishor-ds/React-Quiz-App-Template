@@ -6,123 +6,811 @@
 import { Topic } from '.'
 
 export const math: Topic = {
-  topic: 'math',
+  topic: 'Mathematics',
   level: 'Beginner',
-  totalQuestions: 14,
-  totalScore: 125,
-  totalTime: 240,
+  totalQuestions: 100,
+  totalScore: 1000,
+  totalTime: 100,
   questions: [
+
     {
-      question:
-        'Which of the following are fw data types? (Select all that apply)',
-      choices: ['String', 'Number', 'Function', 'Array'],
-      type: 'MAQs',
-      correctAnswers: ['String', 'Number', 'Array'],
-      score: 10,
-    },
-    {
-      question: 'The "this" keyword in w refers to the current function.',
-      choices: ['True', 'False'],
-      type: 'boolean',
-      correctAnswers: ['False'],
-      score: 5,
-    },
-    {
-      question: 'Which operator is used for strict equality comparison in w?',
-      choices: ['==', '===', '=', '!='],
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
       type: 'MCQs',
-      correctAnswers: ['==='],
+      correctAnswers: ['50'],
       score: 10,
     },
     {
-      question:
-        'Which of the following methods is used to add an element to the end of an array in w?',
-      choices: ['push()', 'pop()', 'shift()', 'unshift()'],
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
       type: 'MCQs',
-      correctAnswers: ['push()'],
+      correctAnswers: ['LIX'],
       score: 10,
     },
     {
-      question: 'What is the value of x after executing the following code snippet?',
-      code: `let x = 5;
-x += 2;
-x *= 3;`,
-      choices: ['21', '25', '33', '35'],
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
       type: 'MCQs',
-      correctAnswers: ['21'],
+      correctAnswers: ['LIX'],
       score: 10,
     },
     {
-      question: 'What is the output of the following code snippet?',
-      code: `console.log(typeof null);`,
-      choices: ['Object', 'Null', 'Undefined', 'NullObject'],
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
       type: 'MCQs',
-      correctAnswers: ['Object'],
+      correctAnswers: ['50'],
       score: 10,
     },
     {
-      question: 'Which of the following is NOT a valid w variable name?',
-      choices: ['myVariable', '_variable', '123variable', '$variable'],
+      question: 'x + 15 = 30, find x',
+      
+      choices: ['30', '10', '15', '25'],
       type: 'MCQs',
-      correctAnswers: ['123variable'],
+      correctAnswers: ['15'],
       score: 10,
     },
     {
-      question:
-        'Which of the following methods is used to remove the last element from an array in w?',
-      choices: ['push()', 'pop()', 'shift()', 'unshift()'],
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
       type: 'MCQs',
-      correctAnswers: ['pop()'],
+      correctAnswers: ['2500g'],
       score: 10,
     },
     {
-      question: 'w is a case-sensitive language.',
-      choices: ['True', 'False'],
-      type: 'boolean',
-      correctAnswers: ['True'],
-      score: 5,
-    },
-    {
-      question: 'What is the output of the following code snippet?',
-      code: `console.log(2 + '2');`,
-      choices: ['4', '22', '24', "'22'"],
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
       type: 'MCQs',
-      correctAnswers: ['22'],
+      correctAnswers: ['50'],
       score: 10,
     },
     {
-      question: 'Which of the following is NOT a w data type?',
-      choices: ['String', 'Boolean', 'Integer', 'Object'],
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
       type: 'MCQs',
-      correctAnswers: ['Integer'],
+      correctAnswers: ['24'],
       score: 10,
     },
     {
-      question:
-        'Which of the following are valid w loop statements? (Select all that apply)',
-      choices: ['for', 'while', 'loop', 'do...while'],
-      type: 'MAQs',
-      correctAnswers: ['for', 'while', 'do...while'],
-      score: 10,
-    },
-    {
-      question: 'w is a statically typed language.',
-      choices: ['True', 'False'],
-      type: 'boolean',
-      correctAnswers: ['False'],
-      score: 5,
-    },
-    {
-      question:
-        'Which of the following is a valid way to comment a single line in w?',
-      choices: [
-        '// This is a comment',
-        '/* This is a comment */',
-        '<!-- This is a comment -->',
-        '# This is a comment',
-      ],
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
       type: 'MCQs',
-      correctAnswers: ['// This is a comment'],
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
+      type: 'MCQs',
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      type: 'MCQs',
+      correctAnswers: ['LIX'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'x + 15 = 30, find x',
+      
+      choices: ['30', '10', '15', '25'],
+      type: 'MCQs',
+      correctAnswers: ['15'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
+      type: 'MCQs',
+      correctAnswers: ['24'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
+      type: 'MCQs',
+      correctAnswers: ['24'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
+      type: 'MCQs',
+      correctAnswers: ['24'],
+      score: 10,
+    },
+    {
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
+      type: 'MCQs',
+      correctAnswers: ['24'],
+      score: 10,
+    },
+    {
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
+      type: 'MCQs',
+      correctAnswers: ['24'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      type: 'MCQs',
+      correctAnswers: ['LIX'],
+      score: 10,
+    },
+    {
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
+      type: 'MCQs',
+      correctAnswers: ['24'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: 'x + 15 = 30, find x',
+      
+      choices: ['30', '10', '15', '25'],
+      type: 'MCQs',
+      correctAnswers: ['15'],
+      score: 10,
+    },
+    {
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'x + 15 = 30, find x',
+      
+      choices: ['30', '10', '15', '25'],
+      type: 'MCQs',
+      correctAnswers: ['15'],
+      score: 10,
+    },
+    {
+      question: 'x + 15 = 30, find x',
+      
+      choices: ['30', '10', '15', '25'],
+      type: 'MCQs',
+      correctAnswers: ['15'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
+      type: 'MCQs',
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
+      type: 'MCQs',
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      type: 'MCQs',
+      correctAnswers: ['LIX'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'x + 15 = 30, find x',
+      
+      choices: ['30', '10', '15', '25'],
+      type: 'MCQs',
+      correctAnswers: ['15'],
+      score: 10,
+    },
+    {
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      type: 'MCQs',
+      correctAnswers: ['LIX'],
+      score: 10,
+    },
+    {
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
+      type: 'MCQs',
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      type: 'MCQs',
+      correctAnswers: ['LIX'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
+      type: 'MCQs',
+      correctAnswers: ['24'],
+      score: 10,
+    },
+    {
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
+      type: 'MCQs',
+      correctAnswers: ['24'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: 'Find the LCM of 8 and 12.',
+      
+      choices: ['24', '12', '8', '48'],
+      type: 'MCQs',
+      correctAnswers: ['24'],
+      score: 10,
+    },
+    {
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      type: 'MCQs',
+      correctAnswers: ['LIX'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
+      type: 'MCQs',
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
+      type: 'MCQs',
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: 'x + 15 = 30, find x',
+      
+      choices: ['30', '10', '15', '25'],
+      type: 'MCQs',
+      correctAnswers: ['15'],
+      score: 10,
+    },
+    {
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
+      type: 'MCQs',
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      type: 'MCQs',
+      correctAnswers: ['LIX'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
+      type: 'MCQs',
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'Roman numeral for 59?',
+      
+      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      type: 'MCQs',
+      correctAnswers: ['LIX'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
+      score: 10,
+    },
+    {
+      question: 'What is 25% of 200?',
+      
+      choices: ['25', '50', '75', '100'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Seconds in 2 hours?',
+      
+      choices: ['120', '7200', '3600', '1800'],
+      type: 'MCQs',
+      correctAnswers: ['7200'],
+      score: 10,
+    },
+    {
+      question: 'Square of 9?',
+      
+      choices: ['81', '18', '27', '72'],
+      type: 'MCQs',
+      correctAnswers: ['81'],
+      score: 10,
+    },
+    {
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: '3/5 + 2/5 = ?',
+      
+      choices: ['1', '3/5', '5/10', '5/5'],
+      type: 'MCQs',
+      correctAnswers: ['5/5'],
+      score: 10,
+    },
+    {
+      question: 'Convert 2.5 kg to grams.',
+      
+      choices: ['250g', '2500g', '25g', '2.5g'],
+      type: 'MCQs',
+      correctAnswers: ['2500g'],
+      score: 10,
+    },
+    {
+      question: 'Simplify: (8 + 2) × 5',
+      
+      choices: ['10', '40', '50', '30'],
+      type: 'MCQs',
+      correctAnswers: ['50'],
+      score: 10,
+    },
+    {
+      question: 'Area of rectangle (10 cm × 4 cm)?',
+      
+      choices: ['14', '40', '20', '100'],
+      type: 'MCQs',
+      correctAnswers: ['40'],
       score: 10,
     },
   ],
