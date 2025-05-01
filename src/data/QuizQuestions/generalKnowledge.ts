@@ -12,806 +12,805 @@ export const generalKnowledge: Topic = {
   totalScore: 1000,
   totalTime: 6000,
   questions: [
-
     {
-      question: `''She _____ playing in the garden.''`,
-      
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Who is the Prime Minister of India (2024)? (1)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: 'Roman numeral for 59?',
-      
-      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      question: `Which is the largest planet? (2)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['LIX'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: 'Simplify: (8 + 2) × 5',
-      
-      choices: ['10', '40', '50', '30'],
+      question: `Which animal is known as the ship of the desert? (3)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-      
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Capital of Maharashtra? (4)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: 'Roman numeral for 59?',
-      
-      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      question: `Which bird can fly backward? (5)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['LIX'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-      
-      choices: ['were', 'was', 'is', 'are'],
+      question: `National flower of India? (6)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-      
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Largest continent? (7)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: 'Simplify: (8 + 2) × 5',
-      
-      choices: ['10', '40', '50', '30'],
+      question: `How many states in India? (8)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: '3/5 + 2/5 = ?',
-      
-      choices: ['1', '3/5', '5/10', '5/5'],
+      question: `Who invented the light bulb? (9)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['5/5'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: 'x + 15 = 30, find x',
-      
-      choices: ['30', '10', '15', '25'],
+      question: `Currency of Japan? (10)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['15'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-      
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Who is the Prime Minister of India (2024)? (11)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: 'Convert 2.5 kg to grams.',
-      
-      choices: ['250g', '2500g', '25g', '2.5g'],
+      question: `Which is the largest planet? (12)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['2500g'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: 'x + 15 = 30, find x',
-      
-      choices: ['30', '10', '15', '25'],
+      question: `Which animal is known as the ship of the desert? (13)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['15'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: 'Roman numeral for 59?',
-      
-      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      question: `Capital of Maharashtra? (14)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['LIX'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-      
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Which bird can fly backward? (15)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: 'Area of rectangle (10 cm × 4 cm)?',
-      
-      choices: ['14', '40', '20', '100'],
+      question: `National flower of India? (16)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['40'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: 'Simplify: (8 + 2) × 5',
-      
-      choices: ['10', '40', '50', '30'],
+      question: `Largest continent? (17)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-      
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `How many states in India? (18)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-      
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Who invented the light bulb? (19)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: 'What is 25% of 200?',
-      
-      choices: ['25', '50', '75', '100'],
+      question: `Currency of Japan? (20)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
     {
-      question: 'Seconds in 2 hours?',
-      
-      choices: ['120', '7200', '3600', '1800'],
+      question: `Who is the Prime Minister of India (2024)? (21)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['7200'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: 'Area of rectangle (10 cm × 4 cm)?',
-      
-      choices: ['14', '40', '20', '100'],
+      question: `Which is the largest planet? (22)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['40'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: 'Square of 9?',
-      
-      choices: ['81', '18', '27', '72'],
+      question: `Which animal is known as the ship of the desert? (23)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['81'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: '3/5 + 2/5 = ?',
-      
-      choices: ['1', '3/5', '5/10', '5/5'],
+      question: `Capital of Maharashtra? (24)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['5/5'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-      
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Which bird can fly backward? (25)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: 'Convert 2.5 kg to grams.',
-      
-      choices: ['250g', '2500g', '25g', '2.5g'],
+      question: `National flower of India? (26)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['2500g'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-      
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Largest continent? (27)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-      
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `How many states in India? (28)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: 'x + 15 = 30, find x',
-      
-      choices: ['30', '10', '15', '25'],
+      question: `Who invented the light bulb? (29)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['15'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-      
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Currency of Japan? (30)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-      
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Who is the Prime Minister of India (2024)? (31)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-      
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Which is the largest planet? (32)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: 'What is 25% of 200?',
-      
-      choices: ['25', '50', '75', '100'],
+      question: `Which animal is known as the ship of the desert? (33)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-      
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Capital of Maharashtra? (34)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-      
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Which bird can fly backward? (35)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-      
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `National flower of India? (36)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: 'Area of rectangle (10 cm × 4 cm)?',
-      
-      choices: ['14', '40', '20', '100'],
+      question: `Largest continent? (37)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['40'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: '3/5 + 2/5 = ?',
-      
-      choices: ['1', '3/5', '5/10', '5/5'],
+      question: `How many states in India? (38)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['5/5'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: 'What is 25% of 200?',
-      
-      choices: ['25', '50', '75', '100'],
+      question: `Who invented the light bulb? (39)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: 'Find the LCM of 8 and 12.',
-      
-      choices: ['24', '12', '8', '48'],
+      question: `Currency of Japan? (40)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['24'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-      
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Who is the Prime Minister of India (2024)? (41)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-      
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Which is the largest planet? (42)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: 'Find the LCM of 8 and 12.',
-      
-      choices: ['24', '12', '8', '48'],
+      question: `Which animal is known as the ship of the desert? (43)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['24'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: 'Find the LCM of 8 and 12.',
-      
-      choices: ['24', '12', '8', '48'],
+      question: `Capital of Maharashtra? (44)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['24'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-      
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Which bird can fly backward? (45)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-      
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `National flower of India? (46)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-      
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Largest continent? (47)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: 'Convert 2.5 kg to grams.',
-      
-      choices: ['250g', '2500g', '25g', '2.5g'],
+      question: `How many states in India? (48)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['2500g'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: 'Seconds in 2 hours?',
-      
-      choices: ['120', '7200', '3600', '1800'],
+      question: `Who invented the light bulb? (49)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['7200'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-      
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Currency of Japan? (50)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-      
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Who is the Prime Minister of India (2024)? (51)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: 'Roman numeral for 59?',
-      
-      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      question: `Which is the largest planet? (52)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['LIX'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-      
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Which animal is known as the ship of the desert? (53)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-      
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Capital of Maharashtra? (54)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: 'Area of rectangle (10 cm × 4 cm)?',
-      
-      choices: ['14', '40', '20', '100'],
+      question: `Which bird can fly backward? (55)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['40'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-      
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `National flower of India? (56)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: 'Area of rectangle (10 cm × 4 cm)?',
-      
-      choices: ['14', '40', '20', '100'],
+      question: `Largest continent? (57)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['40'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: 'Square of 9?',
-      
-      choices: ['81', '18', '27', '72'],
+      question: `How many states in India? (58)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['81'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-      
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Who invented the light bulb? (59)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-      
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Currency of Japan? (60)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-      
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Who is the Prime Minister of India (2024)? (61)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: 'What is 25% of 200?',
-      
-      choices: ['25', '50', '75', '100'],
+      question: `Which is the largest planet? (62)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: 'Seconds in 2 hours?',
-      
-      choices: ['120', '7200', '3600', '1800'],
+      question: `Which animal is known as the ship of the desert? (63)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['7200'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: '3/5 + 2/5 = ?',
-      
-      choices: ['1', '3/5', '5/10', '5/5'],
+      question: `Capital of Maharashtra? (64)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['5/5'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-      
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Which bird can fly backward? (65)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: 'Simplify: (8 + 2) × 5',
-      
-      choices: ['10', '40', '50', '30'],
+      question: `National flower of India? (66)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-      
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Largest continent? (67)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: 'Square of 9?',
-      
-      choices: ['81', '18', '27', '72'],
+      question: `How many states in India? (68)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['81'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: 'Square of 9?',
-      
-      choices: ['81', '18', '27', '72'],
+      question: `Who invented the light bulb? (69)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['81'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-      
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Currency of Japan? (70)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-      
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Who is the Prime Minister of India (2024)? (71)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: 'x + 15 = 30, find x',
-      
-      choices: ['30', '10', '15', '25'],
+      question: `Which is the largest planet? (72)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['15'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-      
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Which animal is known as the ship of the desert? (73)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: 'What is 25% of 200?',
-      
-      choices: ['25', '50', '75', '100'],
+      question: `Capital of Maharashtra? (74)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-      
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Which bird can fly backward? (75)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-      
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `National flower of India? (76)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: 'Simplify: (8 + 2) × 5',
-      
-      choices: ['10', '40', '50', '30'],
+      question: `Largest continent? (77)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: 'Roman numeral for 59?',
-      
-      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      question: `How many states in India? (78)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['LIX'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-      
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Who invented the light bulb? (79)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-      
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Currency of Japan? (80)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
     {
-      question: 'Simplify: (8 + 2) × 5',
-      
-      choices: ['10', '40', '50', '30'],
+      question: `Who is the Prime Minister of India (2024)? (81)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-      
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Which is the largest planet? (82)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: 'Seconds in 2 hours?',
-      
-      choices: ['120', '7200', '3600', '1800'],
+      question: `Which animal is known as the ship of the desert? (83)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['7200'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-      
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Capital of Maharashtra? (84)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: 'Convert 2.5 kg to grams.',
-      
-      choices: ['250g', '2500g', '25g', '2.5g'],
+      question: `Which bird can fly backward? (85)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['2500g'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: 'Roman numeral for 59?',
-      
-      choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
+      question: `National flower of India? (86)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['LIX'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-      
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Largest continent? (87)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-      
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `How many states in India? (88)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: 'Square of 9?',
-      
-      choices: ['81', '18', '27', '72'],
+      question: `Who invented the light bulb? (89)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['81'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-      
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Currency of Japan? (90)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-      
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Who is the Prime Minister of India (2024)? (91)`,
+     
+      choices: ['Narendra Modi', 'Rahul Gandhi', 'Amit Shah', 'Manmohan Singh'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Narendra Modi'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-      
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Which is the largest planet? (92)`,
+     
+      choices: ['Jupiter', 'Mars', 'Earth', 'Saturn'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Jupiter'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-      
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Which animal is known as the ship of the desert? (93)`,
+     
+      choices: ['Camel', 'Horse', 'Elephant', 'Donkey'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['Camel'],
       score: 10,
     },
     {
-      question: 'What is 25% of 200?',
-      
-      choices: ['25', '50', '75', '100'],
+      question: `Capital of Maharashtra? (94)`,
+     
+      choices: ['Mumbai', 'Pune', 'Nagpur', 'Nashik'],
       type: 'MCQs',
-      correctAnswers: ['50'],
+      correctAnswers: ['Mumbai'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-      
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Which bird can fly backward? (95)`,
+     
+      choices: ['Hummingbird', 'Sparrow', 'Crow', 'Parrot'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['Hummingbird'],
       score: 10,
     },
     {
-      question: 'x + 15 = 30, find x',
-      
-      choices: ['30', '10', '15', '25'],
+      question: `National flower of India? (96)`,
+     
+      choices: ['Lotus', 'Rose', 'Lily', 'Sunflower'],
       type: 'MCQs',
-      correctAnswers: ['15'],
+      correctAnswers: ['Lotus'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-      
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Largest continent? (97)`,
+     
+      choices: ['Asia', 'Africa', 'Europe', 'Australia'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Asia'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-      
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `How many states in India? (98)`,
+     
+      choices: ['28', '29', '27', '26'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['28'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-      
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Who invented the light bulb? (99)`,
+     
+      choices: ['Thomas Edison', 'Newton', 'Einstein', 'Tesla'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Thomas Edison'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-      
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Currency of Japan? (100)`,
+     
+      choices: ['Yen', 'Won', 'Dollar', 'Euro'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Yen'],
       score: 10,
     },
   ],
-}
+};

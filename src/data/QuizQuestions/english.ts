@@ -12,806 +12,805 @@ export const english: Topic = {
   totalScore: 1000,
   totalTime: 6000,
   questions: [
-
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Choose the correct spelling: (1)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: `Synonym of 'Brave'?' `,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Identify the verb: 'He runs every morning.' (2)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: `Antonym of 'Dark'?' `,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (3)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Pick the noun: 'The sun shines brightly.' (4)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `Verb in: 'The dog barked loudly.'?' `,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Choose the synonym of 'Happy' (5)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `Type of sentence: 'Please help me.'`,
-
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Antonym of 'Cold' (6)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: `Past tense of 'goes'?' `,
-
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Fill in the blank: She ___ singing. (7)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Pick the adjective: 'The blue sky was clear.' (8)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `What is the plural of 'Mouse'? (9)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Which word is a preposition? (10)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['under'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Choose the correct spelling: (11)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Identify the verb: 'He runs every morning.' (12)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (13)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Pick the noun: 'The sun shines brightly.' (14)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Choose the synonym of 'Happy' (15)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Antonym of 'Cold' (16)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Fill in the blank: She ___ singing. (17)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Pick the adjective: 'The blue sky was clear.' (18)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `What is the plural of 'Mouse'? (19)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Which word is a preposition? (20)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['under'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Choose the correct spelling: (21)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Identify the verb: 'He runs every morning.' (22)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (23)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Pick the noun: 'The sun shines brightly.' (24)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Choose the synonym of 'Happy' (25)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Antonym of 'Cold' (26)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Fill in the blank: She ___ singing. (27)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Pick the adjective: 'The blue sky was clear.' (28)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `What is the plural of 'Mouse'? (29)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Which word is a preposition? (30)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['under'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Choose the correct spelling: (31)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Identify the verb: 'He runs every morning.' (32)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (33)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Pick the noun: 'The sun shines brightly.' (34)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Choose the synonym of 'Happy' (35)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Antonym of 'Cold' (36)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Fill in the blank: She ___ singing. (37)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Pick the adjective: 'The blue sky was clear.' (38)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `What is the plural of 'Mouse'? (39)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Which word is a preposition? (40)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['under'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Choose the correct spelling: (41)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Identify the verb: 'He runs every morning.' (42)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (43)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Pick the noun: 'The sun shines brightly.' (44)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Choose the synonym of 'Happy' (45)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Antonym of 'Cold' (46)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Fill in the blank: She ___ singing. (47)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Pick the adjective: 'The blue sky was clear.' (48)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `What is the plural of 'Mouse'? (49)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Which word is a preposition? (50)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['under'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Choose the correct spelling: (51)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Identify the verb: 'He runs every morning.' (52)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (53)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Pick the noun: 'The sun shines brightly.' (54)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Choose the synonym of 'Happy' (55)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Antonym of 'Cold' (56)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Fill in the blank: She ___ singing. (57)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Pick the adjective: 'The blue sky was clear.' (58)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `What is the plural of 'Mouse'? (59)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Which word is a preposition? (60)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['under'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Choose the correct spelling: (61)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Identify the verb: 'He runs every morning.' (62)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (63)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Pick the noun: 'The sun shines brightly.' (64)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Choose the synonym of 'Happy' (65)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Antonym of 'Cold' (66)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Fill in the blank: She ___ singing. (67)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Pick the adjective: 'The blue sky was clear.' (68)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `What is the plural of 'Mouse'? (69)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `'Past tense of 'goes'?'`,
-
-      choices: ['gone', 'went', 'going', 'go'],
+      question: `Which word is a preposition? (70)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['went'],
+      correctAnswers: ['under'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Choose the correct spelling: (71)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Identify the verb: 'He runs every morning.' (72)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (73)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Pick the noun: 'The sun shines brightly.' (74)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Choose the synonym of 'Happy' (75)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Antonym of 'Cold' (76)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Fill in the blank: She ___ singing. (77)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Pick the adjective: 'The blue sky was clear.' (78)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `What is the plural of 'Mouse'? (79)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Which word is a preposition? (80)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['under'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Choose the correct spelling: (81)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Identify the verb: 'He runs every morning.' (82)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (83)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Pick the noun: 'The sun shines brightly.' (84)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Choose the synonym of 'Happy' (85)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `'Synonym of 'Brave'?'`,
-
-      choices: ['Coward', 'Fearless', 'Weak', 'None'],
+      question: `Antonym of 'Cold' (86)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['Fearless'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Fill in the blank: She ___ singing. (87)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Pick the adjective: 'The blue sky was clear.' (88)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `What is the plural of 'Mouse'? (89)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `''____ apple a day...''`,
-
-      choices: ['A', 'The', 'An', 'No article'],
+      question: `Which word is a preposition? (90)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['An'],
+      correctAnswers: ['under'],
       score: 10,
     },
     {
-      question: `'Verb in: 'The dog barked loudly.'?'`,
-
-      choices: ['The', 'Dog', 'Barked', 'Loudly'],
+      question: `Choose the correct spelling: (91)`,
+     
+      choices: ['Occasion', 'Ocassion', 'Occasssion', 'Occacion'],
       type: 'MCQs',
-      correctAnswers: ['Barked'],
+      correctAnswers: ['Occasion'],
       score: 10,
     },
     {
-      question: `'Rearrange: 'quickly / the / ran / dog''`,
-
-      choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
+      question: `Identify the verb: 'He runs every morning.' (92)`,
+     
+      choices: ['runs', 'every', 'He', 'morning'],
       type: 'MCQs',
-      correctAnswers: ['The dog ran quickly'],
+      correctAnswers: ['runs'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Choose the correct article: 'I saw ___ elephant.' (93)`,
+     
+      choices: ['an', 'a', 'the', 'no article'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['an'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Pick the noun: 'The sun shines brightly.' (94)`,
+     
+      choices: ['sun', 'shines', 'brightly', 'The'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['sun'],
       score: 10,
     },
     {
-      question: `'Type of sentence: 'Please help me.''`,
-
-      choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
+      question: `Choose the synonym of 'Happy' (95)`,
+     
+      choices: ['Joyful', 'Sad', 'Angry', 'Tired'],
       type: 'MCQs',
-      correctAnswers: ['Imperative'],
+      correctAnswers: ['Joyful'],
       score: 10,
     },
     {
-      question: `'Antonym of 'Dark'?'`,
-
-      choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
+      question: `Antonym of 'Cold' (96)`,
+     
+      choices: ['Hot', 'Cool', 'Warm', 'Soft'],
       type: 'MCQs',
-      correctAnswers: ['Light'],
+      correctAnswers: ['Hot'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `Fill in the blank: She ___ singing. (97)`,
+     
+      choices: ['is', 'are', 'am', 'were'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['is'],
       score: 10,
     },
     {
-      question: `''She _____ playing in the garden.''`,
-
-      choices: ['were', 'was', 'is', 'are'],
+      question: `Pick the adjective: 'The blue sky was clear.' (98)`,
+     
+      choices: ['blue', 'sky', 'was', 'clear'],
       type: 'MCQs',
-      correctAnswers: ['was'],
+      correctAnswers: ['blue'],
       score: 10,
     },
     {
-      question: 'Correct spelling?',
-
-      choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
+      question: `What is the plural of 'Mouse'? (99)`,
+     
+      choices: ['Mice', 'Mouses', 'Mouse', 'Mousees'],
       type: 'MCQs',
-      correctAnswers: ['Receive'],
+      correctAnswers: ['Mice'],
       score: 10,
     },
     {
-      question: `'Adjective in: 'The tall boy won.'?'`,
-
-      choices: ['boy', 'tall', 'won', 'The'],
+      question: `Which word is a preposition? (100)`,
+     
+      choices: ['under', 'walk', 'quickly', 'boy'],
       type: 'MCQs',
-      correctAnswers: ['tall'],
+      correctAnswers: ['under'],
       score: 10,
     },
   ],
-}
+};
