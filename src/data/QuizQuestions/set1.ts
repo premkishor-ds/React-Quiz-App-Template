@@ -5,11 +5,12 @@
 
 import { Topic } from '.'
 
+
 export const set1: Topic = {
   topic: 'Set1',
   level: 'Beginner',
-  totalQuestions: 10,
-  totalScore: 100,
+  totalQuestions: 100,
+  totalScore: 1000,
   totalTime: 6000,
   questions: [
     {
