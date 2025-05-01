@@ -10,7 +10,7 @@ export const english: Topic = {
   level: 'Beginner',
   totalQuestions: 100,
   totalScore: 1000,
-  totalTime: 100,
+  totalTime: 6000,
   questions: [
 
     {
