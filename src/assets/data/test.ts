@@ -28,14 +28,6 @@ export const set1: Topic = {
   totalTime: 100,
   questions: [
     {
-      question:
-        "If 4 men can complete a task in 6 days, how many days will it take 6 men to complete the same task?",
-      choices: ["4", "5", "7", "8"],
-      type: "MCQs",
-      correctAnswers: ["4"],
-      score: 10,
-    },
-    {
       question: "Which number completes the series: 2, 6, 12, 20, ?",
       choices: ["30", "36", "40", "45"],
       type: "MCQs",

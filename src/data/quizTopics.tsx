@@ -33,6 +33,26 @@ export const quizTopics: QuizTopic[] = [
     icon: <Question />
   },
   {
+    title: 'Set 6',
+    icon: <Question />
+  },
+  {
+    title: 'Set 7',
+    icon: <Question />
+  },
+  {
+    title: 'Set 8',
+    icon: <Question />
+  },
+  {
+    title: 'Set 9',
+    icon: <Question />
+  },
+  {
+    title: 'Set 10',
+    icon: <Question />
+  },
+  {
     title: 'English',
     icon: <English />,
   },
