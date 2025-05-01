@@ -6,7 +6,7 @@
 import { Topic } from '.'
 import CodeSnippet1 from '../../assets/images/code-snippet-1.png'
 
-export const react: Topic = {
+export const reasoning: Topic = {
   topic: 'React',
   level: 'Intermediate',
   totalQuestions: 11,
@@ -14,16 +14,16 @@ export const react: Topic = {
   totalTime: 600,
   questions: [
     {
-      question: 'What is JSX in React?',
+      question: 'What is JSX in hhj?',
       choices: [
-        'A syntax extension for JavaScript that allows writing HTML-like code in JavaScript',
-        'A state management library for React applications',
-        'A build tool for bundling React applications',
-        'A testing framework for React components',
+        'A syntax extension for aa that allows writing HTML-like code in sd',
+        'A state management library for h applications',
+        'A build tool for bundling h applications',
+        'A testing framework for h components',
       ],
       type: 'MCQs',
       correctAnswers: [
-        'A syntax extension for JavaScript that allows writing HTML-like code in JavaScript',
+        'A syntax extension for sda that allows writing HTML-like code in ww',
       ],
       score: 10,
     },
@@ -61,7 +61,7 @@ export const react: Topic = {
     },
     {
       question: 'What will be the output of the following React code?',
-      code: `import React, { useState } from 'react';
+      code: `import React, { useState } from 'h';
 
 const Counter = () => {
   const [count, setCount] = useState(0);

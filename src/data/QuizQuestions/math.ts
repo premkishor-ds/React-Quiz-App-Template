@@ -5,8 +5,8 @@
 
 import { Topic } from '.'
 
-export const javascript: Topic = {
-  topic: 'Javascript',
+export const math: Topic = {
+  topic: 'math',
   level: 'Beginner',
   totalQuestions: 14,
   totalScore: 125,
@@ -14,21 +14,21 @@ export const javascript: Topic = {
   questions: [
     {
       question:
-        'Which of the following are JavaScript data types? (Select all that apply)',
+        'Which of the following are fw data types? (Select all that apply)',
       choices: ['String', 'Number', 'Function', 'Array'],
       type: 'MAQs',
       correctAnswers: ['String', 'Number', 'Array'],
       score: 10,
     },
     {
-      question: 'The "this" keyword in JavaScript refers to the current function.',
+      question: 'The "this" keyword in w refers to the current function.',
       choices: ['True', 'False'],
       type: 'boolean',
       correctAnswers: ['False'],
       score: 5,
     },
     {
-      question: 'Which operator is used for strict equality comparison in JavaScript?',
+      question: 'Which operator is used for strict equality comparison in w?',
       choices: ['==', '===', '=', '!='],
       type: 'MCQs',
       correctAnswers: ['==='],
@@ -36,7 +36,7 @@ export const javascript: Topic = {
     },
     {
       question:
-        'Which of the following methods is used to add an element to the end of an array in JavaScript?',
+        'Which of the following methods is used to add an element to the end of an array in w?',
       choices: ['push()', 'pop()', 'shift()', 'unshift()'],
       type: 'MCQs',
       correctAnswers: ['push()'],
@@ -61,7 +61,7 @@ x *= 3;`,
       score: 10,
     },
     {
-      question: 'Which of the following is NOT a valid JavaScript variable name?',
+      question: 'Which of the following is NOT a valid w variable name?',
       choices: ['myVariable', '_variable', '123variable', '$variable'],
       type: 'MCQs',
       correctAnswers: ['123variable'],
@@ -69,14 +69,14 @@ x *= 3;`,
     },
     {
       question:
-        'Which of the following methods is used to remove the last element from an array in JavaScript?',
+        'Which of the following methods is used to remove the last element from an array in w?',
       choices: ['push()', 'pop()', 'shift()', 'unshift()'],
       type: 'MCQs',
       correctAnswers: ['pop()'],
       score: 10,
     },
     {
-      question: 'JavaScript is a case-sensitive language.',
+      question: 'w is a case-sensitive language.',
       choices: ['True', 'False'],
       type: 'boolean',
       correctAnswers: ['True'],
@@ -91,7 +91,7 @@ x *= 3;`,
       score: 10,
     },
     {
-      question: 'Which of the following is NOT a JavaScript data type?',
+      question: 'Which of the following is NOT a w data type?',
       choices: ['String', 'Boolean', 'Integer', 'Object'],
       type: 'MCQs',
       correctAnswers: ['Integer'],
@@ -99,14 +99,14 @@ x *= 3;`,
     },
     {
       question:
-        'Which of the following are valid JavaScript loop statements? (Select all that apply)',
+        'Which of the following are valid w loop statements? (Select all that apply)',
       choices: ['for', 'while', 'loop', 'do...while'],
       type: 'MAQs',
       correctAnswers: ['for', 'while', 'do...while'],
       score: 10,
     },
     {
-      question: 'JavaScript is a statically typed language.',
+      question: 'w is a statically typed language.',
       choices: ['True', 'False'],
       type: 'boolean',
       correctAnswers: ['False'],
@@ -114,7 +114,7 @@ x *= 3;`,
     },
     {
       question:
-        'Which of the following is a valid way to comment a single line in JavaScript?',
+        'Which of the following is a valid way to comment a single line in w?',
       choices: [
         '// This is a comment',
         '/* This is a comment */',

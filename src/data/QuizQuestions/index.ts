@@ -1,7 +1,7 @@
 import { generalKnowledge } from './generalKnowledge'
-import { javascript } from './javascript'
-import { python } from './python'
-import { react } from './react'
+import { english } from './english'
+import { math } from './math'
+import { reasoning } from './reasoning'
 
 // Question Types
 // 1. MCQs | Multiple Choice | single
@@ -31,8 +31,8 @@ export type Topic = {
 }
 
 export const quiz: Record<string, Topic> = {
-  JavaScript: javascript,
-  React: react,
-  Python: python,
+  English: english,
+  Reasoning: reasoning,
+  Math: math,
   'General Knowledge': generalKnowledge,
 }
