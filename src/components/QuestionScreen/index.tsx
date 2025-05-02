@@ -12,6 +12,7 @@ import QuizHeader from './QuizHeader'
 const QuestionScreen: FC = () => {
   const [activeQuestion, setActiveQuestion] = useState<number>(0)
   const [selectedAnswer, setSelectedAnswer] = useState<string[]>([])
+  const [userAnswers, setUserAnswers] = useState<string[][]>([])
   const [showTimerModal, setShowTimerModal] = useState<boolean>(false)
   const [showResultModal, setShowResultModal] = useState<boolean>(false)
 
@@ -35,38 +36,52 @@ const QuestionScreen: FC = () => {
       selectedAnswer.length === correctAnswers.length &&
       selectedAnswer.every((answer) => correctAnswers.includes(answer))
 
-    // adding selected answer, and if answer matches key to result array with current question
-    setResult([...result, { ...currentQuestion, selectedAnswer, isMatch }])
+    const updatedResult = [...result, { ...currentQuestion, selectedAnswer, isMatch }]
+    setResult(updatedResult)
+
+    const updatedAnswers = [...userAnswers]
+    updatedAnswers[activeQuestion] = selectedAnswer
+    setUserAnswers(updatedAnswers)
 
     if (activeQuestion !== questions.length - 1) {
       setActiveQuestion((prev) => prev + 1)
+      setSelectedAnswer(updatedAnswers[activeQuestion + 1] || [])
     } else {
-      // how long does it take to finish the quiz
       const timeTaken = quizDetails.totalTime - timer
       setEndTime(timeTaken)
       setShowResultModal(true)
     }
-    setSelectedAnswer([])
+  }
+
+  const onClickPrevious = () => {
+    if (activeQuestion > 0) {
+      const newIndex = activeQuestion - 1
+      setActiveQuestion(newIndex)
+      setSelectedAnswer(userAnswers[newIndex] || [])
+    }
   }
 
   const handleAnswerSelection = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, checked } = e.target
 
+    let updatedSelection: string[] = []
+
     if (type === 'MAQs') {
-      if (selectedAnswer.includes(name)) {
-        setSelectedAnswer((prevSelectedAnswer) =>
-          prevSelectedAnswer.filter((element) => element !== name)
-        )
-      } else {
-        setSelectedAnswer((prevSelectedAnswer) => [...prevSelectedAnswer, name])
+      updatedSelection = checked
+        ? [...selectedAnswer, name]
+        : selectedAnswer.filter((item) => item !== name)
+    } else if (type === 'MCQs' || type === 'boolean') {
+      if (checked) {
+        updatedSelection = [name]
       }
     }
 
-    if (type === 'MCQs' || type === 'boolean') {
-      if (checked) {
-        setSelectedAnswer([name])
-      }
-    }
+    setSelectedAnswer(updatedSelection)
+
+    // Update stored answers immediately
+    const updatedAnswers = [...userAnswers]
+    updatedAnswers[activeQuestion] = updatedSelection
+    setUserAnswers(updatedAnswers)
   }
 
   const handleModal = () => {
@@ -74,14 +89,15 @@ const QuestionScreen: FC = () => {
     document.body.style.overflow = 'auto'
   }
 
-  // to prevent scrolling when modal is opened
   useEffect(() => {
     if (showTimerModal || showResultModal) {
       document.body.style.overflow = 'hidden'
     }
+    return () => {
+      document.body.style.overflow = 'auto'
+    }
   }, [showTimerModal, showResultModal])
 
-  // timer hooks, handle conditions related to time
   useTimer(timer, quizDetails, setEndTime, setTimer, setShowTimerModal, showResultModal)
 
   return (
@@ -105,6 +121,13 @@ const QuestionScreen: FC = () => {
           selectedAnswer={selectedAnswer}
         />
         <div className="absolute right-4 bottom-8 flex w-[90%] justify-end gap-5 md:right-15 md:w-auto md:justify-normal">
+          {activeQuestion > 0 && (
+            <Button
+              text="Previous"
+              onClick={onClickPrevious}
+              iconPosition="left"
+            />
+          )}
           <Button
             text={activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
             onClick={onClickNext}
@@ -115,7 +138,6 @@ const QuestionScreen: FC = () => {
         </div>
       </div>
 
-      {/* timer or finish quiz modal*/}
       {(showTimerModal || showResultModal) && (
         <ModalWrapper
           title={showResultModal ? 'Done!' : 'Your time is up!'}
