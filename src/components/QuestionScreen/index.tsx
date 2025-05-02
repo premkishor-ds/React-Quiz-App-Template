@@ -15,6 +15,7 @@ const QuestionScreen: FC = () => {
   const [userAnswers, setUserAnswers] = useState<string[][]>([])
   const [showTimerModal, setShowTimerModal] = useState<boolean>(false)
   const [showResultModal, setShowResultModal] = useState<boolean>(false)
+  const [showFinishConfirm, setShowFinishConfirm] = useState<boolean>(false)
 
   const {
     questions,
@@ -28,11 +29,17 @@ const QuestionScreen: FC = () => {
   } = useQuiz()
 
   const currentQuestion = questions[activeQuestion]
-
   const { question, type, choices, code, image, correctAnswers } = currentQuestion
 
+  const unansweredCount = questions.length - userAnswers.filter((ans) => ans?.length > 0).length
+
   const onClickNext = () => {
-    const isMatch: boolean =
+    if (activeQuestion === questions.length - 1) {
+      setShowFinishConfirm(true)
+      return
+    }
+
+    const isMatch =
       selectedAnswer.length === correctAnswers.length &&
       selectedAnswer.every((answer) => correctAnswers.includes(answer))
 
@@ -43,14 +50,26 @@ const QuestionScreen: FC = () => {
     updatedAnswers[activeQuestion] = selectedAnswer
     setUserAnswers(updatedAnswers)
 
-    if (activeQuestion !== questions.length - 1) {
-      setActiveQuestion((prev) => prev + 1)
-      setSelectedAnswer(updatedAnswers[activeQuestion + 1] || [])
-    } else {
-      const timeTaken = quizDetails.totalTime - timer
-      setEndTime(timeTaken)
-      setShowResultModal(true)
-    }
+    setActiveQuestion((prev) => prev + 1)
+    setSelectedAnswer(updatedAnswers[activeQuestion + 1] || [])
+  }
+
+  const confirmFinishQuiz = () => {
+    const isMatch =
+      selectedAnswer.length === correctAnswers.length &&
+      selectedAnswer.every((answer) => correctAnswers.includes(answer))
+
+    const updatedResult = [...result, { ...currentQuestion, selectedAnswer, isMatch }]
+    setResult(updatedResult)
+
+    const updatedAnswers = [...userAnswers]
+    updatedAnswers[activeQuestion] = selectedAnswer
+    setUserAnswers(updatedAnswers)
+
+    const timeTaken = quizDetails.totalTime - timer
+    setEndTime(timeTaken)
+    setShowResultModal(true)
+    setShowFinishConfirm(false)
   }
 
   const onClickPrevious = () => {
@@ -78,7 +97,6 @@ const QuestionScreen: FC = () => {
 
     setSelectedAnswer(updatedSelection)
 
-    // Update stored answers immediately
     const updatedAnswers = [...userAnswers]
     updatedAnswers[activeQuestion] = updatedSelection
     setUserAnswers(updatedAnswers)
@@ -111,7 +129,8 @@ const QuestionScreen: FC = () => {
           totalQuestions={quizDetails.totalQuestions}
           timer={timer}
         />
-        {/* Jump-to-Question Navigation */}
+
+        {/* Jump Navigation */}
         <div className="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
           {questions.map((_, index) => {
             const isActive = activeQuestion === index
@@ -137,6 +156,7 @@ const QuestionScreen: FC = () => {
             )
           })}
         </div>
+
         <Question
           question={question}
           code={code}
@@ -146,6 +166,7 @@ const QuestionScreen: FC = () => {
           handleAnswerSelection={handleAnswerSelection}
           selectedAnswer={selectedAnswer}
         />
+
         <div className="absolute right-4 bottom-8 flex w-[90%] justify-end gap-5 md:right-15 md:w-auto md:justify-normal">
           {activeQuestion > 0 && (
             <Button
@@ -164,6 +185,7 @@ const QuestionScreen: FC = () => {
         </div>
       </div>
 
+      {/* Timer/Result Modal */}
       {(showTimerModal || showResultModal) && (
         <ModalWrapper
           title={showResultModal ? 'Done!' : 'Your time is up!'}
@@ -171,6 +193,19 @@ const QuestionScreen: FC = () => {
           onClick={handleModal}
           icon={showResultModal ? <CheckIcon /> : <TimerIcon />}
           buttonTitle="SHOW RESULT"
+        />
+      )}
+
+      {/* Finish Confirmation Modal */}
+      {showFinishConfirm && (
+        <ModalWrapper
+          title="Finish Quiz?"
+          subtitle={`You still have ${unansweredCount} unanswered question${unansweredCount !== 1 ? 's' : ''}. Are you sure you want to submit?`}
+          icon={<CheckIcon />}
+          buttonTitle="YES, FINISH"
+          cancelTitle="Cancel"
+          onClick={confirmFinishQuiz}
+          onClose={() => setShowFinishConfirm(false)}
         />
       )}
     </PageCenter>
