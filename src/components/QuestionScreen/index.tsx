@@ -111,6 +111,32 @@ const QuestionScreen: FC = () => {
           totalQuestions={quizDetails.totalQuestions}
           timer={timer}
         />
+        {/* Jump-to-Question Navigation */}
+        <div className="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
+          {questions.map((_, index) => {
+            const isActive = activeQuestion === index
+            const isAnswered = userAnswers[index] && userAnswers[index].length > 0
+
+            return (
+              <button
+                key={index}
+                onClick={() => {
+                  setActiveQuestion(index)
+                  setSelectedAnswer(userAnswers[index] || [])
+                }}
+                className={`w-8 h-8 rounded-full border text-sm font-semibold transition-all duration-200 ${
+                  isActive
+                    ? 'bg-blue-600 text-white'
+                    : isAnswered
+                    ? 'bg-green-100 text-green-800'
+                    : 'bg-white text-gray-700'
+                }`}
+              >
+                {index + 1}
+              </button>
+            )
+          })}
+        </div>
         <Question
           question={question}
           code={code}
