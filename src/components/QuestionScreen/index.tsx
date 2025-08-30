@@ -12,8 +12,10 @@ import QuizHeader from './QuizHeader'
 const QuestionScreen: FC = () => {
   const [activeQuestion, setActiveQuestion] = useState<number>(0)
   const [selectedAnswer, setSelectedAnswer] = useState<string[]>([])
+  const [userAnswers, setUserAnswers] = useState<string[][]>([])
   const [showTimerModal, setShowTimerModal] = useState<boolean>(false)
   const [showResultModal, setShowResultModal] = useState<boolean>(false)
+  const [showFinishConfirm, setShowFinishConfirm] = useState<boolean>(false)
 
   const {
     questions,
@@ -27,46 +29,77 @@ const QuestionScreen: FC = () => {
   } = useQuiz()
 
   const currentQuestion = questions[activeQuestion]
-
   const { question, type, choices, code, image, correctAnswers } = currentQuestion
 
+  const unansweredCount = questions.length - userAnswers.filter((ans) => ans?.length > 0).length
+
   const onClickNext = () => {
-    const isMatch: boolean =
+    if (activeQuestion === questions.length - 1) {
+      setShowFinishConfirm(true)
+      return
+    }
+
+    const isMatch =
       selectedAnswer.length === correctAnswers.length &&
       selectedAnswer.every((answer) => correctAnswers.includes(answer))
 
-    // adding selected answer, and if answer matches key to result array with current question
-    setResult([...result, { ...currentQuestion, selectedAnswer, isMatch }])
+    const updatedResult = [...result, { ...currentQuestion, selectedAnswer, isMatch }]
+    setResult(updatedResult)
 
-    if (activeQuestion !== questions.length - 1) {
-      setActiveQuestion((prev) => prev + 1)
-    } else {
-      // how long does it take to finish the quiz
-      const timeTaken = quizDetails.totalTime - timer
-      setEndTime(timeTaken)
-      setShowResultModal(true)
+    const updatedAnswers = [...userAnswers]
+    updatedAnswers[activeQuestion] = selectedAnswer
+    setUserAnswers(updatedAnswers)
+
+    setActiveQuestion((prev) => prev + 1)
+    setSelectedAnswer(updatedAnswers[activeQuestion + 1] || [])
+  }
+
+  const confirmFinishQuiz = () => {
+    const isMatch =
+      selectedAnswer.length === correctAnswers.length &&
+      selectedAnswer.every((answer) => correctAnswers.includes(answer))
+
+    const updatedResult = [...result, { ...currentQuestion, selectedAnswer, isMatch }]
+    setResult(updatedResult)
+
+    const updatedAnswers = [...userAnswers]
+    updatedAnswers[activeQuestion] = selectedAnswer
+    setUserAnswers(updatedAnswers)
+
+    const timeTaken = quizDetails.totalTime - timer
+    setEndTime(timeTaken)
+    setShowResultModal(true)
+    setShowFinishConfirm(false)
+  }
+
+  const onClickPrevious = () => {
+    if (activeQuestion > 0) {
+      const newIndex = activeQuestion - 1
+      setActiveQuestion(newIndex)
+      setSelectedAnswer(userAnswers[newIndex] || [])
     }
-    setSelectedAnswer([])
   }
 
   const handleAnswerSelection = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, checked } = e.target
 
+    let updatedSelection: string[] = []
+
     if (type === 'MAQs') {
-      if (selectedAnswer.includes(name)) {
-        setSelectedAnswer((prevSelectedAnswer) =>
-          prevSelectedAnswer.filter((element) => element !== name)
-        )
-      } else {
-        setSelectedAnswer((prevSelectedAnswer) => [...prevSelectedAnswer, name])
+      updatedSelection = checked
+        ? [...selectedAnswer, name]
+        : selectedAnswer.filter((item) => item !== name)
+    } else if (type === 'MCQs' || type === 'boolean') {
+      if (checked) {
+        updatedSelection = [name]
       }
     }
 
-    if (type === 'MCQs' || type === 'boolean') {
-      if (checked) {
-        setSelectedAnswer([name])
-      }
-    }
+    setSelectedAnswer(updatedSelection)
+
+    const updatedAnswers = [...userAnswers]
+    updatedAnswers[activeQuestion] = updatedSelection
+    setUserAnswers(updatedAnswers)
   }
 
   const handleModal = () => {
@@ -74,14 +107,15 @@ const QuestionScreen: FC = () => {
     document.body.style.overflow = 'auto'
   }
 
-  // to prevent scrolling when modal is opened
   useEffect(() => {
     if (showTimerModal || showResultModal) {
       document.body.style.overflow = 'hidden'
     }
+    return () => {
+      document.body.style.overflow = 'auto'
+    }
   }, [showTimerModal, showResultModal])
 
-  // timer hooks, handle conditions related to time
   useTimer(timer, quizDetails, setEndTime, setTimer, setShowTimerModal, showResultModal)
 
   return (
@@ -95,6 +129,34 @@ const QuestionScreen: FC = () => {
           totalQuestions={quizDetails.totalQuestions}
           timer={timer}
         />
+
+        {/* Jump Navigation */}
+        <div className="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
+          {questions.map((_, index) => {
+            const isActive = activeQuestion === index
+            const isAnswered = userAnswers[index] && userAnswers[index].length > 0
+
+            return (
+              <button
+                key={index}
+                onClick={() => {
+                  setActiveQuestion(index)
+                  setSelectedAnswer(userAnswers[index] || [])
+                }}
+                className={`w-8 h-8 rounded-full border text-sm font-semibold transition-all duration-200 ${
+                  isActive
+                    ? 'bg-blue-600 text-white'
+                    : isAnswered
+                    ? 'bg-green-100 text-green-800'
+                    : 'bg-white text-gray-700'
+                }`}
+              >
+                {index + 1}
+              </button>
+            )
+          })}
+        </div>
+
         <Question
           question={question}
           code={code}
@@ -104,7 +166,15 @@ const QuestionScreen: FC = () => {
           handleAnswerSelection={handleAnswerSelection}
           selectedAnswer={selectedAnswer}
         />
+
         <div className="absolute right-4 bottom-8 flex w-[90%] justify-end gap-5 md:right-15 md:w-auto md:justify-normal">
+          {activeQuestion > 0 && (
+            <Button
+              text="Previous"
+              onClick={onClickPrevious}
+              iconPosition="left"
+            />
+          )}
           <Button
             text={activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
             onClick={onClickNext}
@@ -115,7 +185,7 @@ const QuestionScreen: FC = () => {
         </div>
       </div>
 
-      {/* timer or finish quiz modal*/}
+      {/* Timer/Result Modal */}
       {(showTimerModal || showResultModal) && (
         <ModalWrapper
           title={showResultModal ? 'Done!' : 'Your time is up!'}
@@ -123,6 +193,19 @@ const QuestionScreen: FC = () => {
           onClick={handleModal}
           icon={showResultModal ? <CheckIcon /> : <TimerIcon />}
           buttonTitle="SHOW RESULT"
+        />
+      )}
+
+      {/* Finish Confirmation Modal */}
+      {showFinishConfirm && (
+        <ModalWrapper
+          title="Finish Quiz?"
+          subtitle={`You still have ${unansweredCount} unanswered question${unansweredCount !== 1 ? 's' : ''}. Are you sure you want to submit?`}
+          icon={<CheckIcon />}
+          buttonTitle="YES, FINISH"
+          cancelTitle="Cancel"
+          onClick={confirmFinishQuiz}
+          onClose={() => setShowFinishConfirm(false)}
         />
       )}
     </PageCenter>

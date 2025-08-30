@@ -1,12 +1,13 @@
-import { FC, JSX } from 'react'
-import Button from './Button'
+import { FC } from 'react'
 
-interface ModalWrapperProps {
+type ModalWrapperProps = {
   title: string
   subtitle: string
-  icon: JSX.Element
+  icon: React.ReactNode
   buttonTitle: string
   onClick: () => void
+  onClose?: () => void
+  cancelTitle?: string
 }
 
 const ModalWrapper: FC<ModalWrapperProps> = ({
@@ -15,18 +16,31 @@ const ModalWrapper: FC<ModalWrapperProps> = ({
   icon,
   buttonTitle,
   onClick,
+  onClose,
+  cancelTitle
 }) => {
   return (
-    <div className="fixed top-0 left-0 flex h-full w-full items-center justify-center bg-[rgba(0,_0,_0,_0.5)] p-4">
-      <div className="bg-card-bg flex w-[600px] flex-col items-center rounded-[10px] px-6 py-12">
-        {icon}
-        <h6 className="text-theme-color mt-7 mb-5 text-[24px] font-bold sm:text-[26px] md:text-[28px] lg:text-[30px] xl:text-[32px]">
-          {title}
-        </h6>
-        <p className="text-primary-text mb-[18px] text-center text-2xl text-[18px] leading-[1.3] font-medium sm:mb-[22px] sm:text-[20px] md:mb-[30px] md:text-[22px] lg:mb-[38px] lg:text-[24px] xl:mb-[48px]">
-          {subtitle}
-        </p>
-        <Button text={buttonTitle} onClick={onClick} bold big />
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+      <div className="bg-white rounded-lg p-6 w-[90%] max-w-md text-center shadow-lg">
+        <div className="mb-4 flex justify-center text-blue-600 text-3xl">{icon}</div>
+        <h2 className="text-xl font-semibold mb-2">{title}</h2>
+        <p className="text-gray-600 mb-6">{subtitle}</p>
+        <div className="flex justify-center gap-4">
+          {cancelTitle && onClose && (
+            <button
+              onClick={onClose}
+              className="bg-gray-200 text-gray-800 px-4 py-2 rounded hover:bg-gray-300"
+            >
+              {cancelTitle}
+            </button>
+          )}
+          <button
+            onClick={onClick}
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
+            {buttonTitle}
+          </button>
+        </div>
       </div>
     </div>
   )
