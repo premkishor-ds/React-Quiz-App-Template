@@ -2,7 +2,7 @@ import { Topic } from '.'
 
 export const english: Topic = {
   topic: 'RMS Class 6 English',
-  level: 'Intermediate',
+  level: 'medium to hard to hardest',
   totalQuestions: 40,
   totalScore: 400,
   totalTime: 2400,

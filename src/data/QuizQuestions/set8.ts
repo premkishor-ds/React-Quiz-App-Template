@@ -365,10 +365,10 @@ export const set8: Topic = {
       score: 10,
     },
     {
-      question: "What is the nickname of Ravindra Bismark?",
-      choices: ["CR", "Guru Dev", "Frontier Gandhi", "None"],
+      question: "Who is known as the Iron Man of India?",
+      choices: ["Subhas Chandra Bose", "Sardar Vallabhbhai Patel", "Bhagat Singh", "Lal Bahadur Shastri"],
       type: "MCQs",
-      correctAnswers: ["Frontier Gandhi"],
+      correctAnswers: ["Sardar Vallabhbhai Patel"],
       score: 10,
     },
     {
