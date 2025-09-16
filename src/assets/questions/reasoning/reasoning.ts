@@ -1,7 +1,7 @@
 import { Topic } from '../../../data/QuizQuestions/index'
 
 // Number Series / Pattern Recognition 
-export const numberSeriesQuestions = [
+export const numberSeriesQuestions: Topic = [
   {
     question: 'What comes next in the series: 2, 6, 12, 20, ?',
     choices: ['28', '30', '32', '34'],
@@ -146,7 +146,7 @@ export const numberSeriesQuestions = [
 
 
 // Verbal Reasoning
-export const verbalReasoningQuestions = [
+export const verbalReasoningQuestions: Topic = [
   {
     question: 'Find the odd one out: Apple, Mango, Banana, Carrot',
     choices: ['Apple', 'Mango', 'Banana', 'Carrot'],
@@ -290,7 +290,7 @@ export const verbalReasoningQuestions = [
 ]
 
 // Non - Verbal Reasoning
-export const nonVerbalReasoningQuestions = [
+export const nonVerbalReasoningQuestions: Topic = [
   {
     question: 'Find the odd one out: △, ◻, ⚫, A',
     choices: ['△', '◻', '⚫', 'A'],
@@ -434,7 +434,7 @@ export const nonVerbalReasoningQuestions = [
 ]
 
 // Logical Reasoning(20 Questions)
-export const logicalReasoningQuestions = [
+export const logicalReasoningQuestions: Topic = [
   {
     question: 'If all roses are flowers and some flowers fade quickly, which of the following is true?',
     choices: ['All roses fade quickly', 'Some flowers are not roses', 'All flowers are roses', 'No rose fades quickly'],
@@ -578,7 +578,7 @@ export const logicalReasoningQuestions = [
 ]
 
 // Analytical Reasoning(20 Questions)
-export const analyticalReasoningQuestions = [
+export const analyticalReasoningQuestions: Topic = [
   {
     question: 'Ravi is 7th from the left and 12th from the right in a row. How many students are there?',
     choices: ['17', '18', '19', '20'],
@@ -724,7 +724,7 @@ export const analyticalReasoningQuestions = [
 
 // 20 Critical Reasoning 
 
-export const criticalReasoningQuestions = [
+export const criticalReasoningQuestions: Topic = [
   {
     "question": "Statement: 'All public parks in the town were closed last month due to renovation.'\n\nWhich conclusion follows logically?",
     "choices": ["No one used the parks last month.", "Some public parks were renovated last month.", "The town has no parks.", "All parks are permanently closed."],
@@ -870,7 +870,7 @@ export const criticalReasoningQuestions = [
 
 //Coding–Decoding.
 
-export const codingDecodingQuestions = [
+export const codingDecodingQuestions: Topic = [
   {
     "question": "If in a certain code, CAT is written as DBU, how is DOG written?",
     "choices": ["EPH", "EOF", "DPG", "EOH"],
@@ -1015,7 +1015,7 @@ export const codingDecodingQuestions = [
 
 
 //Direction Sense
-export const directionSenseQuestions = [
+export const directionSenseQuestions: Topic = [
   {
     "question": "A is facing North. He turns right, then right again. Which direction is he facing now?",
     "choices": ["North", "East", "South", "West"],
@@ -1159,7 +1159,7 @@ export const directionSenseQuestions = [
 ]
 
 //Blood Relations
-export const bloodRelationsQuestions = [
+export const bloodRelationsQuestions: Topic = [
   {
     "question": "Pointing to a man, Rahul says, 'He is the son of my grandfather’s only son.' How is the man related to Rahul?",
     "choices": ["Brother", "Father", "Uncle", "Cousin"],
@@ -1304,12 +1304,12 @@ export const bloodRelationsQuestions = [
 
 
 //Coding - Decoding
-export const codingDecodingSet: Topic = {
+export const codingDecoding: Topic = {
   topic: "Coding-Decoding",
   level: "Medium",
   totalQuestions: 20,
   totalScore: 200,
-  totalTime: 30,
+  totalTime: 1200,
   questions: [
     {
       question: "If CAT is coded as DBU, then how is DOG coded?",
@@ -1913,7 +1913,7 @@ export const classificationSet: Topic = {
 
 
 // Puzzles & Brain Teasers 
-export const puzzlesBrainTeasersQuestions = [
+export const puzzlesBrainTeasersQuestions: Topic = [
   {
     "question": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
     "choices": ["Echo", "Shadow", "Fire", "Cloud"],
@@ -2058,7 +2058,7 @@ export const puzzlesBrainTeasersQuestions = [
 
 
 // Seating Arrangement
-export const seatingArrangementQuestions = [
+export const seatingArrangementQuestions: Topic = [
   {
     "question": "Five friends A, B, C, D and E sit in a row. B sits to the right of D. C sits at the extreme left. A sits between B and E. Who sits at the extreme right?",
     "choices": ["A", "B", "D", "E"],
@@ -2202,7 +2202,7 @@ export const seatingArrangementQuestions = [
 ]
 
 //Directions & Blood Relations
-export const directionsBloodRelationsQuestions = [
+export const directionsBloodRelationsQuestions: Topic = [
   {
     "question": "Point A is to the east of Point B. Point C is to the north of Point B. In which direction is Point C from Point A?",
     "choices": ["Northwest", "Northeast", "Southwest", "Southeast"],
@@ -2349,7 +2349,7 @@ export const directionsBloodRelationsQuestions = [
 
 
 //Odd One Out & Classification
-export const oddOneOutClassificationQuestions = [
+export const oddOneOutClassificationQuestions: Topic = [
   {
     "question": "Find the odd one out: Apple, Banana, Mango, Carrot",
     "choices": ["Apple", "Banana", "Mango", "Carrot"],
@@ -2495,7 +2495,7 @@ export const oddOneOutClassificationQuestions = [
 
 
 //Coding - Decoding
-export const codingDecodingQuestions2 = [
+export const codingDecodingQuestions2: Topic = [
   {
     "question": "If in a code, APPLE is written as BQQMF, how is ORANGE written?",
     "choices": ["PSBOHF", "PSBNOF", "QSBPOG", "PSBONG"],
@@ -2633,7 +2633,7 @@ export const codingDecodingQuestions2 = [
 
 
 //Pattern Recognition & Series Completion
-export const patternRecognitionSeriesQuestions = [
+export const patternRecognitionSeriesQuestions: Topic = [
   {
     "question": "Find the missing number: 2, 4, 8, 16, ?",
     "choices": ["32", "24", "30", "34"],
@@ -2778,7 +2778,7 @@ export const patternRecognitionSeriesQuestions = [
 
 
 //Puzzles & Brain Teasers
-export const puzzlesBrainTeasersQuestions2 = [
+export const puzzlesBrainTeasersQuestions2: Topic = [
   {
     "question": "A man has 4 daughters, and each daughter has 1 brother. How many children does the man have?",
     "choices": ["5", "4", "6", "8"],
@@ -2917,7 +2917,7 @@ export const puzzlesBrainTeasersQuestions2 = [
 
 //Direction Sense & Blood Relations
 
-export const puzzlesBrainTeasersQqq = [
+export const puzzlesBrainTeasersQqq: Topic = [
   {
     "question": "Point A is 5 km east of Point B. Point C is 5 km north of Point A. What is the direction of Point C from Point B?",
     "choices": ["North-East", "North-West", "South-East", "South-West"],
@@ -3056,7 +3056,7 @@ export const puzzlesBrainTeasersQqq = [
 
 //Classification & Odd One Out
 
-export const puzzlesBrainTeasersQw = [
+export const puzzlesBrainTeasersQw: Topic = [
   {
     "question": "Find the odd one out: Apple, Banana, Mango, Carrot",
     "choices": ["Apple", "Banana", "Mango", "Carrot"],
@@ -3202,7 +3202,7 @@ export const puzzlesBrainTeasersQw = [
 
 //Coding - Decoding Problems
 
-export const puzzlesBrainTeasdfewqf = [
+export const puzzlesBrainTeasdfewqf: Topic = [
   {
     "question": "If in a code, APPLE is written as BQQMF, how is BANANA written?",
     "choices": ["CBOBOB", "CBPBOB", "CBPBPB", "CBQBOB"],
@@ -3341,7 +3341,7 @@ export const puzzlesBrainTeasdfewqf = [
 
 //Pattern Recognition & Series Completion
 
-export const puzzlesBrainTeaserwew2 = [
+export const puzzlesBrainTeaserwew2: Topic = [
   {
     "question": "Find the next number in the series: 2, 4, 8, 16, ?",
     "choices": ["18", "32", "24", "30"],
@@ -3487,7 +3487,7 @@ export const puzzlesBrainTeaserwew2 = [
 
 //Direction Sense & Blood Relations
 
-export const puzzlesBrainTeasedw = [
+export const puzzlesBrainTeasedw: Topic = [
   {
     "question": "Point A is to the North of Point B. Point C is to the West of Point A. In which direction is Point C from Point B?",
     "choices": ["North-West", "South-West", "North-East", "South-East"],
@@ -3626,7 +3626,7 @@ export const puzzlesBrainTeasedw = [
 
 //Classification & Odd One Out
 
-export const classification = [
+export const classification: Topic = [
   {
     "question": "Find the odd one out: Dog, Cat, Elephant, Car",
     "choices": ["Dog", "Cat", "Elephant", "Car"],
@@ -3772,7 +3772,7 @@ export const classification = [
 
 //Coding - Decoding Problems
 
-export const coding = [
+export const coding: Topic = [
   {
     "question": "If in a code, CAT is written as DBU, how is DOG written in that code?",
     "choices": ["EPH", "EPI", "DPH", "DOH"],
@@ -3911,7 +3911,7 @@ export const coding = [
 
 //Pattern Recognition & Series Completion
 
-export const pattern = [
+export const pattern: Topic = [
   {
     "question": "Find the next number in the series: 2, 4, 8, 16, ?",
     "choices": ["18", "32", "24", "30"],
@@ -4057,7 +4057,7 @@ export const pattern = [
 
 //Letter Series / Alphabetical Patterns
 
-export const hgnfdgbf = [
+export const hgnfdgbf: Topic = [
   {
     "question": "Find the next letter in the series: A, C, E, G, ?",
     "choices": ["H", "I", "F", "J"],
@@ -4203,7 +4203,7 @@ export const hgnfdgbf = [
 
 //Alpha - Numeric / Alphanumeric Series
 
-export const hgmghjng = [
+export const hgmghjng: Topic = [
   {
     "question": "Find the next term in the series: A1, B2, C3, D4, ?",
     "choices": ["E5", "E4", "F5", "D5"],
@@ -4349,7 +4349,7 @@ export const hgmghjng = [
 
 //Coding — Decoding(Verbal)
 
-export const gfjnfgdf = [
+export const gfjnfgdf: Topic = [
   {
     "question": "In a code language, 'APPLE' is written as 'ELPPA'. How is 'ORANGE' written?",
     "choices": ["EGNARO", "EGNRAO", "OENGAR", "ENRAGO"],
@@ -4495,7 +4495,7 @@ export const gfjnfgdf = [
 
 //Coding — Decoding(Numeric)
 
-export const hrthrtf = [
+export const hrthrtf: Topic = [
   {
     "question": "In a code, A=1, B=2, … Z=26. The word 'DOG' is written as?",
     "choices": ["4-15-7", "3-14-6", "5-16-8", "4-14-7"],
@@ -4634,7 +4634,7 @@ export const hrthrtf = [
 
 // Direction Sense / Orientation questions
 
-export const htrhrt = [
+export const htrhrt: Topic = [
   {
     "question": "A person walks 5 km north, then 3 km east. How far is he from the starting point?",
     "choices": ["4 km", "5.83 km", "8 km", "7 km"],
@@ -4780,7 +4780,7 @@ export const htrhrt = [
 
 // Blood Relations 
 
-export const ghndsd = [
+export const ghndsd: Topic = [
   {
     "question": "Pointing to a man, she says, 'He is the son of my father’s sister.' How is he related to her?",
     "choices": ["Cousin", "Brother", "Nephew", "Uncle"],
@@ -4926,7 +4926,7 @@ export const ghndsd = [
 
 // Seating Arrangements(Linear & Circular) 
 
-export const gdmjnxdss = [
+export const gdmjnxdss: Topic = [
   {
     "question": "Five friends A, B, C, D, and E are sitting in a row. A is to the left of B, C is to the right of D, E is at one end. Who is sitting in the middle?",
     "choices": ["A", "B", "C", "D"],
@@ -5072,7 +5072,7 @@ export const gdmjnxdss = [
 
 // Puzzles / Logical Grid Puzzles 
 
-export const dbgvfds = [
+export const dbgvfds: Topic = [
   {
     "question": "Four friends A, B, C, D have different pets: cat, dog, parrot, rabbit. A does not have a cat or dog. B does not have rabbit. C has neither cat nor parrot. Who has the rabbit?",
     "choices": ["A", "B", "C", "D"],
@@ -5218,7 +5218,7 @@ export const dbgvfds = [
 
 // Classification / Odd One Out 
 
-export const dsfgbsbgs = [
+export const dsfgbsbgs: Topic = [
   {
     "question": "Which of the following does not belong? Apple, Banana, Carrot, Mango",
     "choices": ["Apple", "Banana", "Carrot", "Mango"],
@@ -5365,7 +5365,7 @@ export const dsfgbsbgs = [
 
 // Analogies(Verbal & Figural)
 
-export const mdfdf = [
+export const mdfdf: Topic = [
   {
     "question": "Hand is to Glove as Foot is to ?",
     "choices": ["Shoe", "Sock", "Boot", "Sandals"],
@@ -5511,7 +5511,7 @@ export const mdfdf = [
 
 //Calendars & Dates 
 
-export const dddfdvgd = [
+export const dddfdvgd: Topic = [
   {
     "question": "If 1st January 2025 is Wednesday, what day will 1st March 2025 be?",
     "choices": ["Saturday", "Friday", "Thursday", "Sunday"],
@@ -5656,7 +5656,7 @@ export const dddfdvgd = [
 
 // Clocks(Time Reasoning) 
 
-export const jmfghfd = [
+export const jmfghfd: Topic = [
   {
     "question": "What is the angle between the hour and minute hands at 3:00?",
     "choices": ["90°", "180°", "120°", "60°"],
@@ -5795,7 +5795,7 @@ export const jmfghfd = [
 
 //Venn Diagrams / Set Logic
 
-export const sdfghndg = [
+export const sdfghndg: Topic = [
   {
     "question": "In a class of 40 students, 20 study Math, 15 study Science, and 5 study both. How many study only Math?",
     "choices": ["15", "20", "25", "10"],
@@ -5933,7 +5933,7 @@ export const sdfghndg = [
 
 
 // Syllogisms / Logical Deduction/
-export const gdfgbdfg = [
+export const gdfgbdfg: Topic = [
   {
     "question": "All cats are animals. Some animals are dogs. Can we conclude that some cats are dogs?",
     "choices": ["Yes", "No", "Cannot Say", "All cats are dogs"],
@@ -6073,7 +6073,7 @@ export const gdfgbdfg = [
 
 // Statement – Assumption / Argument / Conclusion
 
-export const fdaszgvbsd = [
+export const fdaszgvbsd: Topic = [
   {
     "question": "Statement: 'Government should ban plastic bags to reduce pollution.' Which of the following is an assumption?",
     "choices": [
@@ -6307,7 +6307,7 @@ export const fdaszgvbsd = [
 
 //Inequalities & Directional Comparisons
 
-export const dvfgnbd = [
+export const dvfgnbd: Topic = [
   {
     "question": "A > B, B = C, C < D. Who is the smallest?",
     "choices": ["A", "B", "C", "D"],
@@ -6445,7 +6445,7 @@ export const dvfgnbd = [
 
 
 // Mirror & Water Image 
-export const gdsfgsd = [
+export const gdsfgsd: Topic = [
   {
     "question": "If 'CAT' is placed in front of a mirror, what will be the image?",
     "choices": ["CAT", "TAC", "COT", "Cannot say"],
@@ -6590,7 +6590,7 @@ export const gdsfgsd = [
 
 
 //Embedded Figures / Figure Folding & Pattern 
-export const gdsgsgvsd = [
+export const gdsgsgvsd: Topic = [
   {
     "question": "Which figure will appear when the given paper is folded once along the dotted line?",
     "choices": ["Square with diagonal", "Triangle", "Circle", "Cannot say"],
@@ -6735,7 +6735,7 @@ export const gdsgsgvsd = [
 
 // Cube & Dice Problems reasoning
 
-export const fghgjnfg = [
+export const fghgjnfg: Topic = [
   {
     "question": "A cube has faces numbered 1 to 6. If 1 is opposite 6 and 2 is opposite 5, which number is opposite 3?",
     "choices": ["4", "2", "5", "6"],
@@ -6873,7 +6873,7 @@ export const fghgjnfg = [
 
 
 // Mathematical Reasoning / Number Puzzles
-export const hgjmdbhgf = [
+export const hgjmdbhgf: Topic = [
   {
     "question": "Find the missing number: 3, 6, 12, 24, __, 96",
     "choices": ["36", "48", "50", "52"],
@@ -7018,7 +7018,7 @@ export const hgjmdbhgf = [
 
 
 // Work & Time(Basic Logical Approach)
-export const hjgfdhh = [
+export const hjgfdhh: Topic = [
   {
     "question": "A can do a work in 12 days and B in 16 days. If they work together, in how many days will they complete the work?",
     "choices": ["6", "7", "8", "9"],
@@ -7156,7 +7156,7 @@ export const hjgfdhh = [
 
 
 // Distance, Speed & Time(Logic - based) 
-export const gfehthrt = [
+export const gfehthrt: Topic = [
   {
     "question": "A and B start from the same point. A goes north at 6 km/h and B goes east at 8 km/h. After 2 hours, the distance between them is?",
     "choices": ["10 km", "12 km", "14 km", "16 km"],
@@ -7295,7 +7295,7 @@ export const gfehthrt = [
 
 
 // Ratio & Proportion(Reasoning)
-export const u76ui5 = [
+export const u76ui5: Topic = [
   {
     "question": "Two numbers are in the ratio 3:5. If their sum is 64, find the numbers.",
     "choices": ["24 and 40", "30 and 50", "20 and 44", "18 and 30"],
@@ -7440,7 +7440,7 @@ export const u76ui5 = [
 
 // Seating + Scheduling(Timetable Logic) 
 
-export const uui57 = [
+export const uui57: Topic = [
   {
     "question": "Five friends A, B, C, D, and E are sitting in a row. B is to the left of C but to the right of D. E is at one end. Who is sitting in the middle?",
     "choices": ["A", "B", "C", "D"],
@@ -7587,7 +7587,7 @@ export const uui57 = [
 
 //Logical Sequence of Words / Sentence Completion 
 
-export const uy56u56 = [
+export const uy56u56: Topic = [
   {
     "question": "Arrange the following sentences to form a coherent paragraph: \n1. She opened the window.\n2. The room felt stuffy.\n3. She let in fresh air.\n4. The flowers on the balcony looked beautiful.",
     "choices": [
@@ -7833,7 +7833,7 @@ export const uy56u56 = [
 
 
 // Pattern Matrices / 2D Pattern 
-export const y65uy4 = [
+export const y65uy4: Topic = [
   {
     "question": "Find the missing figure in the 2×2 matrix: \n[A] ■ ○\n[B] ▲ ?",
     "choices": ["■", "○", "▲", "●"],
@@ -7978,7 +7978,7 @@ export const y65uy4 = [
 
 
 //Binary / True - False Grids(Yes / No logic)
-export const binary = [
+export const binary: Topic = [
   {
     "question": "In a class of 5 students, A, B, C, D, E: Only A and C play football. B and D play chess. E plays both. Who plays neither?",
     "choices": ["A", "B", "D", "None"],
@@ -8116,7 +8116,7 @@ export const binary = [
 
 
 //Logical Reasoning with Images(Figural)
-export const fdhg = [
+export const fdhg: Topic = [
   {
     "question": "Which figure comes next in the series? ▲ ■ ▲ ■ ?",
     "choices": ["▲", "■", "●", "◆"],
@@ -8260,7 +8260,7 @@ export const fdhg = [
 ]
 
 //Lateral Thinking & Word Puzzles
-export const fhjnfgjgf = [
+export const fhjnfgjgf: Topic = [
   {
     "question": "I speak without a mouth and hear without ears. What am I?",
     "choices": ["Echo", "Shadow", "Wind", "Sound"],
@@ -8398,7 +8398,7 @@ export const fhjnfgjgf = [
 
 
 //Cube & Dice Problems
-export const sfdfdhdghdf = [
+export const sfdfdhdghdf: Topic = [
   {
     "question": "A dice is rolled. The number on the top face is 2. Which number will be on the bottom face?",
     "choices": ["5", "3", "6", "4"],
