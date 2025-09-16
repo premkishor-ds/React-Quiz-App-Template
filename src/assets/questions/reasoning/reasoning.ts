@@ -53,7 +53,7 @@ export const numberSeriesQuestions = [
   },
   {
     question: 'Which number is missing: 11, 22, 44, 88, ?',
-    choices: ['132', '166', '176', '176'],
+    choices: ['132', '166', '176', '200'],
     type: 'MCQs',
     correctAnswers: ['176'],
     score: 10
@@ -200,7 +200,7 @@ export const verbalReasoningQuestions = [
     question: 'Select the pair related in the same way as WORD : SENTENCE',
     choices: ['Letter : Alphabet', 'Book : Library', 'Page : Chapter', 'Paragraph : Story'],
     type: 'MCQs',
-    correctAnswers: ['Letter : Alphabet'],
+    correctAnswers: ['Paragraph : Story'],
     score: 10
   },
   {
@@ -225,8 +225,8 @@ export const verbalReasoningQuestions = [
     score: 10
   },
   {
-    question: 'Which one is different from the rest: Cow, Dog, Horse, Chair',
-    choices: ['Cow', 'Dog', 'Horse', 'Chair'],
+    question: 'Which one is different from the rest: Cat, Dog, Horse, Chair',
+    choices: ['Cat', 'Dog', 'Horse', 'Chair'],
     type: 'MCQs',
     correctAnswers: ['Chair'],
     score: 10
@@ -247,9 +247,9 @@ export const verbalReasoningQuestions = [
   },
   {
     question: 'If TREE is coded as USFF, then PLANT is coded as?',
-    choices: ['QMBNU', 'QMBOT', 'QNCNU', 'QNBNU'],
+    choices: ['QMBOU', 'QMBOT', 'QNCNU', 'QNBNU'],
     type: 'MCQs',
-    correctAnswers: ['QMBNU'],
+    correctAnswers: ['QMBOU'],
     score: 10
   },
   {
@@ -471,13 +471,6 @@ export const logicalReasoningQuestions = [
     score: 10
   },
   {
-    question: 'Which number will complete the series: 7, 14, 28, 56, ?',
-    choices: ['84', '100', '112', '120'],
-    type: 'MCQs',
-    correctAnswers: ['112'],
-    score: 10
-  },
-  {
     question: 'If 2 pencils cost ₹10, how many pencils can be bought with ₹50?',
     choices: ['8', '10', '5', '20'],
     type: 'MCQs',
@@ -489,13 +482,6 @@ export const logicalReasoningQuestions = [
     choices: ['All cats are dogs', 'Some cats may be dogs', 'No cat is a dog', 'All animals are cats'],
     type: 'MCQs',
     correctAnswers: ['Some cats may be dogs'],
-    score: 10
-  },
-  {
-    question: 'Which number is missing: 2, 6, 12, 20, ?',
-    choices: ['24', '28', '30', '32'],
-    type: 'MCQs',
-    correctAnswers: ['30'],
     score: 10
   },
   {
@@ -524,13 +510,6 @@ export const logicalReasoningQuestions = [
     choices: ['12', '16', '32', '24'],
     type: 'MCQs',
     correctAnswers: ['32'],
-    score: 10
-  },
-  {
-    question: 'Which number is missing: 1, 4, 9, 16, 25, ?',
-    choices: ['30', '35', '36', '49'],
-    type: 'MCQs',
-    correctAnswers: ['36'],
     score: 10
   },
   {
@@ -569,10 +548,31 @@ export const logicalReasoningQuestions = [
     score: 10
   },
   {
-    question: 'Which number replaces the question mark: 3, 9, 27, ?, 243',
-    choices: ['54', '72', '81', '90'],
+    question: 'Find the next prime number after 17:',
+    choices: ['18', '19', '20', '21'],
     type: 'MCQs',
-    correctAnswers: ['81'],
+    correctAnswers: ['19'],
+    score: 10
+  },
+  {
+    question: 'If all birds can fly and penguins are birds, what can we conclude?',
+    choices: ['Penguins can fly', 'The premise is incorrect', 'Some birds cannot fly', 'All animals can fly'],
+    type: 'MCQs',
+    correctAnswers: ['The premise is incorrect'],
+    score: 10
+  },
+  {
+    question: 'Complete the pattern: 1, 1, 2, 3, 5, 8, ?',
+    choices: ['11', '12', '13', '15'],
+    type: 'MCQs',
+    correctAnswers: ['13'],
+    score: 10
+  },
+  {
+    question: 'If X is north of Y and Z is east of Y, then Z is __ of X:',
+    choices: ['Northeast', 'Southeast', 'Southwest', 'Northwest'],
+    type: 'MCQs',
+    correctAnswers: ['Southeast'],
     score: 10
   }
 ]
@@ -657,10 +657,10 @@ export const analyticalReasoningQuestions = [
     score: 10
   },
   {
-    question: 'Which sequence is correct? 2, 6, 12, 20, ?',
-    choices: ['28', '30', '32', '34'],
+    question: 'Which sequence is correct? 4, 9, 19, 39, ?',
+    choices: ['59', '69', '79', '89'],
     type: 'MCQs',
-    correctAnswers: ['30'],
+    correctAnswers: ['79'],
     score: 10
   },
   {
@@ -672,7 +672,7 @@ export const analyticalReasoningQuestions = [
   },
   {
     question: 'A clock shows 9:15. What is the angle between the hour and minute hands?',
-    choices: ['90°', '97.5°', '120°', '105°'],
+    choices: ['90°', '97.5°', '172.5°', '105°'],
     type: 'MCQs',
     correctAnswers: ['172.5°'],
     score: 10
@@ -706,10 +706,10 @@ export const analyticalReasoningQuestions = [
     score: 10
   },
   {
-    question: 'Which number will replace ?: 5, 10, 20, 40, ?',
-    choices: ['60', '70', '80', '100'],
+    question: 'Which number will replace ?: 6, 11, 21, 41, ?',
+    choices: ['61', '71', '81', '91'],
     type: 'MCQs',
-    correctAnswers: ['80'],
+    correctAnswers: ['81'],
     score: 10
   },
   {
@@ -1347,18 +1347,18 @@ export const codingDecodingSet: Topic = {
       score: 10,
     },
     {
-      question: "If BIRD is written as CJSE, then EGG = ?",
-      choices: ["FHH", "FFH", "FHI", "FHG"],
-      type: "MCQs",
-      correctAnswers: ["FHH"],
-      score: 10,
+      "question": "If BIRD is written as CJSE, then EGG = ?",
+      "choices": ["FHH", "FFH", "FHI", "FHG"],
+      "type": "MCQs",
+      "correctAnswers": ["FHH"],
+      "score": 10
     },
     {
-      question: "If MANGO is coded as NBOHP, then GRAPE is coded as?",
-      choices: ["HSBQF", "HSBPF", "HTBPF", "HSAQF"],
-      type: "MCQs",
-      correctAnswers: ["HSBQF"],
-      score: 10,
+      "question": "If MANGO is coded as NBOHP, then GRAPE is coded as?",
+      "choices": ["HSBQF", "HSBPF", "HTBPF", "HSAQF"],
+      "type": "MCQs",
+      "correctAnswers": ["HSBQF"],
+      "score": 10
     },
     {
       question: "In a code, SCHOOL = TIDPMM. What is COLLEGE?",
@@ -1851,8 +1851,8 @@ export const classificationSet: Topic = {
       score: 10,
     },
     {
-      question: "Find the odd one out: Cow, Goat, Dog, Whale",
-      choices: ["Cow", "Goat", "Dog", "Whale"],
+      question: "Find the odd one out: Cat, Goat, Dog, Whale",
+      choices: ["Cat", "Goat", "Dog", "Whale"],
       type: "MCQs",
       correctAnswers: ["Whale"],
       score: 10,
@@ -1936,7 +1936,7 @@ export const puzzlesBrainTeasersQuestions = [
     "score": 10
   },
   {
-    "question": "A farmer had 17 sheep, all but 9 died. How many are left?",
+    "question": "A farmer had 17 sheep, all but 9 were lost. How many are left?",
     "choices": ["8", "9", "17", "0"],
     "type": "MCQs",
     "correctAnswers": ["9"],
@@ -2495,147 +2495,147 @@ export const assumptionsConclusionsQuestions = [
 //correct options and answers
 
 export const causeEffectQuestions = [
-    {
-      "question": "Cause: Heavy rain occurred in the city. Effect: Streets were flooded.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The boy studied hard for exams. Effect: He scored the highest marks.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: A car ran out of fuel on the highway. Effect: The driver stopped and called for help.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: A shopkeeper reduced prices of goods. Effect: More customers visited the shop.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The children played outside in the rain. Effect: They caught a cold.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: A heavy storm hit the coastal region. Effect: The crops were damaged.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: A student did not complete homework. Effect: The teacher scolded him.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The government increased petrol prices. Effect: People reduced unnecessary travel.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: A man overslept. Effect: He reached office late.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The factory released smoke and dust. Effect: The nearby area was polluted.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The students were not attentive in class. Effect: They failed the test.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The ice on the road melted. Effect: Water flooded the streets.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: A power cut occurred in the city. Effect: All traffic signals stopped working.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: A patient did not take medicine on time. Effect: His health worsened.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: Heavy snowfall occurred in the mountains. Effect: Roads were blocked for hours.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The restaurant offered new dishes. Effect: Customers increased and revenue grew.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The student revised all chapters thoroughly. Effect: He scored full marks in the exam.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The river overflowed due to heavy rain. Effect: Villages near the river were submerged.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The athlete trained daily. Effect: He won the championship.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    },
-    {
-      "question": "Cause: The city faced a severe drought. Effect: Water supply was rationed.",
-      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-      "type": "MCQs",
-      "correctAnswers": ["Cause is correct and effect logically follows"],
-      "score": 10
-    }
-  ]
+  {
+    "question": "Cause: Heavy rain occurred in the city. Effect: Streets were flooded.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The boy studied hard for exams. Effect: He scored the highest marks.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: A car ran out of fuel on the highway. Effect: The driver stopped and called for help.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: A shopkeeper reduced prices of goods. Effect: More customers visited the shop.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The children played outside in the rain. Effect: They caught a cold.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: A heavy storm hit the coastal region. Effect: The crops were damaged.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: A student did not complete homework. Effect: The teacher scolded him.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The government increased petrol prices. Effect: People reduced unnecessary travel.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: A man overslept. Effect: He reached office late.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The factory released smoke and dust. Effect: The nearby area was polluted.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The students were not attentive in class. Effect: They failed the test.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The ice on the road melted. Effect: Water flooded the streets.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: A power cut occurred in the city. Effect: All traffic signals stopped working.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: A patient did not take medicine on time. Effect: His health worsened.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: Heavy snowfall occurred in the mountains. Effect: Roads were blocked for hours.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The restaurant offered new dishes. Effect: Customers increased and revenue grew.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The student revised all chapters thoroughly. Effect: He scored full marks in the exam.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The river overflowed due to heavy rain. Effect: Villages near the river were submerged.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The athlete trained daily. Effect: He won the championship.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  },
+  {
+    "question": "Cause: The city faced a severe drought. Effect: Water supply was rationed.",
+    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+    "type": "MCQs",
+    "correctAnswers": ["Cause is correct and effect logically follows"],
+    "score": 10
+  }
+]
 
 
 //Directions & Blood Relations
@@ -2785,7 +2785,7 @@ export const directionsBloodRelationsQuestions = [
 
 
 
- //Odd One Out & Classification
+//Odd One Out & Classification
 export const oddOneOutClassificationQuestions = [
   {
     "question": "Find the odd one out: Apple, Banana, Mango, Carrot",
@@ -2796,6 +2796,7 @@ export const oddOneOutClassificationQuestions = [
   },
   {
     "question": "Which one does not belong: Dog, Cat, Cow, Car",
+    // amazonq-ignore-next-line
     "choices": ["Dog", "Cat", "Cow", "Car"],
     "type": "MCQs",
     "correctAnswers": ["Car"],
@@ -3265,7 +3266,7 @@ export const puzzlesBrainTeasersQuestions2 = [
     "score": 10
   },
   {
-    "question": "A farmer has 17 sheep, and all but 9 die. How many are left?",
+    "question": "A farmer has 17 sheep, and all but 9 are lost. How many are left?",
     "choices": ["9", "8", "17", "None"],
     "type": "MCQs",
     "correctAnswers": ["9"],
@@ -3501,10 +3502,10 @@ export const puzzlesBrainTeasersQw = [
     "score": 10
   },
   {
-    "question": "Find the odd one out: Dog, Cat, Cow, Tiger",
-    "choices": ["Dog", "Cat", "Cow", "Tiger"],
+    "question": "Find the odd one out: Dog, Cat, Goat, Tiger",
+    "choices": ["Dog", "Cat", "Goat", "Tiger"],
     "type": "MCQs",
-    "correctAnswers": ["Cow"],
+    "correctAnswers": ["Goat"],
     "score": 10
   },
   {
@@ -3620,8 +3621,8 @@ export const puzzlesBrainTeasersQw = [
     "score": 10
   },
   {
-    "question": "Find the odd one out: Dog, Cow, Cat, Chair",
-    "choices": ["Dog", "Cow", "Cat", "Chair"],
+    "question": "Find the odd one out: Dog, Goat, Cat, Chair",
+    "choices": ["Dog", "Goat", "Cat", "Chair"],
     "type": "MCQs",
     "correctAnswers": ["Chair"],
     "score": 10
@@ -3638,7 +3639,7 @@ export const puzzlesBrainTeasersQw = [
 
 //Coding - Decoding Problems
 
-export const puzzlesBrainTeasdfewqf =[
+export const puzzlesBrainTeasdfewqf = [
   {
     "question": "If in a code, APPLE is written as BQQMF, how is BANANA written?",
     "choices": ["CBOBOB", "CBPBOB", "CBPBPB", "CBQBOB"],
@@ -3777,7 +3778,7 @@ export const puzzlesBrainTeasdfewqf =[
 
 //Pattern Recognition & Series Completion
 
-export const puzzlesBrainTeaserwew2 =[
+export const puzzlesBrainTeaserwew2 = [
   {
     "question": "Find the next number in the series: 2, 4, 8, 16, ?",
     "choices": ["18", "32", "24", "30"],
@@ -3923,7 +3924,7 @@ export const puzzlesBrainTeaserwew2 =[
 
 //Direction Sense & Blood Relations
 
-export const puzzlesBrainTeasedw =[
+export const puzzlesBrainTeasedw = [
   {
     "question": "Point A is to the North of Point B. Point C is to the West of Point A. In which direction is Point C from Point B?",
     "choices": ["North-West", "South-West", "North-East", "South-East"],
@@ -4062,7 +4063,7 @@ export const puzzlesBrainTeasedw =[
 
 //Classification & Odd One Out
 
-export const classification =[
+export const classification = [
   {
     "question": "Find the odd one out: Dog, Cat, Elephant, Car",
     "choices": ["Dog", "Cat", "Elephant", "Car"],
@@ -4141,10 +4142,10 @@ export const classification =[
     "score": 10
   },
   {
-    "question": "Find the odd one out: Crow, Sparrow, Eagle, Cow",
-    "choices": ["Crow", "Sparrow", "Eagle", "Cow"],
+    "question": "Find the odd one out: Crow, Sparrow, Eagle, Goat",
+    "choices": ["Crow", "Sparrow", "Eagle", "Goat"],
     "type": "MCQs",
-    "correctAnswers": ["Cow"],
+    "correctAnswers": ["Goat"],
     "score": 10
   },
   {
@@ -4169,8 +4170,8 @@ export const classification =[
     "score": 10
   },
   {
-    "question": "Find the odd one out: Cow, Buffalo, Goat, Car",
-    "choices": ["Cow", "Buffalo", "Goat", "Car"],
+    "question": "Find the odd one out: Goat, Buffalo, Goat, Car",
+    "choices": ["Goat", "Buffalo", "Goat", "Car"],
     "type": "MCQs",
     "correctAnswers": ["Car"],
     "score": 10
@@ -4347,7 +4348,7 @@ export const coding = [
 
 //Pattern Recognition & Series Completion
 
-export const pattern =[
+export const pattern = [
   {
     "question": "Find the next number in the series: 2, 4, 8, 16, ?",
     "choices": ["18", "32", "24", "30"],
@@ -4493,7 +4494,7 @@ export const pattern =[
 
 //Letter Series / Alphabetical Patterns
 
-export const hgnfdgbf =[
+export const hgnfdgbf = [
   {
     "question": "Find the next letter in the series: A, C, E, G, ?",
     "choices": ["H", "I", "F", "J"],
@@ -4639,7 +4640,7 @@ export const hgnfdgbf =[
 
 //Alpha - Numeric / Alphanumeric Series
 
-export const hgmghjng =[
+export const hgmghjng = [
   {
     "question": "Find the next term in the series: A1, B2, C3, D4, ?",
     "choices": ["E5", "E4", "F5", "D5"],
@@ -4785,7 +4786,7 @@ export const hgmghjng =[
 
 //Coding — Decoding(Verbal)
 
-export const gfjnfgdf =[
+export const gfjnfgdf = [
   {
     "question": "In a code language, 'APPLE' is written as 'ELPPA'. How is 'ORANGE' written?",
     "choices": ["EGNARO", "EGNRAO", "OENGAR", "ENRAGO"],
@@ -4931,7 +4932,7 @@ export const gfjnfgdf =[
 
 //Coding — Decoding(Numeric)
 
-export const hrthrtf =[
+export const hrthrtf = [
   {
     "question": "In a code, A=1, B=2, … Z=26. The word 'DOG' is written as?",
     "choices": ["4-15-7", "3-14-6", "5-16-8", "4-14-7"],
@@ -5070,7 +5071,7 @@ export const hrthrtf =[
 
 // Direction Sense / Orientation questions
 
-export const htrhrt =[
+export const htrhrt = [
   {
     "question": "A person walks 5 km north, then 3 km east. How far is he from the starting point?",
     "choices": ["4 km", "5.83 km", "8 km", "7 km"],
@@ -5216,7 +5217,7 @@ export const htrhrt =[
 
 // Blood Relations 
 
-export const ghndsd =[
+export const ghndsd = [
   {
     "question": "Pointing to a man, she says, 'He is the son of my father’s sister.' How is he related to her?",
     "choices": ["Cousin", "Brother", "Nephew", "Uncle"],
@@ -5362,7 +5363,7 @@ export const ghndsd =[
 
 // Seating Arrangements(Linear & Circular) 
 
-export const gdmjnxdss =[
+export const gdmjnxdss = [
   {
     "question": "Five friends A, B, C, D, and E are sitting in a row. A is to the left of B, C is to the right of D, E is at one end. Who is sitting in the middle?",
     "choices": ["A", "B", "C", "D"],
@@ -5508,7 +5509,7 @@ export const gdmjnxdss =[
 
 // Puzzles / Logical Grid Puzzles 
 
-export const dbgvfds =[
+export const dbgvfds = [
   {
     "question": "Four friends A, B, C, D have different pets: cat, dog, parrot, rabbit. A does not have a cat or dog. B does not have rabbit. C has neither cat nor parrot. Who has the rabbit?",
     "choices": ["A", "B", "C", "D"],
@@ -5654,7 +5655,7 @@ export const dbgvfds =[
 
 // Classification / Odd One Out 
 
-export const dsfgbsbgs =[
+export const dsfgbsbgs = [
   {
     "question": "Which of the following does not belong? Apple, Banana, Carrot, Mango",
     "choices": ["Apple", "Banana", "Carrot", "Mango"],
@@ -5663,8 +5664,8 @@ export const dsfgbsbgs =[
     "score": 10
   },
   {
-    "question": "Find the odd one out: Dog, Cat, Tiger, Cow",
-    "choices": ["Dog", "Cat", "Tiger", "Cow"],
+    "question": "Find the odd one out: Dog, Cat, Tiger, Goat",
+    "choices": ["Dog", "Cat", "Tiger", "Goat"],
     "type": "MCQs",
     "correctAnswers": ["Tiger"],
     "score": 10
@@ -5783,6 +5784,7 @@ export const dsfgbsbgs =[
   },
   {
     "question": "Which does not belong? Elephant, Horse, Cow, Tiger",
+    // amazonq-ignore-next-line
     "choices": ["Elephant", "Horse", "Cow", "Tiger"],
     "type": "MCQs",
     "correctAnswers": ["Tiger"],
@@ -5800,7 +5802,7 @@ export const dsfgbsbgs =[
 
 // Analogies(Verbal & Figural)
 
-export const mdfdf =[
+export const mdfdf = [
   {
     "question": "Hand is to Glove as Foot is to ?",
     "choices": ["Shoe", "Sock", "Boot", "Sandals"],
@@ -5946,7 +5948,7 @@ export const mdfdf =[
 
 //Calendars & Dates 
 
-export const dddfdvgd =[
+export const dddfdvgd = [
   {
     "question": "If 1st January 2025 is Wednesday, what day will 1st March 2025 be?",
     "choices": ["Saturday", "Friday", "Thursday", "Sunday"],
@@ -6091,7 +6093,7 @@ export const dddfdvgd =[
 
 // Clocks(Time Reasoning) 
 
-export const jmfghfd =[
+export const jmfghfd = [
   {
     "question": "What is the angle between the hour and minute hands at 3:00?",
     "choices": ["90°", "180°", "120°", "60°"],
@@ -6230,7 +6232,7 @@ export const jmfghfd =[
 
 //Venn Diagrams / Set Logic
 
-export const sdfghndg =[
+export const sdfghndg = [
   {
     "question": "In a class of 40 students, 20 study Math, 15 study Science, and 5 study both. How many study only Math?",
     "choices": ["15", "20", "25", "10"],
@@ -6368,7 +6370,7 @@ export const sdfghndg =[
 
 
 // Syllogisms / Logical Deduction/
-export const gdfgbdfg =[
+export const gdfgbdfg = [
   {
     "question": "All cats are animals. Some animals are dogs. Can we conclude that some cats are dogs?",
     "choices": ["Yes", "No", "Cannot Say", "All cats are dogs"],
@@ -6508,7 +6510,7 @@ export const gdfgbdfg =[
 
 // Statement – Assumption / Argument / Conclusion
 
-export const fdaszgvbsd =[
+export const fdaszgvbsd = [
   {
     "question": "Statement: 'Government should ban plastic bags to reduce pollution.' Which of the following is an assumption?",
     "choices": [
@@ -6551,7 +6553,7 @@ export const fdaszgvbsd =[
       "Water is essential for life",
       "People can pay for water",
       "Government earns profit",
-      "Citizens hate water"
+      "Citizens dislike water"
     ],
     "type": "MCQs",
     "correctAnswers": ["Water is essential for life"],
@@ -6634,7 +6636,7 @@ export const fdaszgvbsd =[
     "choices": [
       "Science Week promotes learning",
       "Students dislike celebrations",
-      "Teachers hate science",
+      "Teachers dislike science",
       "Science is boring"
     ],
     "type": "MCQs",
@@ -6742,7 +6744,7 @@ export const fdaszgvbsd =[
 
 //Inequalities & Directional Comparisons
 
-export const dvfgnbd =[
+export const dvfgnbd = [
   {
     "question": "A > B, B = C, C < D. Who is the smallest?",
     "choices": ["A", "B", "C", "D"],
@@ -6880,7 +6882,7 @@ export const dvfgnbd =[
 
 
 // Mirror & Water Image 
-export const gdsfgsd =[
+export const gdsfgsd = [
   {
     "question": "If 'CAT' is placed in front of a mirror, what will be the image?",
     "choices": ["CAT", "TAC", "COT", "Cannot say"],
@@ -7025,7 +7027,7 @@ export const gdsfgsd =[
 
 
 //Embedded Figures / Figure Folding & Pattern 
-export const gdsgsgvsd =[
+export const gdsgsgvsd = [
   {
     "question": "Which figure will appear when the given paper is folded once along the dotted line?",
     "choices": ["Square with diagonal", "Triangle", "Circle", "Cannot say"],
@@ -7170,7 +7172,7 @@ export const gdsgsgvsd =[
 
 // Cube & Dice Problems reasoning
 
-export const fghgjnfg =[
+export const fghgjnfg = [
   {
     "question": "A cube has faces numbered 1 to 6. If 1 is opposite 6 and 2 is opposite 5, which number is opposite 3?",
     "choices": ["4", "2", "5", "6"],
@@ -7308,7 +7310,7 @@ export const fghgjnfg =[
 
 
 // Mathematical Reasoning / Number Puzzles
-export const hgjmdbhgf =[
+export const hgjmdbhgf = [
   {
     "question": "Find the missing number: 3, 6, 12, 24, __, 96",
     "choices": ["36", "48", "50", "52"],
@@ -7453,7 +7455,7 @@ export const hgjmdbhgf =[
 
 
 // Work & Time(Basic Logical Approach)
-export const hjgfdhh =[
+export const hjgfdhh = [
   {
     "question": "A can do a work in 12 days and B in 16 days. If they work together, in how many days will they complete the work?",
     "choices": ["6", "7", "8", "9"],
@@ -7591,7 +7593,7 @@ export const hjgfdhh =[
 
 
 // Distance, Speed & Time(Logic - based) 
-export const gfehthrt =[
+export const gfehthrt = [
   {
     "question": "A and B start from the same point. A goes north at 6 km/h and B goes east at 8 km/h. After 2 hours, the distance between them is?",
     "choices": ["10 km", "12 km", "14 km", "16 km"],
@@ -7730,7 +7732,7 @@ export const gfehthrt =[
 
 
 // Ratio & Proportion(Reasoning)
-export const u76ui5 =[
+export const u76ui5 = [
   {
     "question": "Two numbers are in the ratio 3:5. If their sum is 64, find the numbers.",
     "choices": ["24 and 40", "30 and 50", "20 and 44", "18 and 30"],
@@ -7816,7 +7818,7 @@ export const u76ui5 =[
     "score": 10
   },
   {
-    "question": "A bag contains red, blue, and green balls in the ratio 3:4:5. If there are 36 green balls, find the total number of balls.",
+    "question": "A bag contains red, blue, and green marbles in the ratio 3:4:5. If there are 36 green marbles, find the total number of marbles.",
     "choices": ["72", "90", "108", "96"],
     "type": "MCQs",
     "correctAnswers": ["72"],
@@ -7875,7 +7877,7 @@ export const u76ui5 =[
 
 // Seating + Scheduling(Timetable Logic) 
 
-export const uui57 =[
+export const uui57 = [
   {
     "question": "Five friends A, B, C, D, and E are sitting in a row. B is to the left of C but to the right of D. E is at one end. Who is sitting in the middle?",
     "choices": ["A", "B", "C", "D"],
@@ -8022,7 +8024,7 @@ export const uui57 =[
 
 //Logical Sequence of Words / Sentence Completion 
 
-export const uy56u56 =[
+export const uy56u56 = [
   {
     "question": "Arrange the following sentences to form a coherent paragraph: \n1. She opened the window.\n2. The room felt stuffy.\n3. She let in fresh air.\n4. The flowers on the balcony looked beautiful.",
     "choices": [
@@ -8268,7 +8270,7 @@ export const uy56u56 =[
 
 
 // Pattern Matrices / 2D Pattern 
-export const y65uy4 =[
+export const y65uy4 = [
   {
     "question": "Find the missing figure in the 2×2 matrix: \n[A] ■ ○\n[B] ▲ ?",
     "choices": ["■", "○", "▲", "●"],
@@ -8413,7 +8415,7 @@ export const y65uy4 =[
 
 
 //Binary / True - False Grids(Yes / No logic)
-export const binary =[
+export const binary = [
   {
     "question": "In a class of 5 students, A, B, C, D, E: Only A and C play football. B and D play chess. E plays both. Who plays neither?",
     "choices": ["A", "B", "D", "None"],
@@ -8551,7 +8553,7 @@ export const binary =[
 
 
 //Logical Reasoning with Images(Figural)
-export const fdhg =[
+export const fdhg = [
   {
     "question": "Which figure comes next in the series? ▲ ■ ▲ ■ ?",
     "choices": ["▲", "■", "●", "◆"],
@@ -8695,7 +8697,7 @@ export const fdhg =[
 ]
 
 //Lateral Thinking & Word Puzzles
-export const fhjnfgjgf =[
+export const fhjnfgjgf = [
   {
     "question": "I speak without a mouth and hear without ears. What am I?",
     "choices": ["Echo", "Shadow", "Wind", "Sound"],
@@ -8833,7 +8835,7 @@ export const fhjnfgjgf =[
 
 
 //Cube & Dice Problems
-export const sfdfdhdghdf =[
+export const sfdfdhdghdf = [
   {
     "question": "A dice is rolled. The number on the top face is 2. Which number will be on the bottom face?",
     "choices": ["5", "3", "6", "4"],
