@@ -164,4 +164,128 @@ export const quizTopics: QuizTopic[] = [
     title: 'Reasoning Advance Set 1',
     icon: <Reasoning />
   },
+  {
+    title: 'Advanced Reasoning - RMS',
+    icon: <Reasoning />
+  },
+  {
+    title: '30 Reasoning Topics - RMS',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Number Series',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Letter Series',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Coding Decoding',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Direction Sense',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Blood Relations',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Alpha-Numeric Series',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Seating Arrangement',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Classification',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Analogies',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Calendars and Dates',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Clocks',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Venn Diagrams',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Syllogisms',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Inequalities',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Mirror Images',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Embedded Figures',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Cube and Dice',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Mathematical Reasoning',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Work and Time',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Distance Speed Time',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Ratio and Proportion',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Logical Sequence',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Pattern Matrices',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Binary Logic',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Figural Series',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Word Puzzles',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Puzzles Logic Grid',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Statement Assumption',
+    icon: <Reasoning />
+  },
+  {
+    title: 'Lateral Thinking',
+    icon: <Reasoning />
+  },
 ]

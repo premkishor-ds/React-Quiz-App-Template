@@ -35,6 +35,8 @@ import { mathSet2 } from './mathSet2'
 import { mathSet3 } from './mathSet3'
 import { mathSet4 } from './mathSet4'
 import { mathSet5 } from './mathSet5'
+import { math1 } from './math1'
+import { mixed } from './mixed'
 import {reasoning1} from './reasoning1'
 import {reasoning2} from './reasoning2'
 import {reasoning3} from './reasoning3'
@@ -141,6 +143,8 @@ export const quiz: Record<string, Topic> = {
   'Math Set 3': mathSet3,
   'Math Set 4': mathSet4,
   'Math Set 5': mathSet5,
+  'Math 1': math1,
+  'Mixed': mixed,
   'Reasoning Set 1': reasoningSet1,
   'Reasoning Set 2': reasoningSet2,
   'Reasoning Set 3': reasoningSet3,

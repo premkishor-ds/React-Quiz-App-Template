@@ -1,6 +1,6 @@
 import { Topic } from '.'
 
-const math1: Topic = {
+export const math1: Topic = {
 	topic: 'Comprehensive Academic Quiz',
 	level: 'Mathematics, English, General Knowledge, Logical Reasoning, and Science',
 	totalQuestions: 50,
