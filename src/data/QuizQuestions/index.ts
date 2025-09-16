@@ -52,6 +52,37 @@ import { englishAdvanceSet1 } from './englishAdvanceSet1'
 import { generalKnowledgeAdvanceSet1 } from './generalKnowledgeAdvanceSet1'
 import { mathAdvanceSet1 } from './mathAdvanceSet1'
 import { reasoningAdvanceSet1 } from './reasoningAdvanceSet1'
+import { reasoningAdvanced } from './reasoningAdvanced'
+import { reasoning30Topics } from './reasoning30Topics'
+import { numberSeries } from './numberSeries'
+import { letterSeries } from './letterSeries'
+import { codingDecoding } from './codingDecoding'
+import { directionSense } from './directionSense'
+import { bloodRelations } from './bloodRelations'
+import { alphaNumericSeries } from './alphaNumericSeries'
+import { seatingArrangement } from './seatingArrangement'
+import { classification } from './classification'
+import { analogies } from './analogies'
+import { calendarsAndDates } from './calendarsAndDates'
+import { clocks } from './clocks'
+import { vennDiagrams } from './vennDiagrams'
+import { syllogisms } from './syllogisms'
+import { inequalities } from './inequalities'
+import { mirrorImages } from './mirrorImages'
+import { embeddedFigures } from './embeddedFigures'
+import { cubeAndDice } from './cubeAndDice'
+import { mathematicalReasoning } from './mathematicalReasoning'
+import { workAndTime } from './workAndTime'
+import { distanceSpeedTime } from './distanceSpeedTime'
+import { ratioAndProportion } from './ratioAndProportion'
+import { logicalSequence } from './logicalSequence'
+import { patternMatrices } from './patternMatrices'
+import { binaryLogic } from './binaryLogic'
+import { figuralSeries } from './figuralSeries'
+import { wordPuzzles } from './wordPuzzles'
+import { puzzlesLogicGrid } from './puzzlesLogicGrid'
+import { statementAssumption } from './statementAssumption'
+import { lateralThinking } from './lateralThinking'
 
 // Question Types
 // 1. MCQs | Multiple Choice | single
@@ -119,4 +150,35 @@ export const quiz: Record<string, Topic> = {
   'General Knowledge Advance Set 1': generalKnowledgeAdvanceSet1,
   'Math Advance Set 1': mathAdvanceSet1,
   'Reasoning Advance Set 1': reasoningAdvanceSet1,
+  'Advanced Reasoning - RMS': reasoningAdvanced,
+  '30 Reasoning Topics - RMS': reasoning30Topics,
+  'Number Series': numberSeries,
+  'Letter Series': letterSeries,
+  'Coding Decoding': codingDecoding,
+  'Direction Sense': directionSense,
+  'Blood Relations': bloodRelations,
+  'Alpha-Numeric Series': alphaNumericSeries,
+  'Seating Arrangement': seatingArrangement,
+  'Classification': classification,
+  'Analogies': analogies,
+  'Calendars and Dates': calendarsAndDates,
+  'Clocks': clocks,
+  'Venn Diagrams': vennDiagrams,
+  'Syllogisms': syllogisms,
+  'Inequalities': inequalities,
+  'Mirror Images': mirrorImages,
+  'Embedded Figures': embeddedFigures,
+  'Cube and Dice': cubeAndDice,
+  'Mathematical Reasoning': mathematicalReasoning,
+  'Work and Time': workAndTime,
+  'Distance Speed Time': distanceSpeedTime,
+  'Ratio and Proportion': ratioAndProportion,
+  'Logical Sequence': logicalSequence,
+  'Pattern Matrices': patternMatrices,
+  'Binary Logic': binaryLogic,
+  'Figural Series': figuralSeries,
+  'Word Puzzles': wordPuzzles,
+  'Puzzles Logic Grid': puzzlesLogicGrid,
+  'Statement Assumption': statementAssumption,
+  'Lateral Thinking': lateralThinking,
 }

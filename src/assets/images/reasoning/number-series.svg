@@ -1,0 +1,10 @@
+<svg width="400" height="80" xmlns="http://www.w3.org/2000/svg">
+  <text x="20" y="40" font-size="24" font-weight="bold">2</text>
+  <text x="60" y="40" font-size="24" font-weight="bold">6</text>
+  <text x="100" y="40" font-size="24" font-weight="bold">18</text>
+  <text x="140" y="40" font-size="24" font-weight="bold">54</text>
+  <text x="180" y="40" font-size="24" font-weight="bold">?</text>
+  <text x="40" y="65" font-size="12" fill="blue">×3</text>
+  <text x="80" y="65" font-size="12" fill="blue">×3</text>
+  <text x="120" y="65" font-size="12" fill="blue">×3</text>
+</svg>

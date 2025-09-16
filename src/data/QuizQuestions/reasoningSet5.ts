@@ -1,19 +1,63 @@
 import { Topic } from '.'
+import pattern1 from '../../assets/images/reasoning/pattern1.svg'
+import mirrorImage from '../../assets/images/reasoning/mirror-image.svg'
+import countingShapes from '../../assets/images/reasoning/counting-shapes.svg'
+import directionPuzzle from '../../assets/images/reasoning/direction-puzzle.svg'
+import analogyShapes from '../../assets/images/reasoning/analogy-shapes.svg'
 
 export const reasoningSet5: Topic = {
-    topic: 'Reasoning',
+    topic: 'Reasoning - RMS Class 6',
     level: 'Beginner',
     totalQuestions: 20,
     totalScore: 200,
     totalTime: 1200,
     questions: [
       {
+        question: `Look at the pattern below. What shape should come next?`,
+        image: pattern1,
+        choices: ['Circle', 'Square', 'Triangle', 'Diamond'],
+        type: 'MCQs',
+        correctAnswers: ['Diamond'],
+        score: 10,
+      },
+      {
+        question: `What is the mirror image of the letter shown?`,
+        image: mirrorImage,
+        choices: ['Ⅎ', 'F', 'ᖴ', 'ꟻ'],
+        type: 'MCQs',
+        correctAnswers: ['ꟻ'],
+        score: 10,
+      },
+      {
+        question: `Count the total number of triangles in the figure.`,
+        image: countingShapes,
+        choices: ['3', '4', '5', '6'],
+        type: 'MCQs',
+        correctAnswers: ['4'],
+        score: 10,
+      },
+      {
+        question: `If you are facing North and turn 90° clockwise, which direction are you facing?`,
+        image: directionPuzzle,
+        choices: ['North', 'South', 'East', 'West'],
+        type: 'MCQs',
+        correctAnswers: ['East'],
+        score: 10,
+      },
+      {
+        question: `Complete the analogy shown in the figure.`,
+        image: analogyShapes,
+        choices: ['Empty square', 'Square with dot', 'Filled square', 'Square with line'],
+        type: 'MCQs',
+        correctAnswers: ['Square with dot'],
+        score: 10,
+      },
+      {
         question: `Which number comes next: 81, 72, 63, 54, ?`,
         choices: ['46', '45', '44', '43'],
         type: 'MCQs',
         correctAnswers: ['45'],
         score: 10,
-       
       },
       {
         question: `Which is the odd one out: Banana, Apple, Carrot, Mango`,
@@ -21,7 +65,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['Carrot'],
         score: 10,
-       
       },
       {
         question: `What comes next in the series: A1, B2, C3, D4, ?`,
@@ -29,7 +72,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['E5'],
         score: 10,
-       
       },
       {
         question: `Which number continues: 1, 4, 9, 16, 25, ?`,
@@ -37,23 +79,13 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['36'],
         score: 10,
-       
       },
       {
-        question: `Choose the correct mirror image of the letter ‘P’`,
-        choices: ['p', 'Ᵽ', 'b', 'Ɉ'],
-        type: 'MCQs',
-        correctAnswers: ['Ᵽ'],
-        score: 10,
-       
-      },
-      {
-        question: `If ‘MANGO’ is coded as ‘NZOHQ’, how is ‘APPLE’ coded?`,
+        question: `If 'MANGO' is coded as 'NZOHQ', how is 'APPLE' coded?`,
         choices: ['BQQLF', 'ZQOKD', 'BQQMF', 'BOQLF'],
         type: 'MCQs',
         correctAnswers: ['BQQMF'],
         score: 10,
-       
       },
       {
         question: `Find the next figure: ★, ☆, ★, ☆, ★, ?`,
@@ -61,7 +93,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['☆'],
         score: 10,
-       
       },
       {
         question: `Select the one that does not belong: Monday, Tuesday, Saturday, January`,
@@ -69,7 +100,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['January'],
         score: 10,
-       
       },
       {
         question: `Which shape is different: Cube, Sphere, Cylinder, Circle`,
@@ -77,7 +107,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['Circle'],
         score: 10,
-       
       },
       {
         question: `Find the odd number: 121, 144, 169, 180`,
@@ -85,15 +114,13 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['180'],
         score: 10,
-       
       },
       {
-        question: `If in a code ‘SUN’ = ‘TVO’, then ‘MOON’ = ?`,
+        question: `If in a code 'SUN' = 'TVO', then 'MOON' = ?`,
         choices: ['NPPQ', 'NQQO', 'NPPM', 'NQOP'],
         type: 'MCQs',
         correctAnswers: ['NPPQ'],
         score: 10,
-       
       },
       {
         question: `Which letter comes next in the pattern: B, D, G, K, ?`,
@@ -101,7 +128,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['P'],
         score: 10,
-       
       },
       {
         question: `Select the odd pair: Pen-Ink, Brush-Paint, Knife-Bread, Book-Paper`,
@@ -109,7 +135,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['Knife-Bread'],
         score: 10,
-       
       },
       {
         question: `Which number fits the pattern: 2, 6, 12, 20, ?`,
@@ -117,15 +142,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['30'],
         score: 10,
-       
-      },
-      {
-        question: `If CLOCK = 31735, how is ROCK written?`,
-        choices: ['7315', '7915', '7913', '3915'],
-        type: 'MCQs',
-        correctAnswers: ['7915'],
-        score: 10,
-       
       },
       {
         question: `Identify the analogy: Bird : Wings :: Fish : ?`,
@@ -133,15 +149,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['Fins'],
         score: 10,
-       
-      },
-      {
-        question: `Which is the odd one: 3, 5, 7, 10`,
-        choices: ['3', '5', '7', '10'],
-        type: 'MCQs',
-        correctAnswers: ['10'],
-        score: 10,
-       
       },
       {
         question: `Choose the correct pair: Teacher : School :: Doctor : ?`,
@@ -149,23 +156,6 @@ export const reasoningSet5: Topic = {
         type: 'MCQs',
         correctAnswers: ['Hospital'],
         score: 10,
-       
-      },
-      {
-        question: `What comes next in the alphabet series: A, C, F, J, ?`,
-        choices: ['L', 'M', 'O', 'P'],
-        type: 'MCQs',
-        correctAnswers: ['O'],
-        score: 10,
-       
-      },
-      {
-        question: `Which number comes next: 2, 3, 5, 8, 12, ?`,
-        choices: ['15', '16', '17', '18'],
-        type: 'MCQs',
-        correctAnswers: ['17'],
-        score: 10,
-       
       },
     ],
   }

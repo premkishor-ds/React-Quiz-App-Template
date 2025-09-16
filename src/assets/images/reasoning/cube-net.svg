@@ -1,0 +1,15 @@
+<svg width="250" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="40" height="40" fill="white" stroke="black" stroke-width="2"/>
+  <rect x="90" y="50" width="40" height="40" fill="white" stroke="black" stroke-width="2"/>
+  <rect x="130" y="50" width="40" height="40" fill="white" stroke="black" stroke-width="2"/>
+  <rect x="170" y="50" width="40" height="40" fill="white" stroke="black" stroke-width="2"/>
+  <rect x="90" y="10" width="40" height="40" fill="white" stroke="black" stroke-width="2"/>
+  <rect x="90" y="90" width="40" height="40" fill="white" stroke="black" stroke-width="2"/>
+  <text x="65" y="75" font-size="16" font-weight="bold">1</text>
+  <text x="105" y="75" font-size="16" font-weight="bold">2</text>
+  <text x="145" y="75" font-size="16" font-weight="bold">3</text>
+  <text x="185" y="75" font-size="16" font-weight="bold">4</text>
+  <text x="105" y="35" font-size="16" font-weight="bold">5</text>
+  <text x="105" y="115" font-size="16" font-weight="bold">6</text>
+  <text x="50" y="160" font-size="12">Which number is opposite to 2?</text>
+</svg>

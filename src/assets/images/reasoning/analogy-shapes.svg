@@ -1,0 +1,10 @@
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30" cy="50" r="20" fill="yellow" stroke="black" stroke-width="2"/>
+  <text x="65" y="55" font-size="16">:</text>
+  <circle cx="90" cy="50" r="20" fill="yellow" stroke="black" stroke-width="2"/>
+  <circle cx="90" cy="50" r="10" fill="black"/>
+  <text x="125" y="55" font-size="16">::</text>
+  <rect x="150" y="30" width="40" height="40" fill="lightgreen" stroke="black" stroke-width="2"/>
+  <text x="205" y="55" font-size="16">:</text>
+  <text x="230" y="55" font-size="24">?</text>
+</svg>
