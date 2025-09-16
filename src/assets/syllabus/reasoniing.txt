@@ -1,0 +1,189 @@
+1. Number Series / Pattern Recognition
+
+Description: Find the next number(s) or missing term(s) in sequences (additive, multiplicative, mixed, differences, squares/cubes).
+
+Question types: 2, 3, 4 term progressions; missing-term; find rule.
+
+Difficulty: medium → (alternating/mixed rules) hard → (nonlinear/second-difference) hardest.
+
+2. Letter Series / Alphabetical Patterns
+
+Description: Next letters or missing letters in alphabetic patterns (skips, mirrored, letter positions).
+
+Question types: single-letter, multi-letter jumps, combined letter-number patterns.
+
+3. Alpha-Numeric / Alphanumeric Series
+
+Description: Mixed letter-number sequences (A1, B4 style) and repeating patterns.
+
+Question types: find next term, decode rule.
+
+4. Coding — Decoding (Verbal)
+
+Description: Word ↔ code (shift, reverse, substitute, position-based).
+
+Question types: simple Caesar shift, substitution, word-reverse, position-sum codes.
+
+Difficulty: include multi-step encodings for hardest.
+
+5. Coding — Decoding (Numeric)
+
+Description: Numbers encode words/names or arithmetic transformation encodings.
+
+Question types: digit-sum codes, place-value transforms.
+
+6. Direction Sense / Orientation
+
+Description: Turns, right/left sequences, clockwise/anticlockwise rotation problems.
+
+Question types: single-person turns, multi-step walking problems, 90°/180°/270° rotations.
+
+7. Blood Relations
+
+Description: Deduce relationships from descriptive clues.
+
+Question types: “Pointing to a man…”, family-tree deduction.
+
+Difficulty: include generational and gender-trick clues for hardest.
+
+8. Seating Arrangements (Linear & Circular)
+
+Description: Persons arranged in row/circle with positional clues.
+
+Question types: who sits where, who sits opposite/next to whom, multiple constraints.
+
+Hard cases: mixed facing directions, multiple rows, pair constraints.
+
+9. Puzzles / Logical Grid Puzzles
+
+Description: Multi-clue puzzles solved with elimination/grid logic (who owns which pet/which color).
+
+Question types: 4×4 or 5×5 style puzzles, matching sets.
+
+Hard: more entities, hidden constraints, chained clues.
+
+10. Classification / Odd One Out
+
+Description: Identify the item that does not belong in a group (meaning, property, category).
+
+Question types: semantic, functional, numerical, figural odd-one-out.
+
+11. Analogies (Verbal & Figural)
+
+Description: A:B :: C:? (relationships like part:whole, function, degree).
+
+Question types: word analogies, picture analogies, morphological analogies.
+
+12. Calendars & Dates
+
+Description: Day-of-week, leap year, date differences, nth-day problems.
+
+Question types: day-after X days, past/future day calculation, month/day logic.
+
+13. Clocks (Time Reasoning)
+
+Description: Angle between hands, time after/before, mirror-clock problems.
+
+Question types: time-elapsed problems, analog-clock rotations.
+
+14. Venn Diagrams / Set Logic
+
+Description: Overlap problems, members in sets, union/intersection inference.
+
+Question types: compute counts from overlaps, draw conclusions from set info.
+
+15. Syllogisms / Logical Deduction
+
+Description: Statements → conclusions (All, Some, No).
+
+Question types: which conclusions follow, contradictions, both/none.
+
+16. Statement – Assumption / Argument / Conclusion
+
+Description: Critical reasoning on short statements; identify assumption/argument.
+
+Question types: choose most/least appropriate assumption or argument based on statement.
+
+17. Inequalities & Directional Comparisons
+
+Description: a > b, b ≤ c puzzles; order and ranking problems.
+
+Question types: find position in ranking, smallest/largest.
+
+18. Mirror & Water Image
+
+Description: Mirror reflection of letters/words or shapes; identify correct mirror image.
+
+Question types: select correct reflected figure, rotated mirror images.
+
+19. Embedded Figures / Figure Folding & Pattern
+
+Description: Find hidden figures within complex shapes; paper-folding & punching problems.
+
+Question types: which figure will appear after folds, which shape is contained.
+
+20. Cube & Dice Problems
+
+Description: Unfolded nets, opposite faces, dice-rolling inference.
+
+Question types: identify opposite numbers, final orientation after rotations.
+
+21. Mathematical Reasoning / Number Puzzles
+
+Description: Simple algebraic thinking, missing digit problems, digit-sum, cross-number logic.
+
+Question types: find missing digit, product/sum puzzles, two-step arithmetic logic.
+
+22. Work & Time (Basic Logical Approach)
+
+Description: Word problems involving rates, but focused on reasoning rather than heavy calculations.
+
+Question types: combined work, proportionate distribution of work.
+
+23. Distance, Speed & Time (Logic-based)
+
+Description: Relative speed, meeting problems — conceptual reasoning.
+
+Question types: meeting point/time, difference-in-speed inference.
+
+24. Ratio & Proportion (Reasoning)
+
+Description: Logical application of ratio concepts to comparisons and shares.
+
+Question types: dividing amounts, scaling up/down, inverse proportion logic.
+
+25. Seating + Scheduling (Timetable Logic)
+
+Description: Timetables, shift scheduling, who meets whom when.
+
+Question types: figure out order or conflict-free assignment.
+
+26. Logical Sequence of Words / Sentence Completion
+
+Description: Arrange sentences into a coherent paragraph or complete logic in passage.
+
+Question types: next sentence, best opening/closing.
+
+27. Pattern Matrices / 2D Pattern Completion
+
+Description: Small grids (2×2, 3×3) where pattern changes row/column-wise.
+
+Question types: choose missing cell.
+
+28. Binary / True-False Grids (Yes/No logic)
+
+Description: Deduce true/false entries with given constraints—used for exam-style puzzles.
+
+Question types: logic-grid elimination.
+
+29. Logical Reasoning with Images (Figural)
+
+Description: Series of shapes, transformations (rotation, scaling, reflection).
+
+Question types: next figure, odd figural one out.
+
+30. Lateral Thinking & Word Puzzles
+
+Description: Riddles, wordplay, hidden-word puzzles—useful for stretching hardest level reasoning.
+
+Question types: word ladder, anagrams, contextual riddles.
