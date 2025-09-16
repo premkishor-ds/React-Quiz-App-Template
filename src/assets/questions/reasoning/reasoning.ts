@@ -1,3 +1,5 @@
+import { Topic } from '../../../data/QuizQuestions/index'
+
 // Number Series / Pattern Recognition 
 export const numberSeriesQuestions = [
   {
@@ -144,7 +146,7 @@ export const numberSeriesQuestions = [
 
 
 // Verbal Reasoning
-[
+export const verbalReasoningQuestions = [
   {
     question: 'Find the odd one out: Apple, Mango, Banana, Carrot',
     choices: ['Apple', 'Mango', 'Banana', 'Carrot'],
@@ -288,7 +290,7 @@ export const numberSeriesQuestions = [
 ]
 
 // Non - Verbal Reasoning
-[
+export const nonVerbalReasoningQuestions = [
   {
     question: 'Find the odd one out: △, ◻, ⚫, A',
     choices: ['△', '◻', '⚫', 'A'],
@@ -432,7 +434,7 @@ export const numberSeriesQuestions = [
 ]
 
 // Logical Reasoning(20 Questions)
-[
+export const logicalReasoningQuestions = [
   {
     question: 'If all roses are flowers and some flowers fade quickly, which of the following is true?',
     choices: ['All roses fade quickly', 'Some flowers are not roses', 'All flowers are roses', 'No rose fades quickly'],
@@ -576,7 +578,7 @@ export const numberSeriesQuestions = [
 ]
 
 // Analytical Reasoning(20 Questions)
-[
+export const analyticalReasoningQuestions = [
   {
     question: 'Ravi is 7th from the left and 12th from the right in a row. How many students are there?',
     choices: ['17', '18', '19', '20'],
@@ -722,7 +724,7 @@ export const numberSeriesQuestions = [
 
 // 20 Critical Reasoning 
 
-[
+export const criticalReasoningQuestions = [
   {
     "question": "Statement: 'All public parks in the town were closed last month due to renovation.'\n\nWhich conclusion follows logically?",
     "choices": ["No one used the parks last month.", "Some public parks were renovated last month.", "The town has no parks.", "All parks are permanently closed."],
@@ -868,7 +870,7 @@ export const numberSeriesQuestions = [
 
 //Coding–Decoding.
 
-[
+export const codingDecodingQuestions = [
   {
     "question": "If in a certain code, CAT is written as DBU, how is DOG written?",
     "choices": ["EPH", "EOF", "DPG", "EOH"],
@@ -1013,7 +1015,7 @@ export const numberSeriesQuestions = [
 
 
 //Direction Sense
-[
+export const directionSenseQuestions = [
   {
     "question": "A is facing North. He turns right, then right again. Which direction is he facing now?",
     "choices": ["North", "East", "South", "West"],
@@ -1157,7 +1159,7 @@ export const numberSeriesQuestions = [
 ]
 
 //Blood Relations
-[
+export const bloodRelationsQuestions = [
   {
     "question": "Pointing to a man, Rahul says, 'He is the son of my grandfather’s only son.' How is the man related to Rahul?",
     "choices": ["Brother", "Father", "Uncle", "Cousin"],
@@ -1307,6 +1309,7 @@ export const codingDecodingSet: Topic = {
   level: "Medium",
   totalQuestions: 20,
   totalScore: 200,
+  totalTime: 30,
   questions: [
     {
       question: "If CAT is coded as DBU, then how is DOG coded?",
@@ -1458,6 +1461,7 @@ export const bloodRelationsSet: Topic = {
   level: "Medium",
   totalQuestions: 20,
   totalScore: 200,
+  totalTime: 30,
   questions: [
     {
       question: "A is the father of B. B is the mother of C. How is A related to C?",
@@ -1608,6 +1612,7 @@ export const directionSenseSet: Topic = {
   level: "Medium-Hard",
   totalQuestions: 20,
   totalScore: 200,
+  totalTime: 30,
   questions: [
     {
       question: "A person walks 5 km north, then 3 km east. What is his distance from the starting point?",
@@ -1759,6 +1764,7 @@ export const classificationSet: Topic = {
   level: "Medium-Hard",
   totalQuestions: 20,
   totalScore: 200,
+  totalTime: 30,
   questions: [
     {
       question: "Find the odd one out: Apple, Mango, Banana, Carrot",
@@ -1907,7 +1913,7 @@ export const classificationSet: Topic = {
 
 
 // Puzzles & Brain Teasers 
-[
+export const puzzlesBrainTeasersQuestions = [
   {
     "question": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
     "choices": ["Echo", "Shadow", "Fire", "Cloud"],
@@ -2052,7 +2058,7 @@ export const classificationSet: Topic = {
 
 
 // Seating Arrangement
-[
+export const seatingArrangementQuestions = [
   {
     "question": "Five friends A, B, C, D and E sit in a row. B sits to the right of D. C sits at the extreme left. A sits between B and E. Who sits at the extreme right?",
     "choices": ["A", "B", "D", "E"],
@@ -2196,7 +2202,7 @@ export const classificationSet: Topic = {
 ]
 
 // Syllogisms.
-[
+export const syllogismsQuestions = [
   {
     "question": "Statements: All cats are animals. All animals are living beings. Conclusions: I. All cats are living beings. II. All living beings are cats.",
     "choices": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
@@ -2342,7 +2348,7 @@ export const classificationSet: Topic = {
 
 //Assumptions & Conclusions.
 
-[
+export const assumptionsConclusionsQuestions = [
   {
     "question": "Statement: The government should encourage the use of public transport. Assumption: Public transport is safer and more efficient than private transport.",
     "choices": ["Assumption is implicit", "Assumption is not implicit"],
@@ -2486,18 +2492,9 @@ export const classificationSet: Topic = {
 ]
 
 
-✅ All questions are medium - to - hard assumption & conclusion type, with relevant options and correct answers double - checked.
+//correct options and answers
 
-Do you want me to now proceed to the next reasoning topic — Cause & Effect — with another 20 JSON questions ?
-
-  You said:
-yes
-ChatGPT said:
-
-Perfect! Let’s move on to Cause & Effect.
-  Here’s a set of 20 RMS - style questions in the same JSON format, fully checked for correct options and answers(medium → hardest difficulty).
-
-[
+export const causeEffectQuestions = [
     {
       "question": "Cause: Heavy rain occurred in the city. Effect: Streets were flooded.",
       "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
@@ -2641,15 +2638,8 @@ Perfect! Let’s move on to Cause & Effect.
   ]
 
 
-Do you want me to continue with next reasoning topic — Directions & Blood Relations — next 20 questions in the same format ?
-
-  You said:
-yes
-ChatGPT said:
-
-Great! Here’s the Directions & Blood Relations topic with 20 RMS - style questions(medium → hardest) in the same JSON format:
-
-[
+//Directions & Blood Relations
+export const directionsBloodRelationsQuestions = [
   {
     "question": "Point A is to the east of Point B. Point C is to the north of Point B. In which direction is Point C from Point A?",
     "choices": ["Northwest", "Northeast", "Southwest", "Southeast"],
@@ -2796,8 +2786,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
  //Odd One Out & Classification
-
-[
+export const oddOneOutClassificationQuestions = [
   {
     "question": "Find the odd one out: Apple, Banana, Mango, Carrot",
     "choices": ["Apple", "Banana", "Mango", "Carrot"],
@@ -2942,8 +2931,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 //Coding - Decoding
-
-[
+export const codingDecodingQuestions2 = [
   {
     "question": "If in a code, APPLE is written as BQQMF, how is ORANGE written?",
     "choices": ["PSBOHF", "PSBNOF", "QSBPOG", "PSBONG"],
@@ -3081,8 +3069,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 //Pattern Recognition & Series Completion
-
-[
+export const patternRecognitionSeriesQuestions = [
   {
     "question": "Find the missing number: 2, 4, 8, 16, ?",
     "choices": ["32", "24", "30", "34"],
@@ -3227,8 +3214,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 //Puzzles & Brain Teasers
-
-[
+export const puzzlesBrainTeasersQuestions2 = [
   {
     "question": "A man has 4 daughters, and each daughter has 1 brother. How many children does the man have?",
     "choices": ["5", "4", "6", "8"],
@@ -3367,7 +3353,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Direction Sense & Blood Relations
 
-[
+export const puzzlesBrainTeasersQqq = [
   {
     "question": "Point A is 5 km east of Point B. Point C is 5 km north of Point A. What is the direction of Point C from Point B?",
     "choices": ["North-East", "North-West", "South-East", "South-West"],
@@ -3506,7 +3492,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Classification & Odd One Out
 
-[
+export const puzzlesBrainTeasersQw = [
   {
     "question": "Find the odd one out: Apple, Banana, Mango, Carrot",
     "choices": ["Apple", "Banana", "Mango", "Carrot"],
@@ -3652,7 +3638,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Coding - Decoding Problems
 
-[
+export const puzzlesBrainTeasdfewqf =[
   {
     "question": "If in a code, APPLE is written as BQQMF, how is BANANA written?",
     "choices": ["CBOBOB", "CBPBOB", "CBPBPB", "CBQBOB"],
@@ -3791,7 +3777,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Pattern Recognition & Series Completion
 
-[
+export const puzzlesBrainTeaserwew2 =[
   {
     "question": "Find the next number in the series: 2, 4, 8, 16, ?",
     "choices": ["18", "32", "24", "30"],
@@ -3937,7 +3923,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Direction Sense & Blood Relations
 
-[
+export const puzzlesBrainTeasedw =[
   {
     "question": "Point A is to the North of Point B. Point C is to the West of Point A. In which direction is Point C from Point B?",
     "choices": ["North-West", "South-West", "North-East", "South-East"],
@@ -4076,7 +4062,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Classification & Odd One Out
 
-[
+export const classification =[
   {
     "question": "Find the odd one out: Dog, Cat, Elephant, Car",
     "choices": ["Dog", "Cat", "Elephant", "Car"],
@@ -4222,7 +4208,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Coding - Decoding Problems
 
-[
+export const coding = [
   {
     "question": "If in a code, CAT is written as DBU, how is DOG written in that code?",
     "choices": ["EPH", "EPI", "DPH", "DOH"],
@@ -4361,7 +4347,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Pattern Recognition & Series Completion
 
-[
+export const pattern =[
   {
     "question": "Find the next number in the series: 2, 4, 8, 16, ?",
     "choices": ["18", "32", "24", "30"],
@@ -4507,7 +4493,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Letter Series / Alphabetical Patterns
 
-[
+export const hgnfdgbf =[
   {
     "question": "Find the next letter in the series: A, C, E, G, ?",
     "choices": ["H", "I", "F", "J"],
@@ -4653,7 +4639,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Alpha - Numeric / Alphanumeric Series
 
-[
+export const hgmghjng =[
   {
     "question": "Find the next term in the series: A1, B2, C3, D4, ?",
     "choices": ["E5", "E4", "F5", "D5"],
@@ -4799,7 +4785,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Coding — Decoding(Verbal)
 
-[
+export const gfjnfgdf =[
   {
     "question": "In a code language, 'APPLE' is written as 'ELPPA'. How is 'ORANGE' written?",
     "choices": ["EGNARO", "EGNRAO", "OENGAR", "ENRAGO"],
@@ -4945,7 +4931,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Coding — Decoding(Numeric)
 
-[
+export const hrthrtf =[
   {
     "question": "In a code, A=1, B=2, … Z=26. The word 'DOG' is written as?",
     "choices": ["4-15-7", "3-14-6", "5-16-8", "4-14-7"],
@@ -5084,7 +5070,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Direction Sense / Orientation questions
 
-[
+export const htrhrt =[
   {
     "question": "A person walks 5 km north, then 3 km east. How far is he from the starting point?",
     "choices": ["4 km", "5.83 km", "8 km", "7 km"],
@@ -5230,7 +5216,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Blood Relations 
 
-[
+export const ghndsd =[
   {
     "question": "Pointing to a man, she says, 'He is the son of my father’s sister.' How is he related to her?",
     "choices": ["Cousin", "Brother", "Nephew", "Uncle"],
@@ -5376,7 +5362,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Seating Arrangements(Linear & Circular) 
 
-[
+export const gdmjnxdss =[
   {
     "question": "Five friends A, B, C, D, and E are sitting in a row. A is to the left of B, C is to the right of D, E is at one end. Who is sitting in the middle?",
     "choices": ["A", "B", "C", "D"],
@@ -5522,7 +5508,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Puzzles / Logical Grid Puzzles 
 
-[
+export const dbgvfds =[
   {
     "question": "Four friends A, B, C, D have different pets: cat, dog, parrot, rabbit. A does not have a cat or dog. B does not have rabbit. C has neither cat nor parrot. Who has the rabbit?",
     "choices": ["A", "B", "C", "D"],
@@ -5668,7 +5654,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Classification / Odd One Out 
 
-[
+export const dsfgbsbgs =[
   {
     "question": "Which of the following does not belong? Apple, Banana, Carrot, Mango",
     "choices": ["Apple", "Banana", "Carrot", "Mango"],
@@ -5814,7 +5800,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Analogies(Verbal & Figural)
 
-[
+export const mdfdf =[
   {
     "question": "Hand is to Glove as Foot is to ?",
     "choices": ["Shoe", "Sock", "Boot", "Sandals"],
@@ -5960,7 +5946,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Calendars & Dates 
 
-[
+export const dddfdvgd =[
   {
     "question": "If 1st January 2025 is Wednesday, what day will 1st March 2025 be?",
     "choices": ["Saturday", "Friday", "Thursday", "Sunday"],
@@ -6105,7 +6091,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Clocks(Time Reasoning) 
 
-[
+export const jmfghfd =[
   {
     "question": "What is the angle between the hour and minute hands at 3:00?",
     "choices": ["90°", "180°", "120°", "60°"],
@@ -6244,7 +6230,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Venn Diagrams / Set Logic
 
-[
+export const sdfghndg =[
   {
     "question": "In a class of 40 students, 20 study Math, 15 study Science, and 5 study both. How many study only Math?",
     "choices": ["15", "20", "25", "10"],
@@ -6382,7 +6368,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 // Syllogisms / Logical Deduction/
-[
+export const gdfgbdfg =[
   {
     "question": "All cats are animals. Some animals are dogs. Can we conclude that some cats are dogs?",
     "choices": ["Yes", "No", "Cannot Say", "All cats are dogs"],
@@ -6522,7 +6508,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Statement – Assumption / Argument / Conclusion
 
-[
+export const fdaszgvbsd =[
   {
     "question": "Statement: 'Government should ban plastic bags to reduce pollution.' Which of the following is an assumption?",
     "choices": [
@@ -6756,7 +6742,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Inequalities & Directional Comparisons
 
-[
+export const dvfgnbd =[
   {
     "question": "A > B, B = C, C < D. Who is the smallest?",
     "choices": ["A", "B", "C", "D"],
@@ -6894,7 +6880,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 // Mirror & Water Image 
-[
+export const gdsfgsd =[
   {
     "question": "If 'CAT' is placed in front of a mirror, what will be the image?",
     "choices": ["CAT", "TAC", "COT", "Cannot say"],
@@ -7039,7 +7025,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 //Embedded Figures / Figure Folding & Pattern 
-[
+export const gdsgsgvsd =[
   {
     "question": "Which figure will appear when the given paper is folded once along the dotted line?",
     "choices": ["Square with diagonal", "Triangle", "Circle", "Cannot say"],
@@ -7184,7 +7170,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Cube & Dice Problems reasoning
 
-[
+export const fghgjnfg =[
   {
     "question": "A cube has faces numbered 1 to 6. If 1 is opposite 6 and 2 is opposite 5, which number is opposite 3?",
     "choices": ["4", "2", "5", "6"],
@@ -7322,7 +7308,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 // Mathematical Reasoning / Number Puzzles
-[
+export const hgjmdbhgf =[
   {
     "question": "Find the missing number: 3, 6, 12, 24, __, 96",
     "choices": ["36", "48", "50", "52"],
@@ -7467,7 +7453,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 // Work & Time(Basic Logical Approach)
-[
+export const hjgfdhh =[
   {
     "question": "A can do a work in 12 days and B in 16 days. If they work together, in how many days will they complete the work?",
     "choices": ["6", "7", "8", "9"],
@@ -7605,7 +7591,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 // Distance, Speed & Time(Logic - based) 
-[
+export const gfehthrt =[
   {
     "question": "A and B start from the same point. A goes north at 6 km/h and B goes east at 8 km/h. After 2 hours, the distance between them is?",
     "choices": ["10 km", "12 km", "14 km", "16 km"],
@@ -7744,7 +7730,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 // Ratio & Proportion(Reasoning)
-[
+export const u76ui5 =[
   {
     "question": "Two numbers are in the ratio 3:5. If their sum is 64, find the numbers.",
     "choices": ["24 and 40", "30 and 50", "20 and 44", "18 and 30"],
@@ -7889,7 +7875,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 // Seating + Scheduling(Timetable Logic) 
 
-[
+export const uui57 =[
   {
     "question": "Five friends A, B, C, D, and E are sitting in a row. B is to the left of C but to the right of D. E is at one end. Who is sitting in the middle?",
     "choices": ["A", "B", "C", "D"],
@@ -8036,7 +8022,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 //Logical Sequence of Words / Sentence Completion 
 
-[
+export const uy56u56 =[
   {
     "question": "Arrange the following sentences to form a coherent paragraph: \n1. She opened the window.\n2. The room felt stuffy.\n3. She let in fresh air.\n4. The flowers on the balcony looked beautiful.",
     "choices": [
@@ -8282,7 +8268,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 // Pattern Matrices / 2D Pattern 
-[
+export const y65uy4 =[
   {
     "question": "Find the missing figure in the 2×2 matrix: \n[A] ■ ○\n[B] ▲ ?",
     "choices": ["■", "○", "▲", "●"],
@@ -8427,7 +8413,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 //Binary / True - False Grids(Yes / No logic)
-[
+export const binary =[
   {
     "question": "In a class of 5 students, A, B, C, D, E: Only A and C play football. B and D play chess. E plays both. Who plays neither?",
     "choices": ["A", "B", "D", "None"],
@@ -8565,7 +8551,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 //Logical Reasoning with Images(Figural)
-[
+export const fdhg =[
   {
     "question": "Which figure comes next in the series? ▲ ■ ▲ ■ ?",
     "choices": ["▲", "■", "●", "◆"],
@@ -8709,7 +8695,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 ]
 
 //Lateral Thinking & Word Puzzles
-[
+export const fhjnfgjgf =[
   {
     "question": "I speak without a mouth and hear without ears. What am I?",
     "choices": ["Echo", "Shadow", "Wind", "Sound"],
@@ -8847,7 +8833,7 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS - style quest
 
 
 //Cube & Dice Problems
-[
+export const sfdfdhdghdf =[
   {
     "question": "A dice is rolled. The number on the top face is 2. Which number will be on the bottom face?",
     "choices": ["5", "3", "6", "4"],
