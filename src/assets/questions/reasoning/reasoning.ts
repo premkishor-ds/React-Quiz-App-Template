@@ -1,7 +1,5 @@
-
-
-✅ Batch Start: Reasoning — Topic 1: Number Series / Pattern Recognition (20 Questions JSON)
-[
+// Number Series / Pattern Recognition 
+export const numberSeriesQuestions = [
   {
     question: 'What comes next in the series: 2, 6, 12, 20, ?',
     choices: ['28', '30', '32', '34'],
@@ -145,7 +143,7 @@
 ]
 
 
-1. Verbal Reasoning (20 Questions)
+// Verbal Reasoning
 [
   {
     question: 'Find the odd one out: Apple, Mango, Banana, Carrot',
@@ -289,18 +287,7 @@
   }
 ]
 
-
-⚡ This is just Topic 1: Verbal Reasoning (20 Qs).
-
-Would you like me to continue with Topic 2: Non-Verbal Reasoning (20 Qs) next in the same JSON format?
-
-You said:
-yes
-ChatGPT said:
-
-Great 🚀 Let’s continue with Topic 2: Non-Verbal Reasoning (20 Questions) in the same JSON format.
-
-2. Non-Verbal Reasoning (20 Questions)
+// Non - Verbal Reasoning
 [
   {
     question: 'Find the odd one out: △, ◻, ⚫, A',
@@ -444,17 +431,7 @@ Great 🚀 Let’s continue with Topic 2: Non-Verbal Reasoning (20 Questions) in
   }
 ]
 
-
-✅ That’s Non-Verbal Reasoning (20 Qs) done.
-Shall I move on to Logical Reasoning (20 Qs) next?
-
-You said:
-yes
-ChatGPT said:
-
-Great 🚀 Let’s move on to Topic 3: Logical Reasoning (20 Questions) in your requested JSON format.
-
-3. Logical Reasoning (20 Questions)
+// Logical Reasoning(20 Questions)
 [
   {
     question: 'If all roses are flowers and some flowers fade quickly, which of the following is true?',
@@ -598,18 +575,7 @@ Great 🚀 Let’s move on to Topic 3: Logical Reasoning (20 Questions) in your 
   }
 ]
 
-
-✅ That’s Logical Reasoning (20 Qs) done.
-Shall I move on to Analytical Reasoning (20 Qs) next?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect 👍
-Here’s Topic 4: Analytical Reasoning (20 Questions) in the same JSON format, with medium → hardest RMS-level toughness:
-
-4. Analytical Reasoning (20 Questions)
+// Analytical Reasoning(20 Questions)
 [
   {
     question: 'Ravi is 7th from the left and 12th from the right in a row. How many students are there?',
@@ -754,14 +720,7 @@ Here’s Topic 4: Analytical Reasoning (20 Questions) in the same JSON format, w
 ]
 
 
-✅ That’s Analytical Reasoning (20 Qs) fully done.
-Do you want me to continue with Critical Reasoning (20 Questions) next?
-
-You said:
-yes
-ChatGPT said:
-
-Here are 20 Critical Reasoning questions (medium → hard → hardest) in the exact JSON MCQ format you requested. Each question, its choices, and the correctAnswers have been checked for relevance and accuracy.
+// 20 Critical Reasoning 
 
 [
   {
@@ -907,14 +866,7 @@ Here are 20 Critical Reasoning questions (medium → hard → hardest) in the ex
 ]
 
 
-Would you like these exported as a single file (JSON / TS) or shall I continue producing the next reasoning topic (e.g., Syllogisms, Seating Arrangements) with 20 questions each?
-
-You said:
-next reasoning topic
-ChatGPT said:
-
-Great ✅ Let’s move to the next reasoning topic: Coding–Decoding.
-Here are 20 carefully checked JSON-format questions (medium → hard → hardest), with relevant choices and correct answers.
+//Coding–Decoding.
 
 [
   {
@@ -1060,16 +1012,7 @@ Here are 20 carefully checked JSON-format questions (medium → hard → hardest
 ]
 
 
-✅ All questions checked: choices are relevant, and correct answers are accurate.
-Would you like me to move on to the next topic: Direction Sense & Blood Relations with 20 JSON questions?
-
-You said:
-yes
-ChatGPT said:
-
-Great — moving on. Below are Direction Sense (20 Qs) followed by Blood Relations (20 Qs) in the exact JSON MCQ format you requested. I’ve carefully checked every question, every choice, and each correctAnswers for relevance and accuracy.
-
-Direction Sense — 20 Questions
+//Direction Sense
 [
   {
     "question": "A is facing North. He turns right, then right again. Which direction is he facing now?",
@@ -1213,7 +1156,7 @@ Direction Sense — 20 Questions
   }
 ]
 
-Blood Relations — 20 Questions
+//Blood Relations
 [
   {
     "question": "Pointing to a man, Rahul says, 'He is the son of my grandfather’s only son.' How is the man related to Rahul?",
@@ -1358,26 +1301,7 @@ Blood Relations — 20 Questions
 ]
 
 
-If you want, I can:
-
-export these two topics as a single JSON/TS file, or
-
-continue generating the next reasoning topics (Seating Arrangements, Puzzles, Syllogisms, etc.) — 20 Qs each.
-
-Which would you like next?
-
-You said:
-continue generating the next reasoning topics
-ChatGPT said:
-
-Perfect 👍 Let’s continue with the next reasoning topic. We already covered Number Series and Alphabet Series.
-
-Now moving to:
-
-Reasoning Topic 3: Coding-Decoding
-
-Here are 20 JSON-formatted questions:
-
+//Coding - Decoding
 export const codingDecodingSet: Topic = {
   topic: "Coding-Decoding",
   level: "Medium",
@@ -1528,19 +1452,7 @@ export const codingDecodingSet: Topic = {
 }
 
 
-👉 Next topic will be Blood Relations (another reasoning classic).
-Do you want me to directly generate 20 JSON questions for Blood Relations now?
-
-You said:
-yes
-ChatGPT said:
-
-Great 👍 Let’s move on.
-
-Reasoning Topic 4: Blood Relations
-
-Here are 20 JSON-formatted questions:
-
+// Blood Relations
 export const bloodRelationsSet: Topic = {
   topic: "Blood Relations",
   level: "Medium",
@@ -1690,22 +1602,7 @@ export const bloodRelationsSet: Topic = {
   ]
 }
 
-
-👉 Next topic will be Direction Sense Test.
-Do you want me to generate 20 JSON questions for Direction Sense Test now?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect 👍
-
-Here comes the next set:
-
-Reasoning Topic 5: Direction Sense Test
-
-20 JSON-formatted questions
-
+// Direction Sense Test
 export const directionSenseSet: Topic = {
   topic: "Direction Sense Test",
   level: "Medium-Hard",
@@ -1856,20 +1753,7 @@ export const directionSenseSet: Topic = {
 }
 
 
-👉 Next reasoning topic is Classification (Odd One Out).
-Should I generate 20 JSON questions for Classification/Odd One Out now?
-
-You said:
-yes
-ChatGPT said:
-
-Great 🚀
-Here’s the next set:
-
-Reasoning Topic 6: Classification / Odd One Out
-
-20 JSON-formatted questions
-
+//Classification / Odd One Out
 export const classificationSet: Topic = {
   topic: "Classification / Odd One Out",
   level: "Medium-Hard",
@@ -2022,8 +1906,7 @@ export const classificationSet: Topic = {
 
 
 
-Perfect — here are 20 Simple Puzzles & Brain Teasers in the exact JSON MCQ format you requested. Each question, all choices, and the correctAnswers have been checked for relevance and accuracy.
-
+// Puzzles & Brain Teasers 
 [
   {
     "question": "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
@@ -2168,18 +2051,7 @@ Perfect — here are 20 Simple Puzzles & Brain Teasers in the exact JSON MCQ for
 ]
 
 
-Would you like me to:
-
-export this set to the canvas file as well, or
-
-continue with the next reasoning topic (e.g., Seating Arrangements / Syllogisms / Clocks / Venn Diagrams) and generate 20 JSON questions for it now?
-
-You said:
-continue with the next reasoning topic
-ChatGPT said:
-
-Great — continuing. Below are 20 Seating Arrangement questions (linear & circular, mixed facing directions, medium → hardest) in the exact JSON MCQ format you requested. Each question, choices and correctAnswers have been checked for relevance and correctness.
-
+// Seating Arrangement
 [
   {
     "question": "Five friends A, B, C, D and E sit in a row. B sits to the right of D. C sits at the extreme left. A sits between B and E. Who sits at the extreme right?",
@@ -2323,16 +2195,7 @@ Great — continuing. Below are 20 Seating Arrangement questions (linear & circu
   }
 ]
 
-
-Shall I continue with the next reasoning topic — Syllogisms (20 questions) — next?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect 👍. Now let’s cover the next reasoning topic: Syllogisms.
-Below are 20 carefully checked syllogism questions in your RMS exam JSON format (medium → hardest difficulty).
-
+// Syllogisms.
 [
   {
     "question": "Statements: All cats are animals. All animals are living beings. Conclusions: I. All cats are living beings. II. All living beings are cats.",
@@ -2477,14 +2340,7 @@ Below are 20 carefully checked syllogism questions in your RMS exam JSON format 
 ]
 
 
-Do you want me to move on to the next reasoning topic — Assumptions & Conclusions — and generate 20 JSON questions in the same way?
-
-You said:
-yes
-ChatGPT said:
-
-Great 🚀 Let’s continue with the next reasoning topic: Assumptions & Conclusions.
-Here are 20 JSON-formatted questions (medium → hardest level), fully checked for valid choices and answers.
+//Assumptions & Conclusions.
 
 [
   {
@@ -2630,168 +2486,168 @@ Here are 20 JSON-formatted questions (medium → hardest level), fully checked f
 ]
 
 
-✅ All questions are medium-to-hard assumption & conclusion type, with relevant options and correct answers double-checked.
+✅ All questions are medium - to - hard assumption & conclusion type, with relevant options and correct answers double - checked.
 
-Do you want me to now proceed to the next reasoning topic — Cause & Effect — with another 20 JSON questions?
+Do you want me to now proceed to the next reasoning topic — Cause & Effect — with another 20 JSON questions ?
 
-You said:
+  You said:
 yes
 ChatGPT said:
 
 Perfect! Let’s move on to Cause & Effect.
-Here’s a set of 20 RMS-style questions in the same JSON format, fully checked for correct options and answers (medium → hardest difficulty).
+  Here’s a set of 20 RMS - style questions in the same JSON format, fully checked for correct options and answers(medium → hardest difficulty).
 
 [
-  {
-    "question": "Cause: Heavy rain occurred in the city. Effect: Streets were flooded.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The boy studied hard for exams. Effect: He scored the highest marks.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: A car ran out of fuel on the highway. Effect: The driver stopped and called for help.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: A shopkeeper reduced prices of goods. Effect: More customers visited the shop.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The children played outside in the rain. Effect: They caught a cold.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: A heavy storm hit the coastal region. Effect: The crops were damaged.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: A student did not complete homework. Effect: The teacher scolded him.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The government increased petrol prices. Effect: People reduced unnecessary travel.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: A man overslept. Effect: He reached office late.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The factory released smoke and dust. Effect: The nearby area was polluted.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The students were not attentive in class. Effect: They failed the test.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The ice on the road melted. Effect: Water flooded the streets.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: A power cut occurred in the city. Effect: All traffic signals stopped working.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: A patient did not take medicine on time. Effect: His health worsened.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: Heavy snowfall occurred in the mountains. Effect: Roads were blocked for hours.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The restaurant offered new dishes. Effect: Customers increased and revenue grew.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The student revised all chapters thoroughly. Effect: He scored full marks in the exam.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The river overflowed due to heavy rain. Effect: Villages near the river were submerged.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The athlete trained daily. Effect: He won the championship.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  },
-  {
-    "question": "Cause: The city faced a severe drought. Effect: Water supply was rationed.",
-    "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
-    "type": "MCQs",
-    "correctAnswers": ["Cause is correct and effect logically follows"],
-    "score": 10
-  }
-]
+    {
+      "question": "Cause: Heavy rain occurred in the city. Effect: Streets were flooded.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The boy studied hard for exams. Effect: He scored the highest marks.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: A car ran out of fuel on the highway. Effect: The driver stopped and called for help.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: A shopkeeper reduced prices of goods. Effect: More customers visited the shop.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The children played outside in the rain. Effect: They caught a cold.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: A heavy storm hit the coastal region. Effect: The crops were damaged.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: A student did not complete homework. Effect: The teacher scolded him.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The government increased petrol prices. Effect: People reduced unnecessary travel.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: A man overslept. Effect: He reached office late.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The factory released smoke and dust. Effect: The nearby area was polluted.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The students were not attentive in class. Effect: They failed the test.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The ice on the road melted. Effect: Water flooded the streets.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: A power cut occurred in the city. Effect: All traffic signals stopped working.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: A patient did not take medicine on time. Effect: His health worsened.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: Heavy snowfall occurred in the mountains. Effect: Roads were blocked for hours.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The restaurant offered new dishes. Effect: Customers increased and revenue grew.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The student revised all chapters thoroughly. Effect: He scored full marks in the exam.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The river overflowed due to heavy rain. Effect: Villages near the river were submerged.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The athlete trained daily. Effect: He won the championship.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    },
+    {
+      "question": "Cause: The city faced a severe drought. Effect: Water supply was rationed.",
+      "choices": ["Cause is correct and effect logically follows", "Cause is correct but effect does not follow", "Effect is correct but cause does not follow", "Neither cause nor effect is correct"],
+      "type": "MCQs",
+      "correctAnswers": ["Cause is correct and effect logically follows"],
+      "score": 10
+    }
+  ]
 
 
-Do you want me to continue with next reasoning topic — Directions & Blood Relations — next 20 questions in the same format?
+Do you want me to continue with next reasoning topic — Directions & Blood Relations — next 20 questions in the same format ?
 
-You said:
+  You said:
 yes
 ChatGPT said:
 
-Great! Here’s the Directions & Blood Relations topic with 20 RMS-style questions (medium → hardest) in the same JSON format:
+Great! Here’s the Directions & Blood Relations topic with 20 RMS - style questions(medium → hardest) in the same JSON format:
 
 [
   {
@@ -2937,17 +2793,9 @@ Great! Here’s the Directions & Blood Relations topic with 20 RMS-style questio
 ]
 
 
-If you want, I can continue with the next reasoning topic: “Odd One Out & Classification” with 20 questions in the same format.
 
-Do you want me to do that now?
 
-You said:
-one topic at once
-ChatGPT said:
-
-Perfect! We just completed Directions & Blood Relations.
-
-Next, I’ll generate 20 RMS-style questions for the “Odd One Out & Classification” topic in the same JSON format. Here’s the batch:
+ //Odd One Out & Classification
 
 [
   {
@@ -3093,15 +2941,7 @@ Next, I’ll generate 20 RMS-style questions for the “Odd One Out & Classifica
 ]
 
 
-If you want, I can generate the next reasoning topic: “Coding-Decoding” with 20 RMS-style questions next.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here’s the next reasoning topic: Coding-Decoding with 20 RMS-style questions in JSON format:
+//Coding - Decoding
 
 [
   {
@@ -3240,13 +3080,7 @@ Perfect! Here’s the next reasoning topic: Coding-Decoding with 20 RMS-style qu
 ]
 
 
-Do you want me to proceed to the next reasoning topic: “Pattern Recognition & Series Completion” next?
-
-You said:
-yes
-ChatGPT said:
-
-Great! Next, we’ll generate 20 RMS-style questions for “Pattern Recognition & Series Completion” in JSON format:
+//Pattern Recognition & Series Completion
 
 [
   {
@@ -3392,13 +3226,7 @@ Great! Next, we’ll generate 20 RMS-style questions for “Pattern Recognition 
 ]
 
 
-Do you want me to move to the next reasoning topic: “Puzzles & Brain Teasers” next?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Next, here are 20 RMS-style questions for “Puzzles & Brain Teasers” in JSON format:
+//Puzzles & Brain Teasers
 
 [
   {
@@ -3537,13 +3365,7 @@ Perfect! Next, here are 20 RMS-style questions for “Puzzles & Brain Teasers”
 ]
 
 
-Do you want me to continue with the next reasoning topic: “Direction Sense & Blood Relations”?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here are 20 RMS-style questions for “Direction Sense & Blood Relations” in JSON format:
+//Direction Sense & Blood Relations
 
 [
   {
@@ -3682,13 +3504,7 @@ Perfect! Here are 20 RMS-style questions for “Direction Sense & Blood Relation
 ]
 
 
-Do you want me to continue with the next reasoning topic: “Classification & Odd One Out”?
-
-You said:
-yes
-ChatGPT said:
-
-Great! Here are 20 RMS-style questions for “Classification & Odd One Out” in JSON format:
+//Classification & Odd One Out
 
 [
   {
@@ -3834,13 +3650,7 @@ Great! Here are 20 RMS-style questions for “Classification & Odd One Out” in
 ]
 
 
-Do you want me to continue with the next reasoning topic: “Coding-Decoding Problems”?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here are 20 RMS-style questions for “Coding-Decoding Problems” in JSON format:
+//Coding - Decoding Problems
 
 [
   {
@@ -3979,13 +3789,7 @@ Perfect! Here are 20 RMS-style questions for “Coding-Decoding Problems” in J
 ]
 
 
-Do you want me to continue with the next reasoning topic: “Pattern Recognition & Series Completion”?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here are 20 RMS-style questions for “Pattern Recognition & Series Completion” in JSON format:
+//Pattern Recognition & Series Completion
 
 [
   {
@@ -4131,13 +3935,7 @@ Perfect! Here are 20 RMS-style questions for “Pattern Recognition & Series Com
 ]
 
 
-Do you want me to continue with the next reasoning topic: “Direction Sense & Blood Relations” next?
-
-You said:
-yes and difficult level is medium to hard for all
-ChatGPT said:
-
-Perfect! Here are 20 RMS-style questions for “Direction Sense & Blood Relations” with medium to hard difficulty in JSON format:
+//Direction Sense & Blood Relations
 
 [
   {
@@ -4276,13 +4074,7 @@ Perfect! Here are 20 RMS-style questions for “Direction Sense & Blood Relation
 ]
 
 
-Do you want me to continue with the next reasoning topic: “Classification & Odd One Out” next?
-
-You said:
-yes
-ChatGPT said:
-
-Great! Here are 20 RMS-style questions for “Classification & Odd One Out” with medium to hard difficulty in JSON format:
+//Classification & Odd One Out
 
 [
   {
@@ -4428,13 +4220,7 @@ Great! Here are 20 RMS-style questions for “Classification & Odd One Out” wi
 ]
 
 
-Do you want me to continue with the next reasoning topic: “Coding-Decoding Problems” next?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here are 20 RMS-style questions for “Coding-Decoding Problems” with medium to hard difficulty in JSON format:
+//Coding - Decoding Problems
 
 [
   {
@@ -4573,13 +4359,7 @@ Perfect! Here are 20 RMS-style questions for “Coding-Decoding Problems” with
 ]
 
 
-Do you want me to continue next with the topic “Pattern Recognition & Series Completion”?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here are 20 RMS-style questions for “Pattern Recognition & Series Completion” with medium to hard difficulty in JSON format:
+//Pattern Recognition & Series Completion
 
 [
   {
@@ -4725,8 +4505,7 @@ Perfect! Here are 20 RMS-style questions for “Pattern Recognition & Series Com
 ]
 
 
-
-Great! Here are 20 RMS-style questions for “Letter Series / Alphabetical Patterns” with medium → hard difficulty in JSON format:
+//Letter Series / Alphabetical Patterns
 
 [
   {
@@ -4872,15 +4651,7 @@ Great! Here are 20 RMS-style questions for “Letter Series / Alphabetical Patte
 ]
 
 
-I can generate the next topic: “Alpha-Numeric / Alphanumeric Series” with 20 questions next.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here are 20 RMS-style questions for “Alpha-Numeric / Alphanumeric Series” (medium → hard difficulty) in JSON format:
+//Alpha - Numeric / Alphanumeric Series
 
 [
   {
@@ -5026,15 +4797,7 @@ Perfect! Here are 20 RMS-style questions for “Alpha-Numeric / Alphanumeric Ser
 ]
 
 
-If you want, I can generate the next reasoning topic: “Coding — Decoding (Verbal)” with 20 questions in the same format.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here are 20 RMS-style “Coding — Decoding (Verbal)” questions (medium → hardest difficulty) in JSON format:
+//Coding — Decoding(Verbal)
 
 [
   {
@@ -5180,15 +4943,7 @@ Perfect! Here are 20 RMS-style “Coding — Decoding (Verbal)” questions (med
 ]
 
 
-If you want, I can next generate 20 questions for “Coding — Decoding (Numeric)” with medium → hardest difficulty in the same JSON format.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here are 20 RMS-style “Coding — Decoding (Numeric)” questions (medium → hardest difficulty) in JSON format:
+//Coding — Decoding(Numeric)
 
 [
   {
@@ -5327,15 +5082,7 @@ Perfect! Here are 20 RMS-style “Coding — Decoding (Numeric)” questions (me
 ]
 
 
-Next, we can generate 20 questions for “Direction Sense / Orientation” with medium → hardest difficulty in the same JSON format.
-
-Do you want me to proceed with that?
-
-You said:
-yes
-ChatGPT said:
-
-Perfect! Here are 20 Direction Sense / Orientation questions in RMS-style JSON format (medium → hardest difficulty):
+// Direction Sense / Orientation questions
 
 [
   {
@@ -5481,15 +5228,7 @@ Perfect! Here are 20 Direction Sense / Orientation questions in RMS-style JSON f
 ]
 
 
-I can continue with Blood Relations next (20 questions) in the same JSON format.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s the Blood Relations topic with 20 RMS-style reasoning questions (medium → hardest difficulty):
+// Blood Relations 
 
 [
   {
@@ -5635,15 +5374,7 @@ Here’s the Blood Relations topic with 20 RMS-style reasoning questions (medium
 ]
 
 
-I can next generate Seating Arrangements (Linear & Circular) with 20 questions in the same format.
-
-Do you want me to continue with that?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s the Seating Arrangements (Linear & Circular) topic with 20 RMS-style reasoning questions (medium → hardest difficulty):
+// Seating Arrangements(Linear & Circular) 
 
 [
   {
@@ -5789,15 +5520,7 @@ Here’s the Seating Arrangements (Linear & Circular) topic with 20 RMS-style re
 ]
 
 
-If you confirm, I can next generate Puzzles / Logical Grid Puzzles with 20 RMS-style questions in the same JSON format.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s the Puzzles / Logical Grid Puzzles topic with 20 RMS-style reasoning questions (medium → hardest difficulty):
+// Puzzles / Logical Grid Puzzles 
 
 [
   {
@@ -5943,15 +5666,7 @@ Here’s the Puzzles / Logical Grid Puzzles topic with 20 RMS-style reasoning qu
 ]
 
 
-If you confirm, I can next generate Classification / Odd One Out with 20 RMS-style questions in the same JSON format.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s the Classification / Odd One Out topic with 20 RMS-style reasoning questions (medium → hardest difficulty) in the same JSON format:
+// Classification / Odd One Out 
 
 [
   {
@@ -6097,15 +5812,7 @@ Here’s the Classification / Odd One Out topic with 20 RMS-style reasoning ques
 ]
 
 
-If you confirm, I can generate the next topic: Analogies (Verbal & Figural) in the same JSON format with 20 RMS-style questions.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Analogies (Verbal & Figural) with 20 RMS-style reasoning questions (medium → hardest) in the same JSON format:
+// Analogies(Verbal & Figural)
 
 [
   {
@@ -6251,15 +5958,7 @@ Here’s Analogies (Verbal & Figural) with 20 RMS-style reasoning questions (med
 ]
 
 
-If you confirm, I can proceed with the next reasoning topic: Calendars & Dates in the same format with 20 medium-to-hard RMS-style questions.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Calendars & Dates with 20 RMS-style reasoning questions (medium → hardest) in the same JSON format:
+//Calendars & Dates 
 
 [
   {
@@ -6404,16 +6103,7 @@ Here’s Calendars & Dates with 20 RMS-style reasoning questions (medium → har
   }
 ]
 
-
-If you confirm, I can proceed next with Clocks (Time Reasoning) with 20 medium-to-hard RMS-style questions.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Clocks (Time Reasoning) with 20 RMS-style reasoning questions (medium → hardest) in JSON format:
+// Clocks(Time Reasoning) 
 
 [
   {
@@ -6552,15 +6242,7 @@ Here’s Clocks (Time Reasoning) with 20 RMS-style reasoning questions (medium �
 ]
 
 
-If you confirm, I can move next to Venn Diagrams / Set Logic with 20 medium-to-hard questions.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Venn Diagrams / Set Logic with 20 RMS-style reasoning questions (medium → hardest) in JSON format:
+//Venn Diagrams / Set Logic
 
 [
   {
@@ -6699,16 +6381,7 @@ Here’s Venn Diagrams / Set Logic with 20 RMS-style reasoning questions (medium
 ]
 
 
-If confirmed, I can move next to Syllogisms / Logical Deduction with 20 questions.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Syllogisms / Logical Deduction with 20 RMS-style reasoning questions (medium → hardest) in JSON format:
-
+// Syllogisms / Logical Deduction/
 [
   {
     "question": "All cats are animals. Some animals are dogs. Can we conclude that some cats are dogs?",
@@ -6846,15 +6519,8 @@ Here’s Syllogisms / Logical Deduction with 20 RMS-style reasoning questions (m
 ]
 
 
-If you want, I can continue with Statement – Assumption / Argument / Conclusion as the next reasoning topic with 20 questions.
 
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Statement – Assumption / Argument / Conclusion with 20 RMS-style reasoning questions (medium → hardest) in JSON format:
+// Statement – Assumption / Argument / Conclusion
 
 [
   {
@@ -7088,15 +6754,7 @@ Here’s Statement – Assumption / Argument / Conclusion with 20 RMS-style reas
 ]
 
 
-I can continue with Inequalities & Directional Comparisons next if you want.
-
-Do you want me to proceed with that?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Inequalities & Directional Comparisons with 20 RMS-style reasoning questions (medium → hardest) in JSON format:
+//Inequalities & Directional Comparisons
 
 [
   {
@@ -7235,16 +6893,7 @@ Here’s Inequalities & Directional Comparisons with 20 RMS-style reasoning ques
 ]
 
 
-I can next generate Mirror & Water Image reasoning questions (20 Qs) in the same JSON format.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Mirror & Water Image reasoning topic with 20 RMS-style questions (medium → hardest) in JSON format:
-
+// Mirror & Water Image 
 [
   {
     "question": "If 'CAT' is placed in front of a mirror, what will be the image?",
@@ -7389,16 +7038,7 @@ Here’s Mirror & Water Image reasoning topic with 20 RMS-style questions (mediu
 ]
 
 
-Next, I can generate Embedded Figures / Figure Folding & Pattern reasoning questions (20 Qs) in the same JSON format.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Embedded Figures / Figure Folding & Pattern reasoning topic with 20 RMS-style questions (medium → hardest) in JSON format:
-
+//Embedded Figures / Figure Folding & Pattern 
 [
   {
     "question": "Which figure will appear when the given paper is folded once along the dotted line?",
@@ -7542,16 +7182,7 @@ Here’s Embedded Figures / Figure Folding & Pattern reasoning topic with 20 RMS
   }
 ]
 
-
-Next, we can generate Cube & Dice Problems (20 Qs) in the same JSON format.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Cube & Dice Problems reasoning topic with 20 RMS-style questions (medium → hardest) in JSON format:
+// Cube & Dice Problems reasoning
 
 [
   {
@@ -7586,7 +7217,7 @@ Here’s Cube & Dice Problems reasoning topic with 20 RMS-style questions (mediu
     "question": "Which face will be at the bottom if the cube with top face 1 is rotated 90° clockwise along the vertical axis?",
     "choices": ["2", "3", "4", "6"],
     "type": "MCQs",
-    "correctAnswers": ["1"], 
+    "correctAnswers": ["1"],
     "score": 10
   },
   {
@@ -7690,16 +7321,7 @@ Here’s Cube & Dice Problems reasoning topic with 20 RMS-style questions (mediu
 ]
 
 
-If you want, I can continue with Mathematical Reasoning / Number Puzzles next (20 questions, medium → hardest, same JSON style).
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Mathematical Reasoning / Number Puzzles topic with 20 RMS-style questions (medium → hardest) in JSON format:
-
+// Mathematical Reasoning / Number Puzzles
 [
   {
     "question": "Find the missing number: 3, 6, 12, 24, __, 96",
@@ -7844,16 +7466,7 @@ Here’s Mathematical Reasoning / Number Puzzles topic with 20 RMS-style questio
 ]
 
 
-I can continue with Work & Time (Basic Logical Approach) next if you want, in the same medium → hardest JSON style.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Work & Time (Basic Logical Approach) with 20 RMS-style reasoning questions (medium → hardest) in JSON format:
-
+// Work & Time(Basic Logical Approach)
 [
   {
     "question": "A can do a work in 12 days and B in 16 days. If they work together, in how many days will they complete the work?",
@@ -7991,16 +7604,7 @@ Here’s Work & Time (Basic Logical Approach) with 20 RMS-style reasoning questi
 ]
 
 
-If you want, I can continue with Distance, Speed & Time (Logic-based) next in the same JSON format with 20 medium→hard RMS-style questions.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Distance, Speed & Time (Logic-based) with 20 RMS-style reasoning questions (medium → hardest) in JSON format:
-
+// Distance, Speed & Time(Logic - based) 
 [
   {
     "question": "A and B start from the same point. A goes north at 6 km/h and B goes east at 8 km/h. After 2 hours, the distance between them is?",
@@ -8138,16 +7742,8 @@ Here’s Distance, Speed & Time (Logic-based) with 20 RMS-style reasoning questi
 ]
 
 
-I can continue next with Ratio & Proportion (Reasoning) in the same RMS-style JSON format with 20 medium → hardest questions.
 
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Ratio & Proportion (Reasoning) with 20 RMS-style reasoning questions in JSON format (medium → hardest):
-
+// Ratio & Proportion(Reasoning)
 [
   {
     "question": "Two numbers are in the ratio 3:5. If their sum is 64, find the numbers.",
@@ -8291,16 +7887,7 @@ Here’s Ratio & Proportion (Reasoning) with 20 RMS-style reasoning questions in
   }
 ]
 
-
-Next, I can generate Seating + Scheduling (Timetable Logic) with 20 RMS-style questions in the same format.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Seating + Scheduling (Timetable Logic) with 20 RMS-style reasoning questions in JSON format (medium → hardest):
+// Seating + Scheduling(Timetable Logic) 
 
 [
   {
@@ -8446,15 +8033,8 @@ Here’s Seating + Scheduling (Timetable Logic) with 20 RMS-style reasoning ques
 ]
 
 
-If you want, I can continue with the next reasoning topic — Logical Sequence of Words / Sentence Completion — in the same format.
 
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Logical Sequence of Words / Sentence Completion with 20 medium → hardest RMS-style reasoning questions in JSON format:
+//Logical Sequence of Words / Sentence Completion 
 
 [
   {
@@ -8700,16 +8280,8 @@ Here’s Logical Sequence of Words / Sentence Completion with 20 medium → hard
 ]
 
 
-If you want, I can continue with the next reasoning topic — Pattern Matrices / 2D Pattern Completion — next.
 
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Pattern Matrices / 2D Pattern Completion with 20 medium → hardest reasoning questions in the same JSON format:
-
+// Pattern Matrices / 2D Pattern 
 [
   {
     "question": "Find the missing figure in the 2×2 matrix: \n[A] ■ ○\n[B] ▲ ?",
@@ -8854,16 +8426,7 @@ Here’s Pattern Matrices / 2D Pattern Completion with 20 medium → hardest rea
 ]
 
 
-I can continue next with Binary / True-False Grids (Yes/No logic) for 20 questions in the same format.
-
-Do you want me to proceed?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Binary / True-False Grids (Yes/No logic) with 20 medium → hardest reasoning questions in the same JSON format:
-
+//Binary / True - False Grids(Yes / No logic)
 [
   {
     "question": "In a class of 5 students, A, B, C, D, E: Only A and C play football. B and D play chess. E plays both. Who plays neither?",
@@ -9001,16 +8564,7 @@ Here’s Binary / True-False Grids (Yes/No logic) with 20 medium → hardest rea
 ]
 
 
-I can next generate Logical Reasoning with Images (Figural) for 20 questions in the same JSON format.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Logical Reasoning with Images (Figural) — 20 medium → hardest reasoning questions in JSON format:
-
+//Logical Reasoning with Images(Figural)
 [
   {
     "question": "Which figure comes next in the series? ▲ ■ ▲ ■ ?",
@@ -9154,17 +8708,7 @@ Here’s Logical Reasoning with Images (Figural) — 20 medium → hardest reaso
   }
 ]
 
-
-I can next generate Lateral Thinking & Word Puzzles (Riddles, Wordplay) for 20 questions in the same JSON format.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Lateral Thinking & Word Puzzles — 20 medium → hardest questions in the JSON format:
-
+//Lateral Thinking & Word Puzzles
 [
   {
     "question": "I speak without a mouth and hear without ears. What am I?",
@@ -9302,16 +8846,7 @@ Here’s Lateral Thinking & Word Puzzles — 20 medium → hardest questions in 
 ]
 
 
-I can next create Cube & Dice Problems (20 questions) in the same format with medium → hardest difficulty.
-
-Do you want me to continue?
-
-You said:
-yes
-ChatGPT said:
-
-Here’s Cube & Dice Problems — 20 medium → hardest questions in the JSON format:
-
+//Cube & Dice Problems
 [
   {
     "question": "A dice is rolled. The number on the top face is 2. Which number will be on the bottom face?",
