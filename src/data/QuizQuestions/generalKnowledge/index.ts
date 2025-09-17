@@ -1,0 +1,7 @@
+export { indianHistory } from './indianHistory'
+export { indianGeography } from './indianGeography'
+export { currentAffairs } from './currentAffairs'
+export { importantDaysFestivals } from './importantDaysFestivals'
+export { indianConstitutionCivics } from './indianConstitutionCivics'
+export { scienceTechnologyGK } from './scienceTechnologyGK'
+export { miscellaneousGK } from './miscellaneousGK'

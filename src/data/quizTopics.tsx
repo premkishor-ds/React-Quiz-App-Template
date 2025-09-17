@@ -288,4 +288,118 @@ export const quizTopics: QuizTopic[] = [
     title: 'Lateral Thinking',
     icon: <Reasoning />
   },
+  
+  // Mathematics Topics
+  {
+    title: 'Number Systems',
+    icon: <Math />
+  },
+  {
+    title: 'Operations & Arithmetic',
+    icon: <Math />
+  },
+  {
+    title: 'Fractions & Decimals',
+    icon: <Math />
+  },
+  {
+    title: 'Ratio, Proportion & Percentage',
+    icon: <Math />
+  },
+  {
+    title: 'Algebra Basics',
+    icon: <Math />
+  },
+  {
+    title: 'Geometry',
+    icon: <Math />
+  },
+  {
+    title: 'Mensuration',
+    icon: <Math />
+  },
+  {
+    title: 'Time, Speed & Distance',
+    icon: <Math />
+  },
+  {
+    title: 'Work & Time',
+    icon: <Math />
+  },
+  {
+    title: 'Data Interpretation',
+    icon: <Math />
+  },
+  {
+    title: 'Profit & Loss / Simple Interest',
+    icon: <Math />
+  },
+  {
+    title: 'Number Puzzles & Logical Math',
+    icon: <Math />
+  },
+  
+  // English Topics
+  {
+    title: 'Grammar',
+    icon: <English />
+  },
+  {
+    title: 'Vocabulary',
+    icon: <English />
+  },
+  {
+    title: 'Comprehension',
+    icon: <English />
+  },
+  {
+    title: 'Sentence Completion & Correction',
+    icon: <English />
+  },
+  {
+    title: 'Figures of Speech',
+    icon: <English />
+  },
+  {
+    title: 'Spelling & Punctuation',
+    icon: <English />
+  },
+  {
+    title: 'Writing Skills',
+    icon: <English />
+  },
+  {
+    title: 'Analytical English',
+    icon: <English />
+  },
+  
+  // General Knowledge Topics
+  {
+    title: 'Indian History',
+    icon: <Gk />
+  },
+  {
+    title: 'Indian Geography',
+    icon: <Gk />
+  },
+  {
+    title: 'Current Affairs',
+    icon: <Gk />
+  },
+  {
+    title: 'Important Days & Festivals',
+    icon: <Gk />
+  },
+  {
+    title: 'Indian Constitution & Civics',
+    icon: <Gk />
+  },
+  {
+    title: 'Science & Technology GK',
+    icon: <Gk />
+  },
+  {
+    title: 'Miscellaneous GK',
+    icon: <Gk />
+  },
 ]

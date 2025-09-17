@@ -1,90 +1,30 @@
 import { english } from './english'
-import { english1 } from './english1'
-import { english2 } from './english2'
-import { english3 } from './english3'
-import { english4 } from './english4'
 import { generalKnowledge } from './generalKnowledge'
 import { math } from './math'
 import { reasoning } from './reasoning'
-import { set1 } from './set1'
-import { set2 } from './set2'
-import { set3 } from './set3'
-import { set4 } from './set4'
-import { set5 } from './set5'
-import { set6 } from './set6'
-import { set7 } from './set7'
-import { set8 } from './set8'
-import { set9 } from './set9'
-import { set10 } from './set10'
-import { englishSet1 } from './englishSet1'
-import { englishSet2 } from './englishSet2'
-import { englishSet3 } from './englishSet3'
-import { englishSet4 } from './englishSet4'
-import { englishSet5 } from './englishSet5'
-import { generalKnowledgeSet1 } from './generalKnowledgeSet1'
-import { generalKnowledgeSet2 } from './generalKnowledgeSet2'
-import { generalKnowledgeSet3 } from './generalKnowledgeSet3'
-import { generalKnowledgeSet4 } from './generalKnowledgeSet4'
-import { generalKnowledgeSet5 } from './generalKnowledgeSet5'
-import { gk1 } from './gk1'
-import { gk2 } from './gk2'
-import { gk3 } from './gk3'
-import { gk4 } from './gk4'
-import { mathSet1 } from './mathSet1'
-import { mathSet2 } from './mathSet2'
-import { mathSet3 } from './mathSet3'
-import { mathSet4 } from './mathSet4'
-import { mathSet5 } from './mathSet5'
-import { math1 } from './math1'
 import { mixed } from './mixed'
-import {reasoning1} from './reasoning1'
-import {reasoning2} from './reasoning2'
-import {reasoning3} from './reasoning3'
-import {reasoning4} from './reasoning4'
-import { reasoningSet1 } from './reasoningSet1'
-import { reasoningSet2 } from './reasoningSet2'
-import { reasoningSet3 } from './reasoningSet3'
-import { reasoningSet4 } from './reasoningSet4'
-import { reasoningSet5 } from './reasoningSet5'
-import {science1} from './science1'
-import {science2} from './science2'
-import {science3} from './science3'
-import {science4} from './science4'
-import { englishAdvanceSet1 } from './englishAdvanceSet1'
-import { generalKnowledgeAdvanceSet1 } from './generalKnowledgeAdvanceSet1'
-import { mathAdvanceSet1 } from './mathAdvanceSet1'
-import { reasoningAdvanceSet1 } from './reasoningAdvanceSet1'
-import { reasoningAdvanced } from './reasoningAdvanced'
-import { reasoning30Topics } from './reasoning30Topics'
-import { numberSeries } from './numberSeries'
-import { letterSeries } from './letterSeries'
-import { codingDecoding } from './codingDecoding'
-import { directionSense } from './directionSense'
-import { bloodRelations } from './bloodRelations'
-import { alphaNumericSeries } from './alphaNumericSeries'
-import { seatingArrangement } from './seatingArrangement'
-import { classification } from './classification'
-import { analogies } from './analogies'
-import { calendarsAndDates } from './calendarsAndDates'
-import { clocks } from './clocks'
-import { vennDiagrams } from './vennDiagrams'
-import { syllogisms } from './syllogisms'
-import { inequalities } from './inequalities'
-import { mirrorImages } from './mirrorImages'
-import { embeddedFigures } from './embeddedFigures'
-import { cubeAndDice } from './cubeAndDice'
-import { mathematicalReasoning } from './mathematicalReasoning'
-import { workAndTime } from './workAndTime'
-import { distanceSpeedTime } from './distanceSpeedTime'
-import { ratioAndProportion } from './ratioAndProportion'
-import { logicalSequence } from './logicalSequence'
-import { patternMatrices } from './patternMatrices'
-import { binaryLogic } from './binaryLogic'
-import { figuralSeries } from './figuralSeries'
-import { wordPuzzles } from './wordPuzzles'
-import { puzzlesLogicGrid } from './puzzlesLogicGrid'
-import { statementAssumption } from './statementAssumption'
-import { lateralThinking } from './lateralThinking'
+
+
+// Mathematics Topics
+import * as mathematicsTopics from './mathematics/index'
+
+// English Topics
+import * as englishTopics from './english/index'
+
+// General Knowledge Topics
+import * as gkTopics from './generalKnowledge/index'
+
+// Reasoning Topics
+import * as reasoningTopics from './reasoning/index'
+
+// Sets Topics
+import * as setsTopics from './sets/index'
+
+// Science Topics
+import * as scienceTopics from './science/index'
+
+// Advance Topics
+import * as advanceTopics from './advance/index'
 
 // Question Types
 // 1. MCQs | Multiple Choice | single
@@ -118,71 +58,120 @@ export const quiz: Record<string, Topic> = {
   'General Knowledge': generalKnowledge,
   Math: math,
   Reasoning: reasoning,
-  'Set 1': set1,
-  'Set 2': set2,
-  'Set 3': set3,
-  'Set 4': set4,
-  'Set 5': set5,
-  'Set 6': set6,
-  'Set 7': set7,
-  'Set 8': set8,
-  'Set 9': set9,
-  'Set 10': set10,
-  'English Set 1': englishSet1,
-  'English Set 2': englishSet2,
-  'English Set 3': englishSet3,
-  'English Set 4': englishSet4,
-  'English Set 5': englishSet5,
-  'General Knowledge Set 1': generalKnowledgeSet1,
-  'General Knowledge Set 2': generalKnowledgeSet2,
-  'General Knowledge Set 3': generalKnowledgeSet3,
-  'General Knowledge Set 4': generalKnowledgeSet4,
-  'General Knowledge Set 5': generalKnowledgeSet5,
-  'Math Set 1': mathSet1,
-  'Math Set 2': mathSet2,
-  'Math Set 3': mathSet3,
-  'Math Set 4': mathSet4,
-  'Math Set 5': mathSet5,
-  'Math 1': math1,
+  'Set 1': setsTopics.set1,
+  'Set 2': setsTopics.set2,
+  'Set 3': setsTopics.set3,
+  'Set 4': setsTopics.set4,
+  'Set 5': setsTopics.set5,
+  'Set 6': setsTopics.set6,
+  'Set 7': setsTopics.set7,
+  'Set 8': setsTopics.set8,
+  'Set 9': setsTopics.set9,
+  'Set 10': setsTopics.set10,
+  'English Set 1': setsTopics.englishSet1,
+  'English Set 2': setsTopics.englishSet2,
+  'English Set 3': setsTopics.englishSet3,
+  'English Set 4': setsTopics.englishSet4,
+  'English Set 5': setsTopics.englishSet5,
+  'General Knowledge Set 1': setsTopics.generalKnowledgeSet1,
+  'General Knowledge Set 2': setsTopics.generalKnowledgeSet2,
+  'General Knowledge Set 3': setsTopics.generalKnowledgeSet3,
+  'General Knowledge Set 4': setsTopics.generalKnowledgeSet4,
+  'General Knowledge Set 5': setsTopics.generalKnowledgeSet5,
+  'Math Set 1': setsTopics.mathSet1,
+  'Math Set 2': setsTopics.mathSet2,
+  'Math Set 3': setsTopics.mathSet3,
+  'Math Set 4': setsTopics.mathSet4,
+  'Math Set 5': setsTopics.mathSet5,
+  'Math 1': setsTopics.math1,
   'Mixed': mixed,
-  'Reasoning Set 1': reasoningSet1,
-  'Reasoning Set 2': reasoningSet2,
-  'Reasoning Set 3': reasoningSet3,
-  'Reasoning Set 4': reasoningSet4,
-  'Reasoning Set 5': reasoningSet5,
-  'English Advance Set 1': englishAdvanceSet1,
-  'General Knowledge Advance Set 1': generalKnowledgeAdvanceSet1,
-  'Math Advance Set 1': mathAdvanceSet1,
-  'Reasoning Advance Set 1': reasoningAdvanceSet1,
-  'Advanced Reasoning - RMS': reasoningAdvanced,
-  '30 Reasoning Topics - RMS': reasoning30Topics,
-  'Number Series': numberSeries,
-  'Letter Series': letterSeries,
-  'Coding Decoding': codingDecoding,
-  'Direction Sense': directionSense,
-  'Blood Relations': bloodRelations,
-  'Alpha-Numeric Series': alphaNumericSeries,
-  'Seating Arrangement': seatingArrangement,
-  'Classification': classification,
-  'Analogies': analogies,
-  'Calendars and Dates': calendarsAndDates,
-  'Clocks': clocks,
-  'Venn Diagrams': vennDiagrams,
-  'Syllogisms': syllogisms,
-  'Inequalities': inequalities,
-  'Mirror Images': mirrorImages,
-  'Embedded Figures': embeddedFigures,
-  'Cube and Dice': cubeAndDice,
-  'Mathematical Reasoning': mathematicalReasoning,
-  'Work and Time': workAndTime,
-  'Distance Speed Time': distanceSpeedTime,
-  'Ratio and Proportion': ratioAndProportion,
-  'Logical Sequence': logicalSequence,
-  'Pattern Matrices': patternMatrices,
-  'Binary Logic': binaryLogic,
-  'Figural Series': figuralSeries,
-  'Word Puzzles': wordPuzzles,
-  'Puzzles Logic Grid': puzzlesLogicGrid,
-  'Statement Assumption': statementAssumption,
-  'Lateral Thinking': lateralThinking,
+  'Reasoning Set 1': setsTopics.reasoningSet1,
+  'Reasoning Set 2': setsTopics.reasoningSet2,
+  'Reasoning Set 3': setsTopics.reasoningSet3,
+  'Reasoning Set 4': setsTopics.reasoningSet4,
+  'Reasoning Set 5': setsTopics.reasoningSet5,
+  'English Advance Set 1': advanceTopics.englishAdvanceSet1,
+  'General Knowledge Advance Set 1': advanceTopics.generalKnowledgeAdvanceSet1,
+  'Math Advance Set 1': advanceTopics.mathAdvanceSet1,
+  'Reasoning Advance Set 1': advanceTopics.reasoningAdvanceSet1,
+  'Advanced Reasoning - RMS': advanceTopics.reasoningAdvanced,
+  '30 Reasoning Topics - RMS': advanceTopics.reasoning30Topics,
+  'English 1': setsTopics.english1,
+  'English 2': setsTopics.english2,
+  'English 3': setsTopics.english3,
+  'English 4': setsTopics.english4,
+  'GK 1': setsTopics.gk1,
+  'GK 2': setsTopics.gk2,
+  'GK 3': setsTopics.gk3,
+  'GK 4': setsTopics.gk4,
+  'Reasoning 1': setsTopics.reasoning1,
+  'Reasoning 2': setsTopics.reasoning2,
+  'Reasoning 3': setsTopics.reasoning3,
+  'Reasoning 4': setsTopics.reasoning4,
+  'Science 1': scienceTopics.science1,
+  'Science 2': scienceTopics.science2,
+  'Science 3': scienceTopics.science3,
+  'Science 4': scienceTopics.science4,
+  'Number Series': reasoningTopics.numberSeries,
+  'Letter Series': reasoningTopics.letterSeries,
+  'Coding Decoding': reasoningTopics.codingDecoding,
+  'Direction Sense': reasoningTopics.directionSense,
+  'Blood Relations': reasoningTopics.bloodRelations,
+  'Alpha-Numeric Series': reasoningTopics.alphaNumericSeries,
+  'Seating Arrangement': reasoningTopics.seatingArrangement,
+  'Classification': reasoningTopics.classification,
+  'Analogies': reasoningTopics.analogies,
+  'Calendars and Dates': reasoningTopics.calendarsAndDates,
+  'Clocks': reasoningTopics.clocks,
+  'Venn Diagrams': reasoningTopics.vennDiagrams,
+  'Syllogisms': reasoningTopics.syllogisms,
+  'Inequalities': reasoningTopics.inequalities,
+  'Mirror Images': reasoningTopics.mirrorImages,
+  'Embedded Figures': reasoningTopics.embeddedFigures,
+  'Cube and Dice': reasoningTopics.cubeAndDice,
+  'Mathematical Reasoning': reasoningTopics.mathematicalReasoning,
+  'Work and Time': reasoningTopics.workAndTime,
+  'Distance Speed Time': reasoningTopics.distanceSpeedTime,
+  'Ratio and Proportion': reasoningTopics.ratioAndProportion,
+  'Logical Sequence': reasoningTopics.logicalSequence,
+  'Pattern Matrices': reasoningTopics.patternMatrices,
+  'Binary Logic': reasoningTopics.binaryLogic,
+  'Figural Series': reasoningTopics.figuralSeries,
+  'Word Puzzles': reasoningTopics.wordPuzzles,
+  'Puzzles Logic Grid': reasoningTopics.puzzlesLogicGrid,
+  'Statement Assumption': reasoningTopics.statementAssumption,
+  'Lateral Thinking': reasoningTopics.lateralThinking,
+  
+  // Mathematics Topics
+  'Number Systems': mathematicsTopics.numberSystems,
+  'Operations & Arithmetic': mathematicsTopics.operationsArithmetic,
+  'Fractions & Decimals': mathematicsTopics.fractionsDecimals,
+  'Ratio, Proportion & Percentage': mathematicsTopics.ratioProportionPercentage,
+  'Algebra Basics': mathematicsTopics.algebraBasics,
+  'Geometry': mathematicsTopics.geometry,
+  'Mensuration': mathematicsTopics.mensuration,
+  'Time, Speed & Distance': mathematicsTopics.timeSpeedDistance,
+  'Work & Time': mathematicsTopics.workTime,
+  'Data Interpretation': mathematicsTopics.dataInterpretation,
+  'Profit & Loss / Simple Interest': mathematicsTopics.profitLossSimpleInterest,
+  'Number Puzzles & Logical Math': mathematicsTopics.numberPuzzlesLogicalMath,
+  
+  // English Topics
+  'Grammar': englishTopics.grammar,
+  'Vocabulary': englishTopics.vocabulary,
+  'Comprehension': englishTopics.comprehension,
+  'Sentence Completion & Correction': englishTopics.sentenceCompletionCorrection,
+  'Figures of Speech': englishTopics.figuresOfSpeech,
+  'Spelling & Punctuation': englishTopics.spellingPunctuation,
+  'Writing Skills': englishTopics.writingSkills,
+  'Analytical English': englishTopics.analyticalEnglish,
+  
+  // General Knowledge Topics
+  'Indian History': gkTopics.indianHistory,
+  'Indian Geography': gkTopics.indianGeography,
+  'Current Affairs': gkTopics.currentAffairs,
+  'Important Days & Festivals': gkTopics.importantDaysFestivals,
+  'Indian Constitution & Civics': gkTopics.indianConstitutionCivics,
+  'Science & Technology GK': gkTopics.scienceTechnologyGK,
+  'Miscellaneous GK': gkTopics.miscellaneousGK,
 }
