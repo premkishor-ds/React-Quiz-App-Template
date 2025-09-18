@@ -1,0 +1,438 @@
+{
+  "info": {
+    "name": "Quiz Results API",
+    "description": "Complete collection for testing the Quiz Results API with MongoDB Atlas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    },
+    {
+      "key": "resultId",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/",
+          "host": ["{{baseUrl}}"],
+          "path": [""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Quiz Result - JavaScript Basic",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "    const response = pm.response.json();",
+              "    pm.collectionVariables.set('resultId', response.data._id);",
+              "    pm.test('Quiz result created successfully', function () {",
+              "        pm.expect(response.message).to.eql('Quiz result created successfully');",
+              "    });",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_name\": \"john_doe\",\n  \"subject\": \"JavaScript\",\n  \"topic\": \"Arrays\",\n  \"set\": \"Basic\",\n  \"score\": 85,\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What method adds an element to the end of an array?\",\n      \"type\": \"MCQs\",\n      \"choices\": [\"push()\", \"pop()\", \"shift()\", \"unshift()\"],\n      \"correctAnswers\": [\"push()\"],\n      \"score\": 10,\n      \"code\": \"const arr = [1, 2, 3];\\narr.push(4);\",\n      \"image\": null\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Which methods can remove elements from an array?\",\n      \"type\": \"MAQs\",\n      \"choices\": [\"pop()\", \"shift()\", \"slice()\", \"splice()\"],\n      \"correctAnswers\": [\"pop()\", \"shift()\", \"splice()\"],\n      \"score\": 15,\n      \"code\": null,\n      \"image\": null\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Arrays in JavaScript are zero-indexed\",\n      \"type\": \"boolean\",\n      \"choices\": [\"True\", \"False\"],\n      \"correctAnswers\": [\"True\"],\n      \"score\": 5,\n      \"code\": null,\n      \"image\": null\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/results",
+          "host": ["{{baseUrl}}"],
+          "path": ["results"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Quiz Result - Python Advanced",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_name\": \"jane_smith\",\n  \"subject\": \"Python\",\n  \"topic\": \"Object-Oriented Programming\",\n  \"set\": \"Advanced\",\n  \"score\": 92,\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is inheritance in Python?\",\n      \"type\": \"MCQs\",\n      \"choices\": [\"A way to create new classes based on existing classes\", \"A method to copy objects\", \"A type of variable\", \"A loop structure\"],\n      \"correctAnswers\": [\"A way to create new classes based on existing classes\"],\n      \"score\": 20,\n      \"code\": \"class Animal:\\n    def speak(self):\\n        pass\\n\\nclass Dog(Animal):\\n    def speak(self):\\n        return 'Woof!'\",\n      \"image\": null\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Python supports multiple inheritance\",\n      \"type\": \"boolean\",\n      \"choices\": [\"True\", \"False\"],\n      \"correctAnswers\": [\"True\"],\n      \"score\": 10,\n      \"code\": null,\n      \"image\": null\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/results",
+          "host": ["{{baseUrl}}"],
+          "path": ["results"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Quiz Results",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/results",
+          "host": ["{{baseUrl}}"],
+          "path": ["results"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Results - Filter by Subject",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/results?subject=JavaScript",
+          "host": ["{{baseUrl}}"],
+          "path": ["results"],
+          "query": [
+            {
+              "key": "subject",
+              "value": "JavaScript"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Results - Filter by User",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/results?user_name=john_doe",
+          "host": ["{{baseUrl}}"],
+          "path": ["results"],
+          "query": [
+            {
+              "key": "user_name",
+              "value": "john_doe"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Results - Search by Username",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/results?search=john",
+          "host": ["{{baseUrl}}"],
+          "path": ["results"],
+          "query": [
+            {
+              "key": "search",
+              "value": "john"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Results - Sort by Score (Desc)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/results?sortBy=score&sortOrder=desc",
+          "host": ["{{baseUrl}}"],
+          "path": ["results"],
+          "query": [
+            {
+              "key": "sortBy",
+              "value": "score"
+            },
+            {
+              "key": "sortOrder",
+              "value": "desc"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Results - Pagination",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/results?page=1&limit=5",
+          "host": ["{{baseUrl}}"],
+          "path": ["results"],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Results - Complex Filter",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/results?subject=JavaScript&topic=Arrays&sortBy=score&sortOrder=desc&limit=10",
+          "host": ["{{baseUrl}}"],
+          "path": ["results"],
+          "query": [
+            {
+              "key": "subject",
+              "value": "JavaScript"
+            },
+            {
+              "key": "topic",
+              "value": "Arrays"
+            },
+            {
+              "key": "sortBy",
+              "value": "score"
+            },
+            {
+              "key": "sortOrder",
+              "value": "desc"
+            },
+            {
+              "key": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single Quiz Result",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/results/{{resultId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["results", "{{resultId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Quiz Result - Score Only",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"score\": 95\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/results/{{resultId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["results", "{{resultId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Quiz Result - Full Update",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_name\": \"john_doe_updated\",\n  \"subject\": \"JavaScript\",\n  \"topic\": \"Advanced Arrays\",\n  \"set\": \"Intermediate\",\n  \"score\": 98,\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What method adds an element to the end of an array?\",\n      \"type\": \"MCQs\",\n      \"choices\": [\"push()\", \"pop()\", \"shift()\", \"unshift()\"],\n      \"correctAnswers\": [\"push()\"],\n      \"score\": 10,\n      \"code\": \"const arr = [1, 2, 3];\\narr.push(4);\",\n      \"image\": null\n    },\n    {\n      \"id\": 2,\n      \"question\": \"Which methods can remove elements from an array?\",\n      \"type\": \"MAQs\",\n      \"choices\": [\"pop()\", \"shift()\", \"slice()\", \"splice()\"],\n      \"correctAnswers\": [\"pop()\", \"shift()\", \"splice()\"],\n      \"score\": 15,\n      \"code\": null,\n      \"image\": null\n    },\n    {\n      \"id\": 3,\n      \"question\": \"Arrays in JavaScript are zero-indexed\",\n      \"type\": \"boolean\",\n      \"choices\": [\"True\", \"False\"],\n      \"correctAnswers\": [\"True\"],\n      \"score\": 5,\n      \"code\": null,\n      \"image\": null\n    },\n    {\n      \"id\": 4,\n      \"question\": \"What does the map() method return?\",\n      \"type\": \"MCQs\",\n      \"choices\": [\"A new array\", \"The original array\", \"A string\", \"A number\"],\n      \"correctAnswers\": [\"A new array\"],\n      \"score\": 12,\n      \"code\": \"const numbers = [1, 2, 3];\\nconst doubled = numbers.map(x => x * 2);\",\n      \"image\": null\n    }\n  ]\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/results/{{resultId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["results", "{{resultId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Quiz Result",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/results/{{resultId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["results", "{{resultId}}"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Error Cases",
+      "item": [
+        {
+          "name": "Create Quiz Result - Missing Fields",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"user_name\": \"test_user\",\n  \"subject\": \"Math\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/results",
+              "host": ["{{baseUrl}}"],
+              "path": ["results"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Quiz Result - Invalid Question Type",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"user_name\": \"test_user\",\n  \"subject\": \"Math\",\n  \"topic\": \"Algebra\",\n  \"set\": \"Basic\",\n  \"score\": 50,\n  \"questions\": [\n    {\n      \"id\": 1,\n      \"question\": \"What is 2+2?\",\n      \"type\": \"invalid_type\",\n      \"choices\": [\"3\", \"4\", \"5\"],\n      \"correctAnswers\": [\"4\"],\n      \"score\": 10\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/results",
+              "host": ["{{baseUrl}}"],
+              "path": ["results"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Quiz Result - Invalid ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/results/invalid_id",
+              "host": ["{{baseUrl}}"],
+              "path": ["results", "invalid_id"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Quiz Result - Not Found",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/results/507f1f77bcf86cd799439011",
+              "host": ["{{baseUrl}}"],
+              "path": ["results", "507f1f77bcf86cd799439011"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Quiz Result - Invalid ID",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"score\": 100\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/results/invalid_id",
+              "host": ["{{baseUrl}}"],
+              "path": ["results", "invalid_id"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Quiz Result - Invalid ID",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/results/invalid_id",
+              "host": ["{{baseUrl}}"],
+              "path": ["results", "invalid_id"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Invalid Route - 404",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/invalid-route",
+              "host": ["{{baseUrl}}"],
+              "path": ["invalid-route"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
