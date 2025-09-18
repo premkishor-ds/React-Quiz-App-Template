@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '../../QuizQuestions'
 
 export const mathAdvanceSet1: Topic = {
   topic: 'Mathematics',
