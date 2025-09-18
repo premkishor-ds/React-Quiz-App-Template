@@ -171,8 +171,6 @@ export const numberSeriesQuestions: Topic = {
   ]
 }
 
-
-
 // Verbal Reasoning
 export const verbalReasoningQuestions: Topic = {
   topic: 'Mathematics',
@@ -328,9 +326,9 @@ export const verbalReasoningQuestions: Topic = {
 export const nonVerbalReasoningQuestions: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
-  totalQuestions: 20, // since you listed 20 questions
-  totalScore: 200,    // 20 * 10
-  totalTime: 1200,    // e.g. 20 mins
+  totalQuestions: 20, 
+  totalScore: 200,    
+  totalTime: 1200,    
   questions: [
     {
       question: 'Find the odd one out: △, ◻, ⚫, A',
@@ -777,9 +775,7 @@ export const analyticalReasoningQuestions: Topic = {
   ]
 }
 
-
 // 20 Critical Reasoning 
-
 export const criticalReasoningQuestions: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
@@ -930,9 +926,7 @@ export const criticalReasoningQuestions: Topic = {
   ]
 }
 
-
 //Coding–Decoding.
-
 export const codingDecodingQuestions: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
@@ -1082,7 +1076,6 @@ export const codingDecodingQuestions: Topic = {
     }
   ]
 }
-
 
 //Direction Sense
 export const directionSenseQuestions: Topic = {
@@ -1386,7 +1379,6 @@ export const bloodRelationsQuestions: Topic = {
   ]
 }
 
-
 //Coding - Decoding
 export const codingDecoding: Topic = {
   topic: "Coding-Decoding",
@@ -1537,7 +1529,6 @@ export const codingDecoding: Topic = {
     }
   ]
 }
-
 
 // Blood Relations
 export const bloodRelationsSet: Topic = {
@@ -1841,7 +1832,6 @@ export const directionSenseSet: Topic = {
   ]
 }
 
-
 //Classification / Odd One Out
 export const classificationSet: Topic = {
   topic: "Classification / Odd One Out",
@@ -1993,9 +1983,6 @@ export const classificationSet: Topic = {
   ]
 }
 
-
-
-
 // Puzzles & Brain Teasers 
 export const puzzlesBrainTeasersQuestions: Topic = {
   topic: 'Mathematics',
@@ -2146,7 +2133,6 @@ export const puzzlesBrainTeasersQuestions: Topic = {
     }
   ]
 }
-
 
 // Seating Arrangement
 export const seatingArrangementQuestions: Topic = {
@@ -2303,9 +2289,9 @@ export const seatingArrangementQuestions: Topic = {
 export const directionsBloodRelationsQuestions: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
-  totalQuestions: 20, // since you listed 20 questions
-  totalScore: 200,    // 20 * 10
-  totalTime: 1200,    // e.g. 20 mins
+  totalQuestions: 20,
+  totalScore: 200,
+  totalTime: 1200,
   questions: [
     {
       "question": "Point A is to the east of Point B. Point C is to the north of Point B. In which direction is Point C from Point A?",
@@ -2449,9 +2435,6 @@ export const directionsBloodRelationsQuestions: Topic = {
     }
   ]
 }
-
-
-
 
 //Odd One Out & Classification
 export const oddOneOutClassificationQuestions: Topic = {
@@ -2605,7 +2588,6 @@ export const oddOneOutClassificationQuestions: Topic = {
   ]
 }
 
-
 //Coding - Decoding
 export const codingDecodingQuestions2: Topic = {
   topic: 'Mathematics',
@@ -2749,7 +2731,6 @@ export const codingDecodingQuestions2: Topic = {
     }
   ]
 }
-
 
 //Pattern Recognition & Series Completion
 export const patternRecognitionSeriesQuestions: Topic = {
@@ -2902,7 +2883,6 @@ export const patternRecognitionSeriesQuestions: Topic = {
   ]
 }
 
-
 //Puzzles & Brain Teasers
 export const puzzlesBrainTeasersQuestions2: Topic = {
   topic: 'Mathematics',
@@ -3047,10 +3027,8 @@ export const puzzlesBrainTeasersQuestions2: Topic = {
   ]
 }
 
-
 //Direction Sense & Blood Relations
-
-export const puzzlesBrainTeasersQqq: Topic = {
+export const DirectionSenseBloodRelations: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -3193,10 +3171,8 @@ export const puzzlesBrainTeasersQqq: Topic = {
   ]
 }
 
-
 //Classification & Odd One Out
-
-export const puzzlesBrainTeasersQw: Topic = {
+export const ClassificationOddOneOut: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -3346,10 +3322,8 @@ export const puzzlesBrainTeasersQw: Topic = {
   ]
 }
 
-
 //Coding - Decoding Problems
-
-export const puzzlesBrainTeasdfewqf: Topic = {
+export const CodingDecoding: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -3492,10 +3466,8 @@ export const puzzlesBrainTeasdfewqf: Topic = {
   ]
 }
 
-
 //Pattern Recognition & Series Completion
-
-export const puzzlesBrainTeaserwew2: Topic = {
+export const PatternRecognitionSeriesCompletion: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -3645,10 +3617,8 @@ export const puzzlesBrainTeaserwew2: Topic = {
   ]
 }
 
-
 //Direction Sense & Blood Relations
-
-export const puzzlesBrainTeasedw: Topic = {
+export const DirectionSenseBloodRelations2: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -3791,10 +3761,8 @@ export const puzzlesBrainTeasedw: Topic = {
   ]
 }
 
-
 //Classification & Odd One Out
-
-export const classification: Topic = {
+export const ClassificationOddOneOut2: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -3944,10 +3912,8 @@ export const classification: Topic = {
   ]
 }
 
-
 //Coding - Decoding Problems
-
-export const coding: Topic = {
+export const CodingDecoding2: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -4090,10 +4056,8 @@ export const coding: Topic = {
   ]
 }
 
-
 //Pattern Recognition & Series Completion
-
-export const pattern: Topic = {
+export const PatternRecognitionSeriesCompletion2: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -4243,10 +4207,8 @@ export const pattern: Topic = {
   ]
 }
 
-
 //Letter Series / Alphabetical Patterns
-
-export const hgnfdgbf: Topic = {
+export const LetterSeriesAlphabeticalPatterns: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -4396,10 +4358,8 @@ export const hgnfdgbf: Topic = {
   ]
 }
 
-
 //Alpha - Numeric / Alphanumeric Series
-
-export const hgmghjng: Topic = {
+export const AlphaNumericAlphanumeric: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -4549,10 +4509,8 @@ export const hgmghjng: Topic = {
   ]
 }
 
-
 //Coding — Decoding(Verbal)
-
-export const gfjnfgdf: Topic = {
+export const CodingDecoding3: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -4702,10 +4660,8 @@ export const gfjnfgdf: Topic = {
   ]
 }
 
-
 //Coding — Decoding(Numeric)
-
-export const hrthrtf: Topic = {
+export const CodingDecoding4: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -4848,10 +4804,8 @@ export const hrthrtf: Topic = {
   ]
 }
 
-
 // Direction Sense / Orientation questions
-
-export const htrhrt: Topic = {
+export const DirectionSenseOrientationquestions: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -5001,10 +4955,8 @@ export const htrhrt: Topic = {
   ]
 }
 
-
 // Blood Relations 
-
-export const ghndsd: Topic = {
+export const BloodRelations: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -5154,10 +5106,8 @@ export const ghndsd: Topic = {
   ]
 }
 
-
 // Seating Arrangements(Linear & Circular) 
-
-export const gdmjnxdss: Topic = {
+export const SeatingArrangements: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -5307,10 +5257,8 @@ export const gdmjnxdss: Topic = {
   ]
 }
 
-
 // Puzzles / Logical Grid Puzzles 
-
-export const dbgvfds: Topic = {
+export const PuzzlesLogicalGridPuzzles : Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -5460,10 +5408,8 @@ export const dbgvfds: Topic = {
   ]
 }
 
-
 // Classification / Odd One Out 
-
-export const dsfgbsbgs: Topic = {
+export const OddOneOut: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -5614,9 +5560,8 @@ export const dsfgbsbgs: Topic = {
   ]
 }
 
-
 // Analogies(Verbal & Figural)
-export const mdfdf: Topic = {
+export const Analogies: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -5766,10 +5711,8 @@ export const mdfdf: Topic = {
   ]
 }
 
-
 //Calendars & Dates 
-
-export const dddfdvgd: Topic = {
+export const Calendars: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -5920,8 +5863,7 @@ export const dddfdvgd: Topic = {
 }
 
 // Clocks(Time Reasoning) 
-
-export const jmfghfd: Topic = {
+export const Clocks: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -6064,10 +6006,8 @@ export const jmfghfd: Topic = {
   ]
 }
 
-
 //Venn Diagrams / Set Logic
-
-export const sdfghndg: Topic = {
+export const Venn: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -6210,9 +6150,8 @@ export const sdfghndg: Topic = {
   ]
 }
 
-
 // Syllogisms / Logical Deduction/
-export const gdfgbdfg: Topic = {
+export const Syllogisms: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -6355,11 +6294,8 @@ export const gdfgbdfg: Topic = {
   ]
 }
 
-
-
 // Statement – Assumption / Argument / Conclusion
-
-export const fdaszgvbsd: Topic = {
+export const Statement: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -6597,10 +6533,8 @@ export const fdaszgvbsd: Topic = {
   ]
 }
 
-
 //Inequalities & Directional Comparisons
-
-export const dvfgnbd: Topic = {
+export const InequalitiesDirectionalComparisons: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -6743,9 +6677,8 @@ export const dvfgnbd: Topic = {
   ]
 }
 
-
 // Mirror & Water Image 
-export const gdsfgsd: Topic = {
+export const MirrorWater: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -6895,9 +6828,8 @@ export const gdsfgsd: Topic = {
   ]
 }
 
-
 //Embedded Figures / Figure Folding & Pattern 
-export const gdsgsgvsd: Topic = {
+export const EmbeddedFigures: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -7048,8 +6980,7 @@ export const gdsgsgvsd: Topic = {
 }
 
 // Cube & Dice Problems reasoning
-
-export const fghgjnfg: Topic = {
+export const CubeDice: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -7192,9 +7123,8 @@ export const fghgjnfg: Topic = {
   ]
 }
 
-
 // Mathematical Reasoning / Number Puzzles
-export const hgjmdbhgf: Topic = {
+export const MathematicalReasoning: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -7344,9 +7274,8 @@ export const hgjmdbhgf: Topic = {
   ]
 }
 
-
 // Work & Time(Basic Logical Approach)
-export const hjgfdhh: Topic = {
+export const WorkTime: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -7489,9 +7418,8 @@ export const hjgfdhh: Topic = {
   ]
 }
 
-
 // Distance, Speed & Time(Logic - based) 
-export const gfehthrt: Topic = {
+export const DistanceSpeedTime: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -7634,10 +7562,8 @@ export const gfehthrt: Topic = {
   ]
 }
 
-
-
 // Ratio & Proportion(Reasoning)
-export const u76ui5: Topic = {
+export const RatioProportion: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -7788,8 +7714,7 @@ export const u76ui5: Topic = {
 }
 
 // Seating + Scheduling(Timetable Logic) 
-
-export const uui57: Topic = {
+export const SeatingScheduling: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -7939,11 +7864,8 @@ export const uui57: Topic = {
   ]
 }
 
-
-
 //Logical Sequence of Words / Sentence Completion 
-
-export const uy56u56: Topic = {
+export const LogicalSequenceWords: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -8193,10 +8115,8 @@ export const uy56u56: Topic = {
   ]
 }
 
-
-
 // Pattern Matrices / 2D Pattern 
-export const y65uy4: Topic = {
+export const Matrices: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -8346,7 +8266,6 @@ export const y65uy4: Topic = {
   ]
 }
 
-
 //Binary / True - False Grids(Yes / No logic)
 export const binary: Topic = {
   topic: 'Mathematics',
@@ -8491,9 +8410,8 @@ export const binary: Topic = {
   ]
 }
 
-
 //Logical Reasoning with Images(Figural)
-export const fdhg: Topic = {
+export const LogicalReasoningImages: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -8644,7 +8562,7 @@ export const fdhg: Topic = {
 }
 
 //Lateral Thinking & Word Puzzles
-export const fhjnfgjgf: Topic = {
+export const LateralThinkingWordPuzzles: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
@@ -8787,9 +8705,8 @@ export const fhjnfgjgf: Topic = {
   ]
 }
 
-
 //Cube & Dice Problems
-export const sfdfdhdghdf: Topic = {
+export const CubeDiceProblems: Topic = {
   topic: 'Mathematics',
   level: 'Advanced',
   totalQuestions: 20, // since you listed 20 questions
