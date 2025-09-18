@@ -13,7 +13,7 @@ const QuizDetailsScreen = () => {
   const { selectedQuizTopic, totalQuestions, totalScore, totalTime } = quizDetails
 
   const goToQuestionScreen = () => {
-    setCurrentScreen(ScreenTypes.QuizPage)
+    setCurrentScreen(ScreenTypes.QuestionScreen)
   }
 
   return (
@@ -41,26 +41,13 @@ const QuizDetailsScreen = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 justify-center">
-          <Button
-            text="← Home"
-            onClick={() => setCurrentScreen(ScreenTypes.QuizTopicsScreen)}
-            className="w-full sm:w-auto lg:px-6 lg:py-3"
-          />
-          <Button
-            text="View History"
-            onClick={() => setCurrentScreen(ScreenTypes.HistoryScreen)}
-            className="w-full sm:w-auto lg:px-6 lg:py-3"
-          />
-          <Button
-            text="Start Quiz"
-            icon={<StartIcon />}
-            iconPosition="left"
-            onClick={goToQuestionScreen}
-            bold
-            className="w-full sm:w-auto lg:px-8 lg:py-3 lg:text-lg"
-          />
-        </div>
+        <Button
+          text="Start"
+          icon={<StartIcon />}
+          iconPosition="left"
+          onClick={goToQuestionScreen}
+          bold
+        />
       </CenterCardContainer>
     </PageCenter>
   )

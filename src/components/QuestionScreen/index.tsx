@@ -102,34 +102,8 @@ const QuestionScreen: FC = () => {
     setUserAnswers(updatedAnswers)
   }
 
-  const handleModal = async () => {
-    // Save quiz result to API
-    try {
-      const { useQuizHistory } = await import('../../hooks/useQuizHistory')
-      const { saveResult } = useQuizHistory()
-      
-      await saveResult({
-        user_name: 'Anonymous', // You can add user management later
-        subject: quizDetails.selectedQuizTopic.split(' ')[0] || 'General',
-        topic: quizDetails.selectedQuizTopic,
-        set: 'Default',
-        score: result.reduce((acc, curr) => acc + (curr.isMatch ? curr.score : 0), 0),
-        questions: result.map((r, index) => ({
-          id: index + 1,
-          question: r.question,
-          type: r.type,
-          choices: r.choices,
-          correctAnswers: r.correctAnswers,
-          score: r.score,
-          code: r.code,
-          image: r.image
-        }))
-      })
-    } catch (error) {
-      console.error('Failed to save quiz result:', error)
-    }
-    
-    setCurrentScreen(ScreenTypes.ResultPage)
+  const handleModal = () => {
+    setCurrentScreen(ScreenTypes.ResultScreen)
     document.body.style.overflow = 'auto'
   }
 
@@ -157,7 +131,7 @@ const QuestionScreen: FC = () => {
         />
 
         {/* Jump Navigation */}
-        <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 justify-center md:justify-start max-h-20 sm:max-h-none overflow-y-auto">
+        <div className="flex flex-wrap gap-2 mb-4 justify-center md:justify-start">
           {questions.map((_, index) => {
             const isActive = activeQuestion === index
             const isAnswered = userAnswers[index] && userAnswers[index].length > 0
@@ -169,7 +143,7 @@ const QuestionScreen: FC = () => {
                   setActiveQuestion(index)
                   setSelectedAnswer(userAnswers[index] || [])
                 }}
-                className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full border text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                className={`w-8 h-8 rounded-full border text-sm font-semibold transition-all duration-200 ${
                   isActive
                     ? 'bg-blue-600 text-white'
                     : isAnswered
@@ -193,13 +167,12 @@ const QuestionScreen: FC = () => {
           selectedAnswer={selectedAnswer}
         />
 
-        <div className="absolute right-2 sm:right-4 bottom-4 sm:bottom-8 flex w-[90%] sm:w-[85%] justify-end gap-2 sm:gap-5 md:right-15 md:w-auto md:justify-normal">
+        <div className="absolute right-4 bottom-8 flex w-[90%] justify-end gap-5 md:right-15 md:w-auto md:justify-normal">
           {activeQuestion > 0 && (
             <Button
               text="Previous"
               onClick={onClickPrevious}
               iconPosition="left"
-              className="text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-2"
             />
           )}
           <Button
@@ -208,7 +181,6 @@ const QuestionScreen: FC = () => {
             icon={<Next />}
             iconPosition="right"
             disabled={selectedAnswer.length === 0}
-            className="text-xs sm:text-sm px-2 py-1 sm:px-3 sm:py-2"
           />
         </div>
       </div>
