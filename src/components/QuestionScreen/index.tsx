@@ -33,6 +33,59 @@ const QuestionScreen: FC = () => {
 
   const unansweredCount = questions.length - userAnswers.filter((ans) => ans?.length > 0).length
 
+  // 🔹 Calculate total score
+  const calculateScore = (results: any[]) => {
+    return results.reduce((acc, curr) => {
+      return curr.isMatch ? acc + (curr.score || 0) : acc
+    }, 0)
+  }
+
+  // 🔹 API call to submit result
+const submitResult = async (finalResult: any[]) => {
+  try {
+    const payload = {
+      user_name: "ergert",
+      subject: "trhty",
+      topic: "trhr",
+      set: "gfre",
+      score: calculateScore(finalResult),
+      questions: finalResult.map((q, index) => ({
+        id: q.id || index + 1,
+        question: q.question,
+        type: q.type,
+        choices: q.choices,
+        correctAnswers: q.correctAnswers,
+        score: q.score,
+        code: q.code || null,
+        image: q.image || null,
+        selectedAnswer: q.selectedAnswer || [],
+        isMatch: q.isMatch,
+      })),
+    }
+
+    console.log("🚀 Sending payload:", payload)
+
+    const response = await fetch(`http://localhost:3001/results`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+
+    if (!response.ok) {
+      const errorText = await response.text()
+      throw new Error(`Failed to submit result: ${response.status} ${errorText}`)
+    }
+
+    const data = await response.json()
+    console.log("✅ Result submitted successfully:", data)
+  } catch (err) {
+    console.error("❌ Error submitting result:", err)
+  }
+}
+
+
   const onClickNext = () => {
     if (activeQuestion === questions.length - 1) {
       setShowFinishConfirm(true)
@@ -54,7 +107,7 @@ const QuestionScreen: FC = () => {
     setSelectedAnswer(updatedAnswers[activeQuestion + 1] || [])
   }
 
-  const confirmFinishQuiz = () => {
+  const confirmFinishQuiz = async () => {
     const isMatch =
       selectedAnswer.length === correctAnswers.length &&
       selectedAnswer.every((answer) => correctAnswers.includes(answer))
@@ -68,6 +121,10 @@ const QuestionScreen: FC = () => {
 
     const timeTaken = quizDetails.totalTime - timer
     setEndTime(timeTaken)
+
+    // 🔹 Call API when quiz finishes
+    await submitResult(updatedResult)
+
     setShowResultModal(true)
     setShowFinishConfirm(false)
   }
