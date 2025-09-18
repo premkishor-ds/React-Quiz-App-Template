@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const generalKnowledgeSet4: Topic = {
     topic: 'General Knowledge',

@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const ratioAndProportion: Topic = {
     topic: 'Ratio and Proportion',

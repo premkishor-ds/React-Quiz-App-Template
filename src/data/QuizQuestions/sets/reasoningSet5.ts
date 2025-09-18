@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 import pattern1 from '../../../assets/images/reasoning/pattern1.svg'
 import mirrorImage from '../../../assets/images/reasoning/mirror-image.svg'
 import countingShapes from '../../../assets/images/reasoning/counting-shapes.svg'

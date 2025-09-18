@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const logicalSequence: Topic = {
     topic: 'Logical Sequence',

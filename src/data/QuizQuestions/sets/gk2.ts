@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const gk2: Topic = {
   topic: 'Current Affairs, Sports, Important Days & Festivals',

@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const mathSet1: Topic = {
     topic: 'RMS Class 6 Mathematics',

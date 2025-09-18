@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 const gk4: Topic = {
 	topic: 'General Knowledge Quiz',

@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const distanceSpeedTime: Topic = {
     topic: 'Distance Speed Time',

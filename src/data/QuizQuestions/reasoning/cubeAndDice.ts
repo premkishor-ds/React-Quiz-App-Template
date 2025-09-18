@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const cubeAndDice: Topic = {
     topic: 'Cube and Dice',

@@ -3,7 +3,7 @@
 // 2. boolean | true/false | single
 // 3. MAQs | Multiple Answers | multiple
 
-import { Topic } from '.'
+import { Topic } from '..'
 
 
 export const set6: Topic = {

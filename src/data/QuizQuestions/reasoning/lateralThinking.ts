@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const lateralThinking: Topic = {
     topic: 'Lateral Thinking',
@@ -162,14 +162,14 @@ export const lateralThinking: Topic = {
         score: 10,
       },
       {
-        question: `A man pushes his car to a hotel and tells owner he\'s bankrupt. What happened?`,
+        question: `A man pushes his car to a hotel and tells owner he's bankrupt. What happened?`,
         choices: ['Playing Monopoly', 'Car broke down', 'Lost his job', 'Gambling debt'],
         type: 'MCQs',
         correctAnswers: ['Playing Monopoly'],
         score: 10,
       },
       {
-        question: `Two people are born at same time, same parents, same hospital, but they\'re not twins. How?`,
+        question: `Two people are born at same time, same parents, same hospital, but they're not twins. How?`,
         choices: ['They\'re triplets', 'Different years', 'Adopted', 'Time zones'],
         type: 'MCQs',
         correctAnswers: ['They\'re triplets'],

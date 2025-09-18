@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const english2: Topic = {
   topic: 'Vocabulary – Synonyms, Antonyms & One-word Substitutions',

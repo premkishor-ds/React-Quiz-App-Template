@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const science2: Topic = {
   topic: 'Elementary Biology & Human Body Systems',

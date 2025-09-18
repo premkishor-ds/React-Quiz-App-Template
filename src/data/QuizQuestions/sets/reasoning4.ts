@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 const reasoning4: Topic = {
 	topic: 'Logical Reasoning Quiz',

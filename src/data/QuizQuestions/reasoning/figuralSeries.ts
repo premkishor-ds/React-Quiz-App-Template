@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const figuralSeries: Topic = {
     topic: 'Figural Series',

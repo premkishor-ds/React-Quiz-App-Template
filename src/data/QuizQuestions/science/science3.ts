@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const science3: Topic = {
   topic: 'Natural Phenomena',

@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const english1: Topic = {
   topic: 'Tenses, Parts of Speech & Sentence Formation',

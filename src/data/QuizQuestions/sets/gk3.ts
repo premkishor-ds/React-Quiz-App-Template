@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const gk3: Topic = {
   topic: 'Civics – Indian Constitution, World GK & Mixed GK',

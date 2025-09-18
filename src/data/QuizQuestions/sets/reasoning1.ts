@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 
 export const reasoning1: Topic = {
   topic: 'Pattern Recognition & Series Completion, Coding-Decoding, Direction Sense',
