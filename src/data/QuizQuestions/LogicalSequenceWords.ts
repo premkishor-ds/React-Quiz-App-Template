@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Logical Sequence of Words / Sentence Completion 
 export const LogicalSequenceWords: Topic = {
   topic: 'Mathematics',

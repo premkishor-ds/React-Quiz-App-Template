@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Coding–Decoding.
 export const codingDecodingQuestions: Topic = {
   topic: 'Mathematics',

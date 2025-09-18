@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Number Series / Pattern Recognition 
 export const numberSeriesQuestions: Topic = {
   topic: 'Mathematics',

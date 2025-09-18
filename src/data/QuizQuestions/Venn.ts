@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Venn Diagrams / Set Logic
 export const Venn: Topic = {
   topic: 'Mathematics',

@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Mirror & Water Image 
 export const MirrorWater: Topic = {
   topic: 'Mathematics',

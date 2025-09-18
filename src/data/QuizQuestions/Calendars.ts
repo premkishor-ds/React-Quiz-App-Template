@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Calendars & Dates 
 export const Calendars: Topic = {
   topic: 'Mathematics',

@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Coding - Decoding
 export const codingDecoding: Topic = {
   topic: "Coding-Decoding",

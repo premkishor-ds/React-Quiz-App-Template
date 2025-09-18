@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Mathematical Reasoning / Number Puzzles
 export const MathematicalReasoning: Topic = {
   topic: 'Mathematics',

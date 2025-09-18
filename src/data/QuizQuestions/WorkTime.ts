@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Work & Time(Basic Logical Approach)
 export const WorkTime: Topic = {
   topic: 'Mathematics',

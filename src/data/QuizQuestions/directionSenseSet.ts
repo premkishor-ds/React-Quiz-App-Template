@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Direction Sense Test
 export const directionSenseSet: Topic = {
   topic: "Direction Sense Test",

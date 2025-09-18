@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Seating Arrangement
 export const seatingArrangementQuestions: Topic = {
   topic: 'Mathematics',

@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Lateral Thinking & Word Puzzles
 export const LateralThinkingWordPuzzles: Topic = {
   topic: 'Mathematics',

@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Pattern Matrices / 2D Pattern 
 export const Matrices: Topic = {
   topic: 'Mathematics',

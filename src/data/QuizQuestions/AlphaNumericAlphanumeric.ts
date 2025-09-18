@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Alpha - Numeric / Alphanumeric Series
 export const AlphaNumericAlphanumeric: Topic = {
   topic: 'Mathematics',

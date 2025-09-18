@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // 20 Critical Reasoning 
 export const criticalReasoningQuestions: Topic = {
   topic: 'Mathematics',

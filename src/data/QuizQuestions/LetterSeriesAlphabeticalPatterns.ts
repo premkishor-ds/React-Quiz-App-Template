@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Letter Series / Alphabetical Patterns
 export const LetterSeriesAlphabeticalPatterns: Topic = {
   topic: 'Mathematics',

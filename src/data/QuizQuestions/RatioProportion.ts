@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Ratio & Proportion(Reasoning)
 export const RatioProportion: Topic = {
   topic: 'Mathematics',

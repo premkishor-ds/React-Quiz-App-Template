@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Seating Arrangements(Linear & Circular) 
 export const SeatingArrangements: Topic = {
   topic: 'Mathematics',

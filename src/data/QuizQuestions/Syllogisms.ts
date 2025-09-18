@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Syllogisms / Logical Deduction/
 export const Syllogisms: Topic = {
   topic: 'Mathematics',

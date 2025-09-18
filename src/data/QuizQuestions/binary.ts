@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Binary / True - False Grids(Yes / No logic)
 export const binary: Topic = {
   topic: 'Mathematics',

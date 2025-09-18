@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Puzzles & Brain Teasers 
 export const puzzlesBrainTeasersQuestions: Topic = {
   topic: 'Mathematics',

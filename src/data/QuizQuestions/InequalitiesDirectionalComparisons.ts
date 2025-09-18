@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Inequalities & Directional Comparisons
 export const InequalitiesDirectionalComparisons: Topic = {
   topic: 'Mathematics',

@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Non - Verbal Reasoning
 export const nonVerbalReasoningQuestions: Topic = {
   topic: 'Mathematics',

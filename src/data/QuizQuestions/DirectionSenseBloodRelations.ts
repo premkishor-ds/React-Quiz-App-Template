@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Direction Sense & Blood Relations
 export const DirectionSenseBloodRelations: Topic = {
   topic: 'Mathematics',

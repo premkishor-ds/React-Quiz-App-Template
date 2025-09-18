@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Distance, Speed & Time(Logic - based) 
 export const DistanceSpeedTime: Topic = {
   topic: 'Mathematics',

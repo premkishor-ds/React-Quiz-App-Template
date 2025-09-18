@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Seating + Scheduling(Timetable Logic) 
 export const SeatingScheduling: Topic = {
   topic: 'Mathematics',

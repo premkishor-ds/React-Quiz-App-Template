@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Embedded Figures / Figure Folding & Pattern 
 export const EmbeddedFigures: Topic = {
   topic: 'Mathematics',

@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Cube & Dice Problems
 export const CubeDiceProblems: Topic = {
   topic: 'Mathematics',

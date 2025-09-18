@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Blood Relations
 export const bloodRelationsSet: Topic = {
   topic: "Blood Relations",

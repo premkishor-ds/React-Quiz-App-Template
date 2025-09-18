@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Logical Reasoning with Images(Figural)
 export const LogicalReasoningImages: Topic = {
   topic: 'Mathematics',

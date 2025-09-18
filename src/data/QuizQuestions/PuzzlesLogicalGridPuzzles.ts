@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Puzzles / Logical Grid Puzzles 
 export const PuzzlesLogicalGridPuzzles : Topic = {
   topic: 'Mathematics',

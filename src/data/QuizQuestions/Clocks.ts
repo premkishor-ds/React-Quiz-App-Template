@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Clocks(Time Reasoning) 
 export const Clocks: Topic = {
   topic: 'Mathematics',

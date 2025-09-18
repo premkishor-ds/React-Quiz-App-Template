@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Direction Sense
 export const directionSenseQuestions: Topic = {
   topic: 'Mathematics',

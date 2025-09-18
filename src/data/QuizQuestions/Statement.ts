@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Statement – Assumption / Argument / Conclusion
 export const Statement: Topic = {
   topic: 'Mathematics',

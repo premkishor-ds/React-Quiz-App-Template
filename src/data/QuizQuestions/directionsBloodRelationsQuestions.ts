@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Directions & Blood Relations
 export const directionsBloodRelationsQuestions: Topic = {
   topic: 'Mathematics',

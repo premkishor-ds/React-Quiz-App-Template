@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 //Odd One Out & Classification
 export const oddOneOutClassificationQuestions: Topic = {
   topic: 'Mathematics',

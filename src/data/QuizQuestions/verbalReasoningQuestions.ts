@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Verbal Reasoning
 export const verbalReasoningQuestions: Topic = {
   topic: 'Mathematics',

@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Analytical Reasoning(20 Questions)
 export const analyticalReasoningQuestions: Topic = {
   topic: 'Mathematics',

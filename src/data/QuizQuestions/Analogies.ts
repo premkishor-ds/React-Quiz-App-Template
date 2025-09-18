@@ -1,3 +1,5 @@
+import { Topic } from ".";
+
 // Analogies(Verbal & Figural)
 export const Analogies: Topic = {
   topic: 'Mathematics',
