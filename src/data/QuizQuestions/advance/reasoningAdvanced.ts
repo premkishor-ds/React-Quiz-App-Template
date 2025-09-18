@@ -1,9 +1,9 @@
 import { Topic } from '.'
-import numberSeries from '../../assets/images/reasoning/number-series.svg'
-import clockAngle from '../../assets/images/reasoning/clock-angle.svg'
-import vennDiagram from '../../assets/images/reasoning/venn-diagram.svg'
-import cubeNet from '../../assets/images/reasoning/cube-net.svg'
-import seatingArrangement from '../../assets/images/reasoning/seating-arrangement.svg'
+import numberSeries from '../../../assets/images/reasoning/number-series.svg'
+import clockAngle from '../../../assets/images/reasoning/clock-angle.svg'
+import vennDiagram from '../../../assets/images/reasoning/venn-diagram.svg'
+import cubeNet from '../../../assets/images/reasoning/cube-net.svg'
+import seatingArrangement from '../../../assets/images/reasoning/seating-arrangement.svg'
 
 export const reasoningAdvanced: Topic = {
     topic: 'Advanced Reasoning - RMS',

@@ -1,13 +1,13 @@
 import { Topic } from '.'
-import numberSeries from '../../assets/images/reasoning/number-series.svg'
-import clockAngle from '../../assets/images/reasoning/clock-angle.svg'
-import vennDiagram from '../../assets/images/reasoning/venn-diagram.svg'
-import cubeNet from '../../assets/images/reasoning/cube-net.svg'
-import seatingArrangement from '../../assets/images/reasoning/seating-arrangement.svg'
-import mirrorImage from '../../assets/images/reasoning/mirror-image.svg'
-import embeddedFigure from '../../assets/images/reasoning/embedded-figure.svg'
-import patternMatrix from '../../assets/images/reasoning/pattern-matrix.svg'
-import figuralSeries from '../../assets/images/reasoning/figural-series.svg'
+import numberSeries from '../../../assets/images/reasoning/number-series.svg'
+import clockAngle from '../../../assets/images/reasoning/clock-angle.svg'
+import vennDiagram from '../../../assets/images/reasoning/venn-diagram.svg'
+import cubeNet from '../../../assets/images/reasoning/cube-net.svg'
+import seatingArrangement from '../../../assets/images/reasoning/seating-arrangement.svg'
+import mirrorImage from '../../../assets/images/reasoning/mirror-image.svg'
+import embeddedFigure from '../../../assets/images/reasoning/embedded-figure.svg'
+import patternMatrix from '../../../assets/images/reasoning/pattern-matrix.svg'
+import figuralSeries from '../../../assets/images/reasoning/figural-series.svg'
 
 export const reasoning30Topics: Topic = {
     topic: '30 Reasoning Topics - RMS',

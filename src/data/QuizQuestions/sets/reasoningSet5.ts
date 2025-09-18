@@ -1,9 +1,9 @@
 import { Topic } from '.'
-import pattern1 from '../../assets/images/reasoning/pattern1.svg'
-import mirrorImage from '../../assets/images/reasoning/mirror-image.svg'
-import countingShapes from '../../assets/images/reasoning/counting-shapes.svg'
-import directionPuzzle from '../../assets/images/reasoning/direction-puzzle.svg'
-import analogyShapes from '../../assets/images/reasoning/analogy-shapes.svg'
+import pattern1 from '../../../assets/images/reasoning/pattern1.svg'
+import mirrorImage from '../../../assets/images/reasoning/mirror-image.svg'
+import countingShapes from '../../../assets/images/reasoning/counting-shapes.svg'
+import directionPuzzle from '../../../assets/images/reasoning/direction-puzzle.svg'
+import analogyShapes from '../../../assets/images/reasoning/analogy-shapes.svg'
 
 export const reasoningSet5: Topic = {
     topic: 'Reasoning - RMS Class 6',
