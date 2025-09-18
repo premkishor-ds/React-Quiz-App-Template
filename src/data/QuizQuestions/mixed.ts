@@ -1,4 +1,4 @@
-import { Topic } from '..'
+import { Topic } from '.'
 
 export const mixed: Topic = {
   topic: 'Set 11',
