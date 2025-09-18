@@ -1,24 +1,4 @@
-type Choice = string
-type CorrectAnswers = string[]
-
-export type Question = {
-  question: string
-  choices: Choice[]
-  type: 'MCQs' | 'MAQs' | 'boolean'
-  correctAnswers: CorrectAnswers
-  score: number
-  code?: string
-  image?: null
-}
-
-export type Topic = {
-  topic: string
-  level: string
-  totalQuestions: number
-  totalScore: number
-  totalTime: number
-  questions: Question[]
-}
+import { Topic } from "../../../data/QuizQuestions";
 
 export const mathematicsQuestions: Topic = {
   topic: 'Mathematics',

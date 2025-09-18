@@ -1,24 +1,4 @@
-type Choice = string
-type CorrectAnswers = string[]
-
-export type Question = {
-  question: string
-  choices: Choice[]
-  type: 'MCQs' | 'MAQs' | 'boolean'
-  correctAnswers: CorrectAnswers
-  score: number
-  code?: string
-  image?: null
-}
-
-export type Topic = {
-  topic: string
-  level: string
-  totalQuestions: number
-  totalScore: number
-  totalTime: number
-  questions: Question[]
-}
+import { Topic } from "../../../data/QuizQuestions"
 
 export const mathematicsQuestions: Topic = {
     topic: 'Mathematics',
@@ -30,7 +10,7 @@ export const mathematicsQuestions: Topic = {
   
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -38,7 +18,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -46,7 +26,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -54,7 +34,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -62,7 +42,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -70,7 +50,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -78,7 +58,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -86,7 +66,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -94,7 +74,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -102,7 +82,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -110,7 +90,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -118,7 +98,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -126,7 +106,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -134,7 +114,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -142,7 +122,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -150,7 +130,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -158,7 +138,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -166,7 +146,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -174,7 +154,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -182,7 +162,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -190,7 +170,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -198,7 +178,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -206,7 +186,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -214,7 +194,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -222,7 +202,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -230,7 +210,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -238,7 +218,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -246,7 +226,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -254,7 +234,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -262,7 +242,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -270,7 +250,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -278,7 +258,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -286,7 +266,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -294,7 +274,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -302,7 +282,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -310,7 +290,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -318,7 +298,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -326,7 +306,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -334,7 +314,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -342,7 +322,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -350,7 +330,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -358,7 +338,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -366,7 +346,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -374,7 +354,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -382,7 +362,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -390,7 +370,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -398,7 +378,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -406,7 +386,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -414,7 +394,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -422,7 +402,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -430,7 +410,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -438,7 +418,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -446,7 +426,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -454,7 +434,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -462,7 +442,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -470,7 +450,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -478,7 +458,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -486,7 +466,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -494,7 +474,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -502,7 +482,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -510,7 +490,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -518,7 +498,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -526,7 +506,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -534,7 +514,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -542,7 +522,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -550,7 +530,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -558,7 +538,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -566,7 +546,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -574,7 +554,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -582,7 +562,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -590,7 +570,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -598,7 +578,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -606,7 +586,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -614,7 +594,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -622,7 +602,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -630,7 +610,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -638,7 +618,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -646,7 +626,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -654,7 +634,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -662,7 +642,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -670,7 +650,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -678,7 +658,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -686,7 +666,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -694,7 +674,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -702,7 +682,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -710,7 +690,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -718,7 +698,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -726,7 +706,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -734,7 +714,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -742,7 +722,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -750,7 +730,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -758,7 +738,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -766,7 +746,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -774,7 +754,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -782,7 +762,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -790,7 +770,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -798,7 +778,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -806,7 +786,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -814,7 +794,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -822,7 +802,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -841,7 +821,7 @@ export const mathematicsQuestions: Topic = {
   
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -849,7 +829,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `Synonym of 'Brave'?' `,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -857,7 +837,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `Antonym of 'Dark'?' `,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -865,7 +845,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -873,7 +853,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `Verb in: 'The dog barked loudly.'?' `,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -881,7 +861,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `Type of sentence: 'Please help me.'`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -889,7 +869,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `Past tense of 'goes'?' `,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -897,7 +877,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -905,7 +885,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -913,7 +893,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -921,7 +901,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -929,7 +909,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -937,7 +917,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -945,7 +925,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -953,7 +933,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -961,7 +941,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -969,7 +949,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -977,7 +957,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -985,7 +965,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -993,7 +973,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1001,7 +981,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1009,7 +989,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1017,7 +997,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1025,7 +1005,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1033,7 +1013,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -1041,7 +1021,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1049,7 +1029,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1057,7 +1037,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1065,7 +1045,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1073,7 +1053,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -1081,7 +1061,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1089,7 +1069,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1097,7 +1077,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -1105,7 +1085,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1113,7 +1093,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1121,7 +1101,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1129,7 +1109,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1137,7 +1117,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -1145,7 +1125,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -1153,7 +1133,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1161,7 +1141,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1169,7 +1149,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -1177,7 +1157,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1185,7 +1165,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -1193,7 +1173,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1201,7 +1181,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1209,7 +1189,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1217,7 +1197,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -1225,7 +1205,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1233,7 +1213,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1241,7 +1221,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1249,7 +1229,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -1257,7 +1237,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -1265,7 +1245,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1273,7 +1253,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1281,7 +1261,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -1289,7 +1269,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1297,7 +1277,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -1305,7 +1285,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -1313,7 +1293,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1321,7 +1301,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1329,7 +1309,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1337,7 +1317,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1345,7 +1325,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1353,7 +1333,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -1361,7 +1341,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1369,7 +1349,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -1377,7 +1357,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -1385,7 +1365,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1393,7 +1373,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -1401,7 +1381,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1409,7 +1389,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1417,7 +1397,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -1425,7 +1405,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -1433,7 +1413,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1441,7 +1421,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1449,7 +1429,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1457,7 +1437,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1465,7 +1445,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -1473,7 +1453,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1481,7 +1461,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1489,7 +1469,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1497,7 +1477,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1505,7 +1485,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1513,7 +1493,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1521,7 +1501,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1529,7 +1509,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1537,7 +1517,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1545,7 +1525,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -1553,7 +1533,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1561,7 +1541,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -1569,7 +1549,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1577,7 +1557,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -1585,7 +1565,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -1593,7 +1573,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -1601,7 +1581,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1609,7 +1589,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -1617,7 +1597,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1625,7 +1605,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -1633,7 +1613,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1652,7 +1632,7 @@ export const mathematicsQuestions: Topic = {
   
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1660,7 +1640,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -1668,7 +1648,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -1676,7 +1656,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -1684,7 +1664,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -1692,7 +1672,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1700,7 +1680,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -1708,7 +1688,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -1716,7 +1696,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -1724,7 +1704,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -1732,7 +1712,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -1740,7 +1720,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -1748,7 +1728,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -1756,7 +1736,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -1764,7 +1744,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -1772,7 +1752,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -1780,7 +1760,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -1788,7 +1768,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1796,7 +1776,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1804,7 +1784,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -1812,7 +1792,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -1820,7 +1800,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -1828,7 +1808,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -1836,7 +1816,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -1844,7 +1824,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1852,7 +1832,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -1860,7 +1840,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1868,7 +1848,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -1876,7 +1856,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -1884,7 +1864,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1892,7 +1872,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -1900,7 +1880,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -1908,7 +1888,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -1916,7 +1896,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -1924,7 +1904,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -1932,7 +1912,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -1940,7 +1920,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -1948,7 +1928,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -1956,7 +1936,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -1964,7 +1944,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -1972,7 +1952,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -1980,7 +1960,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -1988,7 +1968,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -1996,7 +1976,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the LCM of 8 and 12.',
-        image: null,
+        image: "",
         choices: ['24', '12', '8', '48'],
         type: 'MCQs',
         correctAnswers: ['24'],
@@ -2004,7 +1984,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -2012,7 +1992,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -2020,7 +2000,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -2028,7 +2008,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -2036,7 +2016,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -2044,7 +2024,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -2052,7 +2032,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -2060,7 +2040,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -2068,7 +2048,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -2076,7 +2056,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -2084,7 +2064,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2092,7 +2072,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -2100,7 +2080,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Area of rectangle (10 cm × 4 cm)?',
-        image: null,
+        image: "",
         choices: ['14', '40', '20', '100'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2108,7 +2088,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -2116,7 +2096,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -2124,7 +2104,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -2132,7 +2112,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -2140,7 +2120,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -2148,7 +2128,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -2156,7 +2136,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: '3/5 + 2/5 = ?',
-        image: null,
+        image: "",
         choices: ['1', '3/5', '5/10', '5/5'],
         type: 'MCQs',
         correctAnswers: ['5/5'],
@@ -2164,7 +2144,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -2172,7 +2152,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -2180,7 +2160,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -2188,7 +2168,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -2196,7 +2176,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -2204,7 +2184,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -2212,7 +2192,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -2220,7 +2200,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -2228,7 +2208,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -2236,7 +2216,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -2244,7 +2224,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -2252,7 +2232,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Antonym of 'Dark'?'`,
-        image: null,
+        image: "",
         choices: ['Light', 'Bright', 'Gloomy', 'Shadow'],
         type: 'MCQs',
         correctAnswers: ['Light'],
@@ -2260,7 +2240,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -2268,7 +2248,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -2276,7 +2256,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -2284,7 +2264,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -2292,7 +2272,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Simplify: (8 + 2) × 5',
-        image: null,
+        image: "",
         choices: ['10', '40', '50', '30'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -2300,7 +2280,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Verb in: 'The dog barked loudly.'?'`,
-        image: null,
+        image: "",
         choices: ['The', 'Dog', 'Barked', 'Loudly'],
         type: 'MCQs',
         correctAnswers: ['Barked'],
@@ -2308,7 +2288,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Seconds in 2 hours?',
-        image: null,
+        image: "",
         choices: ['120', '7200', '3600', '1800'],
         type: 'MCQs',
         correctAnswers: ['7200'],
@@ -2316,7 +2296,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''____ apple a day...''`,
-        image: null,
+        image: "",
         choices: ['A', 'The', 'An', 'No article'],
         type: 'MCQs',
         correctAnswers: ['An'],
@@ -2324,7 +2304,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Convert 2.5 kg to grams.',
-        image: null,
+        image: "",
         choices: ['250g', '2500g', '25g', '2.5g'],
         type: 'MCQs',
         correctAnswers: ['2500g'],
@@ -2332,7 +2312,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Roman numeral for 59?',
-        image: null,
+        image: "",
         choices: ['LIX', 'LVIII', 'XLIX', 'LXI'],
         type: 'MCQs',
         correctAnswers: ['LIX'],
@@ -2340,7 +2320,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -2348,7 +2328,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Past tense of 'goes'?'`,
-        image: null,
+        image: "",
         choices: ['gone', 'went', 'going', 'go'],
         type: 'MCQs',
         correctAnswers: ['went'],
@@ -2356,7 +2336,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Square of 9?',
-        image: null,
+        image: "",
         choices: ['81', '18', '27', '72'],
         type: 'MCQs',
         correctAnswers: ['81'],
@@ -2364,7 +2344,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Adjective in: 'The tall boy won.'?'`,
-        image: null,
+        image: "",
         choices: ['boy', 'tall', 'won', 'The'],
         type: 'MCQs',
         correctAnswers: ['tall'],
@@ -2372,7 +2352,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -2380,7 +2360,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -2388,7 +2368,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -2396,7 +2376,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What is 25% of 200?',
-        image: null,
+        image: "",
         choices: ['25', '50', '75', '100'],
         type: 'MCQs',
         correctAnswers: ['50'],
@@ -2404,7 +2384,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `''She _____ playing in the garden.''`,
-        image: null,
+        image: "",
         choices: ['were', 'was', 'is', 'are'],
         type: 'MCQs',
         correctAnswers: ['was'],
@@ -2412,7 +2392,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'x + 15 = 30, find x',
-        image: null,
+        image: "",
         choices: ['30', '10', '15', '25'],
         type: 'MCQs',
         correctAnswers: ['15'],
@@ -2420,7 +2400,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Correct spelling?',
-        image: null,
+        image: "",
         choices: ['Recieve', 'Receive', 'Recive', 'Receeve'],
         type: 'MCQs',
         correctAnswers: ['Receive'],
@@ -2428,7 +2408,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Synonym of 'Brave'?'`,
-        image: null,
+        image: "",
         choices: ['Coward', 'Fearless', 'Weak', 'None'],
         type: 'MCQs',
         correctAnswers: ['Fearless'],
@@ -2436,7 +2416,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Type of sentence: 'Please help me.''`,
-        image: null,
+        image: "",
         choices: ['Exclamatory', 'Declarative', 'Interrogative', 'Imperative'],
         type: 'MCQs',
         correctAnswers: ['Imperative'],
@@ -2444,7 +2424,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Rearrange: 'quickly / the / ran / dog''`,
-        image: null,
+        image: "",
         choices: ['The dog quickly ran', 'The quickly ran dog', 'Dog the quickly ran', 'The dog ran quickly'],
         type: 'MCQs',
         correctAnswers: ['The dog ran quickly'],
@@ -2463,7 +2443,7 @@ export const mathematicsQuestions: Topic = {
   
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2471,7 +2451,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -2479,7 +2459,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If CAT = 3-1-20, then DOG = ?',
-        image: null,
+        image: "",
         choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
         type: 'MCQs',
         correctAnswers: ['4-15-7'],
@@ -2487,7 +2467,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -2495,7 +2475,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which number comes next: 2, 4, 6, 8, ?',
-        image: null,
+        image: "",
         choices: ['9', '10', '12', '14'],
         type: 'MCQs',
         correctAnswers: ['10'],
@@ -2503,7 +2483,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -2511,7 +2491,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2519,7 +2499,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -2527,7 +2507,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],
@@ -2535,7 +2515,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -2543,7 +2523,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which number comes next: 2, 4, 6, 8, ?',
-        image: null,
+        image: "",
         choices: ['9', '10', '12', '14'],
         type: 'MCQs',
         correctAnswers: ['10'],
@@ -2551,7 +2531,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -2559,7 +2539,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],
@@ -2567,7 +2547,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -2575,7 +2555,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -2583,7 +2563,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],
@@ -2591,7 +2571,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -2599,7 +2579,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -2607,7 +2587,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -2615,7 +2595,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If CAT = 3-1-20, then DOG = ?',
-        image: null,
+        image: "",
         choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
         type: 'MCQs',
         correctAnswers: ['4-15-7'],
@@ -2623,7 +2603,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2631,7 +2611,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -2639,7 +2619,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If CAT = 3-1-20, then DOG = ?',
-        image: null,
+        image: "",
         choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
         type: 'MCQs',
         correctAnswers: ['4-15-7'],
@@ -2647,7 +2627,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -2655,7 +2635,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -2663,7 +2643,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which number comes next: 2, 4, 6, 8, ?',
-        image: null,
+        image: "",
         choices: ['9', '10', '12', '14'],
         type: 'MCQs',
         correctAnswers: ['10'],
@@ -2671,7 +2651,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -2679,7 +2659,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2687,7 +2667,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -2695,7 +2675,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -2703,7 +2683,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2711,7 +2691,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -2719,7 +2699,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -2727,7 +2707,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -2735,7 +2715,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -2743,7 +2723,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which number comes next: 2, 4, 6, 8, ?',
-        image: null,
+        image: "",
         choices: ['9', '10', '12', '14'],
         type: 'MCQs',
         correctAnswers: ['10'],
@@ -2751,7 +2731,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],
@@ -2759,7 +2739,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],
@@ -2767,7 +2747,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which number comes next: 2, 4, 6, 8, ?',
-        image: null,
+        image: "",
         choices: ['9', '10', '12', '14'],
         type: 'MCQs',
         correctAnswers: ['10'],
@@ -2775,7 +2755,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -2783,7 +2763,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -2791,7 +2771,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -2799,7 +2779,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -2807,7 +2787,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -2815,7 +2795,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2823,7 +2803,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -2831,7 +2811,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -2839,7 +2819,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -2847,7 +2827,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -2855,7 +2835,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -2863,7 +2843,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -2871,7 +2851,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -2879,7 +2859,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -2887,7 +2867,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -2895,7 +2875,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -2903,7 +2883,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -2911,7 +2891,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -2919,7 +2899,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -2927,7 +2907,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2935,7 +2915,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2943,7 +2923,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -2951,7 +2931,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -2959,7 +2939,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If CAT = 3-1-20, then DOG = ?',
-        image: null,
+        image: "",
         choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
         type: 'MCQs',
         correctAnswers: ['4-15-7'],
@@ -2967,7 +2947,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],
@@ -2975,7 +2955,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -2983,7 +2963,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -2991,7 +2971,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -2999,7 +2979,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which number comes next: 2, 4, 6, 8, ?',
-        image: null,
+        image: "",
         choices: ['9', '10', '12', '14'],
         type: 'MCQs',
         correctAnswers: ['10'],
@@ -3007,7 +2987,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Find the odd one out: Apple, Banana, Carrot, Mango',
-        image: null,
+        image: "",
         choices: ['Apple', 'Banana', 'Carrot', 'Mango'],
         type: 'MCQs',
         correctAnswers: ['Carrot'],
@@ -3015,7 +2995,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -3023,7 +3003,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -3031,7 +3011,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -3039,7 +3019,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which number comes next: 2, 4, 6, 8, ?',
-        image: null,
+        image: "",
         choices: ['9', '10', '12', '14'],
         type: 'MCQs',
         correctAnswers: ['10'],
@@ -3047,7 +3027,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],
@@ -3055,7 +3035,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If CAT = 3-1-20, then DOG = ?',
-        image: null,
+        image: "",
         choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
         type: 'MCQs',
         correctAnswers: ['4-15-7'],
@@ -3063,7 +3043,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Fill in the blank: 5, 10, 20, __, 80',
-        image: null,
+        image: "",
         choices: ['30', '35', '40', '50'],
         type: 'MCQs',
         correctAnswers: ['40'],
@@ -3071,7 +3051,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If CAT = 3-1-20, then DOG = ?',
-        image: null,
+        image: "",
         choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
         type: 'MCQs',
         correctAnswers: ['4-15-7'],
@@ -3079,7 +3059,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],
@@ -3087,7 +3067,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -3095,7 +3075,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -3103,7 +3083,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -3111,7 +3091,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -3119,7 +3099,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Unscramble: ‘LPEAP’'`,
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -3127,7 +3107,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which number comes next: 2, 4, 6, 8, ?',
-        image: null,
+        image: "",
         choices: ['9', '10', '12', '14'],
         type: 'MCQs',
         correctAnswers: ['10'],
@@ -3135,7 +3115,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If CAT = 3-1-20, then DOG = ?',
-        image: null,
+        image: "",
         choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
         type: 'MCQs',
         correctAnswers: ['4-15-7'],
@@ -3143,7 +3123,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -3151,7 +3131,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -3159,7 +3139,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -3167,7 +3147,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -3175,7 +3155,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -3183,7 +3163,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -3191,7 +3171,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which is the lightest?',
-        image: null,
+        image: "",
         choices: ['Iron', 'Cotton', 'Gold', 'Silver'],
         type: 'MCQs',
         correctAnswers: ['Cotton'],
@@ -3199,7 +3179,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If CAT = 3-1-20, then DOG = ?',
-        image: null,
+        image: "",
         choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
         type: 'MCQs',
         correctAnswers: ['4-15-7'],
@@ -3207,7 +3187,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Unscramble: ‘LPEAP’',
-        image: null,
+        image: "",
         choices: ['LAPEL', 'APPLE', 'PALEL', 'PLEAL'],
         type: 'MCQs',
         correctAnswers: ['APPLE'],
@@ -3215,7 +3195,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: `'Mirror image of 'CAT' is?'`,
-        image: null,
+        image: "",
         choices: ['TAC', 'ʇ∀Ɔ', 'ACT', 'TCA'],
         type: 'MCQs',
         correctAnswers: ['ʇ∀Ɔ'],
@@ -3223,7 +3203,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'What comes next in: A, C, E, G, ?',
-        image: null,
+        image: "",
         choices: ['H', 'I', 'J', 'K'],
         type: 'MCQs',
         correctAnswers: ['J'],
@@ -3231,7 +3211,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If CAT = 3-1-20, then DOG = ?',
-        image: null,
+        image: "",
         choices: ['4-15-7', '4-14-7', '4-15-6', '3-15-7'],
         type: 'MCQs',
         correctAnswers: ['4-15-7'],
@@ -3239,7 +3219,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],
@@ -3247,7 +3227,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'Which shape is different?',
-        image: null,
+        image: "",
         choices: ['Circle', 'Triangle', 'Square', 'Cube'],
         type: 'MCQs',
         correctAnswers: ['Cube'],
@@ -3255,7 +3235,7 @@ export const mathematicsQuestions: Topic = {
       },
       {
         question: 'If MONDAY is coded as 123456, then DAY = ?',
-        image: null,
+        image: "",
         choices: ['456', '654', '321', '345'],
         type: 'MCQs',
         correctAnswers: ['456'],

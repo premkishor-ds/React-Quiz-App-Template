@@ -1,4 +1,4 @@
-import { Topic } from '.'
+import { Topic } from '..'
 import numberSeries from '../../../assets/images/reasoning/number-series.svg'
 import clockAngle from '../../../assets/images/reasoning/clock-angle.svg'
 import vennDiagram from '../../../assets/images/reasoning/venn-diagram.svg'

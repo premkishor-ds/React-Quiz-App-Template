@@ -1,7 +1,6 @@
-import { Topic } from '.'
+import { Topic } from ".."
 
-export const science1: Topic = {
-  topic: 'Elementary Physics & Chemistry',
+export const science1: Topic = {  topic: 'Elementary Physics & Chemistry',
   level: 'Medium to Hard',
   totalQuestions: 10,
   totalScore: 100,
