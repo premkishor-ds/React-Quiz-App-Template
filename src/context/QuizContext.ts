@@ -4,6 +4,8 @@ import { QuizContextTypes, ScreenTypes } from '../types'
 export const initialState: QuizContextTypes = {
   currentScreen: ScreenTypes.SplashScreen,
   setCurrentScreen: () => {},
+  userName: '',
+  setUserName: () => {},
   quizTopic: 'Reasoning',
   selectQuizTopic: () => {},
   questions: [],

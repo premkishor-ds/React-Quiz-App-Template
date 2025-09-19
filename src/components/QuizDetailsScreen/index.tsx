@@ -8,12 +8,16 @@ import HighlightedText from '../ui/HighlightedText'
 import PageCenter from '../ui/PageCenter'
 
 const QuizDetailsScreen = () => {
-  const { setCurrentScreen, quizDetails } = useQuiz()
+  const { setCurrentScreen, quizDetails, userName } = useQuiz()
 
   const { selectedQuizTopic, totalQuestions, totalScore, totalTime } = quizDetails
 
   const goToQuestionScreen = () => {
     setCurrentScreen(ScreenTypes.QuestionScreen)
+  }
+
+  const goBack = () => {
+    setCurrentScreen(ScreenTypes.QuizTopicsScreen)
   }
 
   return (
@@ -22,6 +26,13 @@ const QuizDetailsScreen = () => {
         <div className="text-app-logo mb-8 text-center md:mb-12">
           <AppLogo width={220} />
         </div>
+        
+        <div className="mb-4 text-center">
+          <p className="text-secondary-text">
+            Good luck, <span className="font-medium text-theme-color">{userName}</span>!
+          </p>
+        </div>
+        
         <h2 className="text-theme-color text-3xl font-bold">QUIZ</h2>
 
         <div className="mt-4 mb-10 max-w-[500px] text-center text-xl font-medium">
@@ -41,13 +52,20 @@ const QuizDetailsScreen = () => {
           </p>
         </div>
 
-        <Button
-          text="Start"
-          icon={<StartIcon />}
-          iconPosition="left"
-          onClick={goToQuestionScreen}
-          bold
-        />
+        <div className="flex gap-4 justify-center">
+          <Button
+            text="Start Quiz"
+            icon={<StartIcon />}
+            iconPosition="left"
+            onClick={goToQuestionScreen}
+            bold
+          />
+          <Button
+            text="Back"
+            onClick={goBack}
+            outline
+          />
+        </div>
       </CenterCardContainer>
     </PageCenter>
   )

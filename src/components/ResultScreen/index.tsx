@@ -11,10 +11,18 @@ import ResultOverview from './ResultOverview'
 import RightAnswer from './RightAnswer'
 
 const ResultScreen: FC = () => {
-  const { result } = useQuiz()
+  const { result, setCurrentScreen } = useQuiz()
 
   const onClickRetry = () => {
     refreshPage()
+  }
+
+  const goToHistory = () => {
+    setCurrentScreen(ScreenTypes.QuizHistoryScreen)
+  }
+
+  const goToTopics = () => {
+    setCurrentScreen(ScreenTypes.QuizTopicsScreen)
   }
 
   return (
@@ -94,15 +102,25 @@ const ResultScreen: FC = () => {
           },
         )}
       </div>
-      <Flex flxEnd>
+      <div className="flex justify-center gap-4">
         <Button
-          text="RETRY"
+          text="New Quiz"
+          onClick={goToTopics}
+          bold
+        />
+        <Button
+          text="View History"
+          onClick={goToHistory}
+          outline
+        />
+        <Button
+          text="Retry"
           onClick={onClickRetry}
           icon={<Refresh />}
           iconPosition="left"
-          bold
+          outline
         />
-      </Flex>
+      </div>
     </div>
   )
 }

@@ -16,6 +16,8 @@ const QuestionScreen: FC = () => {
   const [showTimerModal, setShowTimerModal] = useState<boolean>(false)
   const [showResultModal, setShowResultModal] = useState<boolean>(false)
   const [showFinishConfirm, setShowFinishConfirm] = useState<boolean>(false)
+  const [showAnswerFeedback, setShowAnswerFeedback] = useState<boolean>(false)
+  const [isCorrect, setIsCorrect] = useState<boolean>(false)
 
   const {
     questions,
@@ -26,6 +28,7 @@ const QuestionScreen: FC = () => {
     timer,
     setTimer,
     setEndTime,
+    userName,
   } = useQuiz()
 
   const currentQuestion = questions[activeQuestion]
@@ -41,60 +44,60 @@ const QuestionScreen: FC = () => {
   }
 
   // 🔹 API call to submit result
-const submitResult = async (finalResult: any[]) => {
-  try {
-    const payload = {
-      user_name: "ergert",
-      subject: "trhty",
-      topic: "trhr",
-      set: "gfre",
-      score: calculateScore(finalResult),
-      questions: finalResult.map((q, index) => ({
-        id: q.id || index + 1,
-        question: q.question,
-        type: q.type,
-        choices: q.choices,
-        correctAnswers: q.correctAnswers,
-        score: q.score,
-        code: q.code || null,
-        image: q.image || null,
-        selectedAnswer: q.selectedAnswer || [],
-        isMatch: q.isMatch,
-      })),
+  const submitResult = async (finalResult: any[]) => {
+    try {
+      const payload = {
+        user_name: userName,
+        subject: quizDetails.selectedQuizTopic.split(' ')[0] || 'General',
+        topic: quizDetails.selectedQuizTopic,
+        set: 'Set 1',
+        score: calculateScore(finalResult),
+        questions: finalResult.map((q, index) => ({
+          id: q.id || index + 1,
+          question: q.question,
+          type: q.type,
+          choices: q.choices,
+          correctAnswers: q.correctAnswers,
+          score: q.score,
+          code: q.code || null,
+          image: q.image || null,
+          selectedAnswer: q.selectedAnswer || [],
+          isMatch: q.isMatch,
+        })),
+      }
+
+      console.log("🚀 Sending payload:", payload)
+
+      const { quizAPI } = await import('../../services/api')
+      const data = await quizAPI.createQuizResult(payload)
+      console.log("✅ Result submitted successfully:", data)
+    } catch (err) {
+      console.error("❌ Error submitting result:", err)
     }
-
-    console.log("🚀 Sending payload:", payload)
-
-    const response = await fetch(`http://localhost:3001/results`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    })
-
-    if (!response.ok) {
-      const errorText = await response.text()
-      throw new Error(`Failed to submit result: ${response.status} ${errorText}`)
-    }
-
-    const data = await response.json()
-    console.log("✅ Result submitted successfully:", data)
-  } catch (err) {
-    console.error("❌ Error submitting result:", err)
   }
-}
 
 
   const onClickNext = () => {
+    const isMatch =
+      selectedAnswer.length === correctAnswers.length &&
+      selectedAnswer.every((answer) => correctAnswers.includes(answer))
+
+    // Show immediate feedback
+    setIsCorrect(isMatch)
+    setShowAnswerFeedback(true)
+
+    // Hide feedback after 1.5 seconds and proceed
+    setTimeout(() => {
+      setShowAnswerFeedback(false)
+      proceedToNext(isMatch)
+    }, 1500)
+  }
+
+  const proceedToNext = (isMatch: boolean) => {
     if (activeQuestion === questions.length - 1) {
       setShowFinishConfirm(true)
       return
     }
-
-    const isMatch =
-      selectedAnswer.length === correctAnswers.length &&
-      selectedAnswer.every((answer) => correctAnswers.includes(answer))
 
     const updatedResult = [...result, { ...currentQuestion, selectedAnswer, isMatch }]
     setResult(updatedResult)
@@ -230,6 +233,7 @@ const submitResult = async (finalResult: any[]) => {
               text="Previous"
               onClick={onClickPrevious}
               iconPosition="left"
+              disabled={showAnswerFeedback}
             />
           )}
           <Button
@@ -237,9 +241,33 @@ const submitResult = async (finalResult: any[]) => {
             onClick={onClickNext}
             icon={<Next />}
             iconPosition="right"
-            disabled={selectedAnswer.length === 0}
+            disabled={selectedAnswer.length === 0 || showAnswerFeedback}
           />
         </div>
+
+        {/* Answer Feedback Modal */}
+        {showAnswerFeedback && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+            <div className={`bg-white rounded-lg p-6 w-[90%] max-w-md text-center shadow-lg border-4 ${
+              isCorrect ? 'border-success' : 'border-danger'
+            }`}>
+              <div className={`text-4xl mb-4 ${isCorrect ? 'text-success' : 'text-danger'}`}>
+                {isCorrect ? '✅' : '❌'}
+              </div>
+              <h3 className={`text-xl font-bold mb-2 ${isCorrect ? 'text-success' : 'text-danger'}`}>
+                {isCorrect ? 'Correct!' : 'Incorrect!'}
+              </h3>
+              {!isCorrect && (
+                <div className="text-sm text-secondary-text">
+                  <p className="mb-2">Correct answer{correctAnswers.length > 1 ? 's' : ''}:</p>
+                  <p className="font-medium text-primary-text">
+                    {correctAnswers.join(', ')}
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Timer/Result Modal */}

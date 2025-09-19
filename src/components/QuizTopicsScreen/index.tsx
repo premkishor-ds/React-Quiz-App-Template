@@ -10,10 +10,14 @@ import HighlightedText from '../ui/HighlightedText'
 import PageCenter from '../ui/PageCenter'
 
 const QuizTopicsScreen: React.FC = () => {
-  const { quizTopic, selectQuizTopic, setCurrentScreen } = useQuiz()
+  const { quizTopic, selectQuizTopic, setCurrentScreen, userName } = useQuiz()
 
   const goToQuizDetailsScreen = () => {
     setCurrentScreen(ScreenTypes.QuizDetailsScreen)
+  }
+
+  const goToHistory = () => {
+    setCurrentScreen(ScreenTypes.QuizHistoryScreen)
   }
 
   return (
@@ -22,6 +26,13 @@ const QuizTopicsScreen: React.FC = () => {
         <div className="text-app-logo mb-8 text-center md:mb-12">
           <AppLogo width={220} />
         </div>
+        
+        <div className="mb-4 text-center">
+          <p className="text-secondary-text">
+            Welcome, <span className="font-medium text-theme-color">{userName}</span>
+          </p>
+        </div>
+        
         <h2 className="mb-5 text-center text-3xl font-bold">
           <HighlightedText>QUIZ</HighlightedText>
         </h2>
@@ -51,7 +62,22 @@ const QuizTopicsScreen: React.FC = () => {
           ))}
         </div>
 
-        <Button text="Continue" onClick={goToQuizDetailsScreen} bold />
+        <div className="flex gap-4 justify-center">
+          <Button text="Continue" onClick={goToQuizDetailsScreen} bold />
+          <Button text="View History" onClick={goToHistory} outline />
+        </div>
+        
+        <div className="mt-6 text-center">
+          <button
+            onClick={() => {
+              localStorage.removeItem('quiz-user')
+              setCurrentScreen(ScreenTypes.UserSetupScreen)
+            }}
+            className="text-sm text-secondary-text hover:text-theme-color underline"
+          >
+            Switch User
+          </button>
+        </div>
       </CenterCardContainer>
     </PageCenter>
   )

@@ -3,10 +3,12 @@ import { Question } from '../data/QuizQuestions'
 
 export enum ScreenTypes {
   SplashScreen,
+  UserSetupScreen,
   QuizTopicsScreen,
   QuizDetailsScreen,
   QuestionScreen,
   ResultScreen,
+  QuizHistoryScreen,
 }
 
 export interface Result extends Question {
@@ -17,6 +19,8 @@ export interface Result extends Question {
 export type QuizContextTypes = {
   currentScreen: ScreenTypes
   setCurrentScreen: Dispatch<SetStateAction<ScreenTypes>>
+  userName: string
+  setUserName: (name: string) => void
   quizTopic: string
   selectQuizTopic: (type: string) => void
   questions: Question[]
